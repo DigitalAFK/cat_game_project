@@ -12,14 +12,6 @@ public partial class PlayerCharacter : CharacterBody2D
 
 	public override void _Input(InputEvent @event)
 	{
-		if (@event.IsActionPressed(InputConfig.InputUp))
-		{
-			_isMovingUp = true;
-		}
-		if (@event.IsActionPressed(InputConfig.InputDown))
-		{
-			_isMovingDown = true;
-		}
 	}
 	public override void _Process(double delta)
 	{
