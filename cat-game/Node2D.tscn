@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqkj06bx11avh"]
+
+[ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://CharacterBody2D.tscn" id="1_wg1v2"]
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://icon.svg" id="2_ri2ts"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_wg1v2")]
+position = Vector2(570, 255)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(424, 141)
+texture = ExtResource("2_ri2ts")
