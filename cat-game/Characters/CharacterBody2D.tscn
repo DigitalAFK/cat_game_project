@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://do4ocgd2ffir5"]
 
-[ext_resource type="Script" uid="uid://bgle8xxm0ox2h" path="res://PlayerCharacter.cs" id="1_0cgs4"]
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://icon.svg" id="2_7odrv"]
-[ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://FollowCamera.cs" id="3_jkhun"]
+[ext_resource type="Script" uid="uid://bgle8xxm0ox2h" path="res://Characters/PlayerCharacter.cs" id="1_0cgs4"]
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Characters/icon.svg" id="2_7odrv"]
+[ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Characters/FollowCamera.cs" id="3_jkhun"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7odrv"]
 radius = 60.0
@@ -21,5 +21,6 @@ texture = ExtResource("2_7odrv")
 position = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_7odrv")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_target")]
 script = ExtResource("3_jkhun")
+_target = NodePath("..")

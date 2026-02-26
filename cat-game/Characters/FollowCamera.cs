@@ -23,4 +23,12 @@ public partial class FollowCamera : Camera2D
 			return;
 		}
 	}
+
+	public void SetTarget(Node2D newTarget)
+	{
+		if (newTarget != null)
+		{
+			_target = newTarget;
+		}
+	}
 }
