@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://do4ocgd2ffir5"]
 
 [ext_resource type="Script" uid="uid://bgle8xxm0ox2h" path="res://Code/Characters/PlayerCharacter.cs" id="1_0cgs4"]
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Code/Characters/icon.svg" id="2_7odrv"]
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_7odrv"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="3_jkhun"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7odrv"]
