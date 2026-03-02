@@ -22,6 +22,19 @@ public partial class FollowCamera : Camera2D
 			// There's no target, no can do!
 			return;
 		}
+		if (ProcessCallback == Camera2DProcessCallback.Physics)
+		{
+			UpdatePosition((float)delta);
+		}
+	}
+
+	private void UpdatePosition(float deltaTime)
+	{
+		// Target's position in the game world in global coordinates.
+		Vector2 targetPosition = _target.GlobalPosition;
+		Vector2 currentPosition = GlobalPosition;
+		Vector2 newPosition = currentPosition.Lerp(targetPosition, _speed * deltaTime);
+		GlobalPosition = newPosition;
 	}
 
 	public void SetTarget(Node2D newTarget)
