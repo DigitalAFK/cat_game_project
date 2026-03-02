@@ -13,7 +13,12 @@ config_version=5
 config/name="Cat Game"
 run/main_scene="uid://cqkj06bx11avh"
 config/features=PackedStringArray("4.5", "C#", "Mobile")
-config/icon="res://Characters/icon.svg"
+config/icon="res://Code/Characters/icon.svg"
+
+[display]
+
+window/size/viewport_width=360
+window/size/viewport_height=640
 
 [dotnet]
 
