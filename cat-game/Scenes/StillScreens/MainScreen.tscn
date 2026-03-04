@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccill4u7ll78d"]
+[gd_scene load_steps=4 format=3 uid="uid://ccill4u7ll78d"]
 
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_qtvbs"]
-[ext_resource type="Script" uid="uid://t8buvr3854d4" path="res://Scenes/StillScreens/ButtonFunction.cs" id="2_oi830"]
+[ext_resource type="Script" uid="uid://t8buvr3854d4" path="res://Code/Buttons/ButtonFunction.cs" id="2_oi830"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_n415r"]
 
 [node name="MainScreen" type="Node2D"]
 
@@ -35,39 +36,27 @@ layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="PlayButton" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("1_qtvbs")
-
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/PlayButton"]
-layout_mode = 0
-offset_top = -27.0
-offset_right = 128.0
-offset_bottom = -4.0
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="SettingsButton" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("1_qtvbs")
-
-[node name="TextureRect3" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("1_qtvbs")
-
-[node name="Button" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
-layout_mode = 2
-text = "test"
-icon = ExtResource("1_qtvbs")
-icon_alignment = 1
-
 [node name="TextureButton" type="TextureButton" parent="MarginContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("1_qtvbs")
+stretch_mode = 0
+script = ExtResource("2_oi830")
+
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/TextureButton"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 43.0
+offset_right = 112.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.61893296, 1.540184e-06, 4.813075e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_n415r")
+theme_override_font_sizes/font_size = 30
+text = "Pelaa"
+
+[node name="TextureButton2" type="TextureButton" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("1_qtvbs")
+stretch_mode = 0
 script = ExtResource("2_oi830")
