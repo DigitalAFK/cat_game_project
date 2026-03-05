@@ -1,17 +1,21 @@
 using Godot;
 using System;
 
-public partial class ButtonFunction : TextureButton
+public partial class SettingsButtonFuntion : TextureButton
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 	}
+
 	//Called when the TextureButton is pressed
 	public override void _Pressed()
 	{
 		base._Pressed();
+		//TODO: Remove
 		GD.Print("Pressed");
+		//TODO: Change file path when the settings scene is made and remove the "//"
+		//GetTree().ChangeSceneToFile("res://Scenes/Characters/Node2D.tscn");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
