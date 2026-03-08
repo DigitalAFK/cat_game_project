@@ -7,9 +7,12 @@
 [ext_resource type="Texture2D" uid="uid://d11l8su1lekut" path="res://Art/Menu/SpriteSheets/CatWithPaws.png" id="5_ypipb"]
 [ext_resource type="Script" uid="uid://og4kwao3xidd" path="res://Code/AnimatedBackgrounds/MainMenuCat.cs" id="6_a5w2e"]
 
-[node name="MainMenu" type="Node2D"]
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

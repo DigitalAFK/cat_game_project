@@ -14,7 +14,7 @@ public partial class PlayButtonFunction : TextureButton
 		base._Pressed();
 		//TODO: Remove
 		GD.Print("Pressed");
-		GetTree().ChangeSceneToFile("res://Scenes/Characters/Node2D.tscn");
+		GetTree().ChangeSceneToFile("res://Scenes/Characters/Sea.tscn");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

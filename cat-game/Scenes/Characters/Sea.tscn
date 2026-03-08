@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqkj06bx11avh"]
+
+[ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_ucktt"]
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_82053"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(582, 307)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_ucktt")]
+position = Vector2(-2, 2)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-195, 31)
+texture = ExtResource("2_82053")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
