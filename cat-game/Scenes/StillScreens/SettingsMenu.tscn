@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://df1a215vkka6b"]
+
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_5mdq7"]
+[ext_resource type="Script" uid="uid://bup0gscjpsdre" path="res://Code/Buttons/SettingsButtonFuntion.cs" id="2_iiig2"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_yrun1"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="SettingsButton" type="TextureButton" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = ExtResource("1_5mdq7")
+stretch_mode = 0
+script = ExtResource("2_iiig2")
+
+[node name="Label" type="Label" parent="MarginContainer/SettingsButton"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 46.0
+offset_right = 130.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0.80813736, 3.272891e-06, 7.70092e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_yrun1")
+theme_override_font_sizes/font_size = 25
+text = "Takaisin"
