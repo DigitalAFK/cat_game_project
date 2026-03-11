@@ -1,16 +1,56 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqkj06bx11avh"]
+[gd_scene load_steps=5 format=3 uid="uid://cqkj06bx11avh"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_ucktt"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_82053"]
+[ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="3_82053"]
+[ext_resource type="Script" uid="uid://jlbw7lpkqysw" path="res://Code/Buttons/ExitButtonFunction.cs" id="4_nlmf2"]
 
 [node name="Node2D" type="Node2D"]
+visibility_layer = 2
 position = Vector2(582, 307)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_ucktt")]
+visibility_layer = 2
 position = Vector2(-2, 2)
 
 [node name="Icon" type="Sprite2D" parent="."]
+visibility_layer = 2
 position = Vector2(-195, 31)
 texture = ExtResource("2_82053")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+visibility_layer = 2
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_target")]
+visibility_layer = 2
+zoom = Vector2(0.5, 0.5)
+process_callback = 0
+position_smoothing_enabled = true
+script = ExtResource("3_82053")
+_target = NodePath("../CharacterBody2D")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="TextureButton" parent="CanvasLayer"]
+top_level = true
+anchors_preset = -1
+anchor_left = 0.731
+anchor_top = 0.85200006
+anchor_right = 0.731
+anchor_bottom = 0.85200006
+offset_left = -27.160004
+offset_top = -27.28003
+offset_right = 108.84
+offset_bottom = 108.71997
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("2_82053")
+script = ExtResource("4_nlmf2")
+
+[node name="Label" type="Label" parent="CanvasLayer/Button"]
+layout_mode = 0
+offset_left = 22.499996
+offset_top = 12.500001
+offset_right = 109.5
+offset_bottom = 57.5
+theme_override_font_sizes/font_size = 30
+text = "Takas"
