@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://4eafawoxufa6"]
+
+[ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="1_3rloc"]
+[ext_resource type="Script" uid="uid://d23ugdqow3slf" path="res://Scenes/StillScreens/DialogueManagerFunction.cs" id="1_77l6o"]
+[ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://AnswerButtonFunction.cs" id="2_77l6o"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_77l6o")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(185, 50)
+layout_mode = 0
+offset_left = -94.0
+offset_top = 313.0
+offset_right = 461.0
+offset_bottom = 463.0
+texture_normal = ExtResource("1_3rloc")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("2_77l6o")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(185, 50)
+layout_mode = 0
+offset_left = -97.0
+offset_top = 147.0
+offset_right = 458.0
+offset_bottom = 297.0
+texture_normal = ExtResource("1_3rloc")
+ignore_texture_size = true
+stretch_mode = 0
