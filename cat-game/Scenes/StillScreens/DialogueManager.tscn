@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://4eafawoxufa6"]
+[gd_scene load_steps=5 format=3 uid="uid://4eafawoxufa6"]
 
 [ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="1_3rloc"]
-[ext_resource type="Script" uid="uid://d23ugdqow3slf" path="res://Scenes/StillScreens/DialogueManagerFunction.cs" id="1_77l6o"]
-[ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://AnswerButtonFunction.cs" id="2_77l6o"]
+[ext_resource type="Script" uid="uid://d23ugdqow3slf" path="res://Code/System/DialogueManagerFunction.cs" id="1_77l6o"]
+[ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_77l6o"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="4_4snyh"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -14,24 +15,96 @@ grow_vertical = 2
 script = ExtResource("1_77l6o")
 
 [node name="TextureButton" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(185, 50)
 layout_mode = 0
-offset_left = -94.0
-offset_top = 313.0
-offset_right = 461.0
-offset_bottom = 463.0
+offset_left = 26.0
+offset_top = 383.0
+offset_right = 326.0
+offset_bottom = 458.0
 texture_normal = ExtResource("1_3rloc")
 ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("2_77l6o")
+_targetScenePath = "res://Scenes/Islands/Island.tscn"
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47700003
+anchor_top = 0.507
+anchor_right = 0.47700003
+anchor_bottom = 0.507
+offset_left = -110.100006
+offset_top = -36.025
+offset_right = 134.9
+offset_bottom = 46.975
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -6
+theme_override_fonts/font = ExtResource("4_4snyh")
+theme_override_font_sizes/font_size = 30
+text = "Vaihtoehto 1
+(etsijä)"
 
 [node name="TextureButton2" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(185, 50)
 layout_mode = 0
-offset_left = -97.0
-offset_top = 147.0
-offset_right = 458.0
-offset_bottom = 297.0
+offset_left = 24.0
+offset_top = 464.0
+offset_right = 324.0
+offset_bottom = 539.0
 texture_normal = ExtResource("1_3rloc")
 ignore_texture_size = true
 stretch_mode = 0
+script = ExtResource("2_77l6o")
+type = 1
+_targetScenePath = "res://Scenes/Islands/Island.tscn"
+
+[node name="Label" type="Label" parent="TextureButton2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47700003
+anchor_top = 0.507
+anchor_right = 0.47700003
+anchor_bottom = 0.507
+offset_left = -102.100006
+offset_top = -37.025
+offset_right = 131.9
+offset_bottom = 45.975
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -6
+theme_override_fonts/font = ExtResource("4_4snyh")
+theme_override_font_sizes/font_size = 30
+text = "Vaihtoehto 2 
+(etenijä)"
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 546.0
+offset_right = 326.0
+offset_bottom = 621.0
+texture_normal = ExtResource("1_3rloc")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("2_77l6o")
+type = 2
+_targetScenePath = "res://Scenes/Islands/Island.tscn"
+
+[node name="Label" type="Label" parent="TextureButton3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47700003
+anchor_top = 0.507
+anchor_right = 0.47700003
+anchor_bottom = 0.507
+offset_left = -107.100006
+offset_top = -36.025
+offset_right = 129.9
+offset_bottom = 46.975
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -6
+theme_override_fonts/font = ExtResource("4_4snyh")
+theme_override_font_sizes/font_size = 30
+text = "Vaihtoehto 3
+(edistäjä)"
