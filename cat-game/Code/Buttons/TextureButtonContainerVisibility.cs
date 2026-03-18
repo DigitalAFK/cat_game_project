@@ -1,26 +1,24 @@
 using Godot;
 using System;
 
-public partial class AnswerButtonFunction : TextureButton
+public partial class TextureButtonContainerVisibility : TextureButton
 {
-	[Export] private ScoreType type = ScoreType.Finder;
-	[Export] private String _targetScenePath = "res://Scenes/Islands/";
-
+	private VBoxContainer _targetContainer;
+	[Export] private String _targetContainerPath = "";
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		_targetContainer = GetNode<VBoxContainer>(_targetContainerPath);
 	}
 
-	/// <summary>
-	/// Detect the button being pressed
-	/// </summary>
+	//Called when the TextureButton is pressed
 	public override void _Pressed()
 	{
 		base._Pressed();
 		//TODO: Remove
 		GD.Print("Pressed");
-		GameManager.Instance.AddScore(type);
-		GameManager.Instance.GoToScene(_targetScenePath);
+		_targetContainer.Visible = !_targetContainer.Visible;
+
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

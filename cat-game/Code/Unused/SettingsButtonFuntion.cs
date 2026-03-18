@@ -1,11 +1,13 @@
 using Godot;
 using System;
 
-public partial class PlayButtonFunction : TextureButton
+public partial class SettingsButtonFuntion : TextureButton
 {
+	private VBoxContainer _settingsContainer;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		_settingsContainer = GetNode<VBoxContainer>("../../../SettingsContainer");
 	}
 
 	//Called when the TextureButton is pressed
@@ -14,7 +16,8 @@ public partial class PlayButtonFunction : TextureButton
 		base._Pressed();
 		//TODO: Remove
 		GD.Print("Pressed");
-		GetTree().ChangeSceneToFile("res://Scenes/Characters/Sea.tscn");
+		_settingsContainer.Visible = true;
+
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -2,12 +2,14 @@ using Godot;
 using System;
 
 //Different types of score, can be used outside this class:
+/*
 public enum ScoreType
 {
 	Finder,
 	Advancer,
 	Promoter
 }
+*/
 public partial class DialogueManagerFunction : Control
 {
 	#region Singleton

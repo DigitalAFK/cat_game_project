@@ -1,21 +1,20 @@
 using Godot;
 using System;
 
-public partial class SettingsButtonFuntion : TextureButton
+public partial class TextureButtonFunction : TextureButton
 {
+	[Export] private string _targetScenePath = "res://Scenes/";
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 	}
 
-	//Called when the TextureButton is pressed
 	public override void _Pressed()
 	{
 		base._Pressed();
-		//TODO: Remove
+		//TODO: Remove print
 		GD.Print("Pressed");
-		//TODO: Change file path when the settings scene is made and remove the "//"
-		//GetTree().ChangeSceneToFile("res://Scenes/Characters/Node2D.tscn");
+		GameManager.Instance.GoToScene(_targetScenePath);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

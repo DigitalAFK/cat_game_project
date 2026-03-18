@@ -2,6 +2,14 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
+//Different types of score, can be used outside GameManager:
+public enum ScoreType
+{
+	Finder,
+	Advancer,
+	Promoter
+}
+
 public partial class GameManager : Node
 {
 	#region Singleton
@@ -35,6 +43,22 @@ public partial class GameManager : Node
 
 	private readonly Dictionary<String, bool> _visitedScenes = new();
 
+	private SceneTree _sceneTree = null;
+
+	// Automatically initializing property. Loads the reference to the
+	// scene tree when it is needed for the first time.
+	public SceneTree SceneTree
+	{
+		get
+		{
+			if (_sceneTree == null)
+			{
+				_sceneTree = GetTree();
+			}
+			return _sceneTree;
+		}
+	}
+
 	/// <summary>
 	/// Adds the id of the scene to the list of visited scenes
 	/// </summary>
@@ -62,5 +86,68 @@ public partial class GameManager : Node
 		}
 	}
 
+	private int _maxScore = 6;
+	//Etsijä
+	private int _finderScore = 0;
+	//Etenijä
+	private int _advancerScore = 0;
+	//Edistäjä
+	private int _promoterScore = 0;
+
+	public void AddScore(ScoreType type)
+	{
+		switch (type)
+		{
+			case ScoreType.Finder:
+				_finderScore++;
+				_finderScore = Mathf.Clamp(_finderScore, 0, _maxScore);
+				GD.Print($"Etsijän pisteet nyt: {_finderScore}");
+				break;
+			case ScoreType.Advancer:
+				_advancerScore++;
+				_advancerScore = Mathf.Clamp(_advancerScore, 0, _maxScore);
+				GD.Print($"Etenijän pisteet nyt: {_advancerScore}");
+				break;
+			case ScoreType.Promoter:
+				_promoterScore++;
+				_promoterScore = Mathf.Clamp(_promoterScore, 0, _maxScore);
+				GD.Print($"Edistäjän pisteet nyt: {_promoterScore}");
+				break;
+		}
+	}
+
+	public int GetScore(ScoreType type)
+	{
+		switch (type)
+		{
+			case ScoreType.Finder:
+				return _finderScore;
+			case ScoreType.Advancer:
+				return _advancerScore;
+			case ScoreType.Promoter:
+				return _promoterScore;
+		}
+		throw new Exception("Score type not found");
+	}
+
 	#endregion
+	public void GoToScene(string path)
+	{
+		CallDeferred(MethodName.LoadScene, path);
+	}
+
+	private void LoadScene(string path)
+	{
+		// Fetch the scene to be loaded.
+		PackedScene nextScene = GD.Load<PackedScene>(path);
+		if (nextScene != null)
+		{
+			// Scene was loaded successfully.
+			GetTree().ChangeSceneToFile(path);
+		}
+		else
+		{
+			GD.PushError($"Can't load a scene at the path {path}");
+		}
+	}
 }
