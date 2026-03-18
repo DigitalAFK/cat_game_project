@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://df1a215vkka6b"]
 
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_5mdq7"]
-[ext_resource type="Script" uid="uid://bup0gscjpsdre" path="res://Code/Buttons/SettingsButtonFuntion.cs" id="2_iiig2"]
+[ext_resource type="Script" uid="uid://bup0gscjpsdre" path="res://Code/Unused/SettingsButtonFuntion.cs" id="2_iiig2"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_yrun1"]
 
 [node name="Control" type="Control"]

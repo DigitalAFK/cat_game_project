@@ -1,13 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://ccill4u7ll78d"]
+[gd_scene load_steps=11 format=3 uid="uid://ccill4u7ll78d"]
 
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_ldqj3"]
-[ext_resource type="Script" uid="uid://t8buvr3854d4" path="res://Code/Buttons/PlayButtonFunction.cs" id="2_4kuwh"]
 [ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="2_84jhe"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_84jhe"]
-[ext_resource type="Script" uid="uid://bup0gscjpsdre" path="res://Code/Buttons/SettingsButtonFuntion.cs" id="4_iw5g5"]
+[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="3_ypipb"]
 [ext_resource type="Texture2D" uid="uid://crxh0v5cu8dmj" path="res://Art/Menu/menu-Sheet.png" id="5_ldqj3"]
+[ext_resource type="Script" uid="uid://86vwtjkdrlnr" path="res://Code/Buttons/TextureButtonContainerVisibility.cs" id="5_ypipb"]
 [ext_resource type="Script" uid="uid://og4kwao3xidd" path="res://Code/AnimatedBackgrounds/MainMenuCat.cs" id="6_a5w2e"]
 [ext_resource type="Texture2D" uid="uid://dkkdx5ffwdm2f" path="res://Art/Menu/SeperatedPaws/paws.png" id="7_4kuwh"]
+[ext_resource type="Texture2D" uid="uid://rrenxaqkfg4u" path="res://Art/Menu/rectangle.png" id="9_iw5g5"]
+[ext_resource type="Script" uid="uid://cyi60kjieg4iq" path="res://Code/Buttons/VolumeSlider.cs" id="10_ypipb"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -18,7 +20,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -99.0
+offset_top = 1.0
 offset_right = 360.0
 offset_bottom = 640.0
 grow_horizontal = 2
@@ -32,17 +34,19 @@ theme_override_constants/margin_bottom = 30
 [node name="MuteButton" type="TextureRect" parent="MarginContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-size_flags_horizontal = 8
+size_flags_horizontal = 0
 size_flags_vertical = 8
 texture = ExtResource("1_ldqj3")
 expand_mode = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 theme_override_constants/separation = 10
 
@@ -52,7 +56,8 @@ layout_mode = 2
 texture_normal = ExtResource("2_84jhe")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_4kuwh")
+script = ExtResource("3_ypipb")
+_targetScenePath = "res://Scenes/Characters/Sea.tscn"
 
 [node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/PlayButton"]
 layout_mode = 0
@@ -69,11 +74,13 @@ text = "Pelaa"
 [node name="SettingsButton" type="TextureButton" parent="MarginContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(185, 50)
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_horizontal = 0
+size_flags_vertical = 2
 texture_normal = ExtResource("2_84jhe")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("4_iw5g5")
+script = ExtResource("5_ypipb")
+_targetContainerPath = "../../../SettingsContainer"
 
 [node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/SettingsButton"]
 layout_mode = 0
@@ -89,17 +96,55 @@ text = "Asetukset"
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
 show_behind_parent = true
-position = Vector2(171, 384)
+position = Vector2(172, 285)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("5_ldqj3")
 hframes = 12
 script = ExtResource("6_a5w2e")
 metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
 
 [node name="Paws" type="Sprite2D" parent="MarginContainer"]
-position = Vector2(170, 385)
+position = Vector2(171, 286)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("7_4kuwh")
 metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
+
+[node name="SettingsContainer" type="VBoxContainer" parent="MarginContainer"]
+visible = false
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ExitButton" type="TextureButton" parent="MarginContainer/SettingsContainer"]
+custom_minimum_size = Vector2(185, 50)
+layout_mode = 2
+texture_normal = ExtResource("2_84jhe")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_ypipb")
+_targetContainerPath = "../"
+
+[node name="Label" type="Label" parent="MarginContainer/SettingsContainer/ExitButton"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 7.0
+offset_right = 134.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_84jhe")
+theme_override_font_sizes/font_size = 30
+text = "Exit"
+
+[node name="Rectangle" type="Sprite2D" parent="MarginContainer/SettingsContainer"]
+show_behind_parent = true
+position = Vector2(101, 90)
+texture = ExtResource("9_iw5g5")
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/SettingsContainer"]
+custom_minimum_size = Vector2(185, 30)
+layout_mode = 2
+step = 5.0
+scrollable = false
+script = ExtResource("10_ypipb")

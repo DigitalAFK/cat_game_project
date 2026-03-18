@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2coer7l1x84u"]
+
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_jomne"]
+[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="2_jomne"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="MenuButton" type="TextureButton" parent="."]
+top_level = true
+anchors_preset = -1
+anchor_left = 0.851
+anchor_top = 0.072000004
+anchor_right = 0.851
+anchor_bottom = 0.072000004
+offset_left = -27.360016
+offset_top = -27.079971
+offset_right = 108.639984
+offset_bottom = 108.92003
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("1_jomne")
+script = ExtResource("2_jomne")
+_targetScenePath = "res://Scenes/StillScreens/MainMenu.tscn"
+
+[node name="Label" type="Label" parent="MenuButton"]
+layout_mode = 0
+offset_left = 22.499996
+offset_top = 12.500001
+offset_right = 109.5
+offset_bottom = 57.5
+theme_override_font_sizes/font_size = 30
+text = "Menu"
