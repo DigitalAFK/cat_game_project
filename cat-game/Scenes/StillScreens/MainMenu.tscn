@@ -6,8 +6,8 @@
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="3_ypipb"]
 [ext_resource type="Texture2D" uid="uid://crxh0v5cu8dmj" path="res://Art/Menu/menu-Sheet.png" id="5_ldqj3"]
 [ext_resource type="Script" uid="uid://86vwtjkdrlnr" path="res://Code/Buttons/TextureButtonContainerVisibility.cs" id="5_ypipb"]
-[ext_resource type="Script" uid="uid://og4kwao3xidd" path="res://Code/AnimatedBackgrounds/MainMenuCat.cs" id="6_a5w2e"]
 [ext_resource type="Texture2D" uid="uid://dkkdx5ffwdm2f" path="res://Art/Menu/SeperatedPaws/paws.png" id="7_4kuwh"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedSprites.cs" id="7_ypipb"]
 [ext_resource type="Texture2D" uid="uid://rrenxaqkfg4u" path="res://Art/Menu/rectangle.png" id="9_iw5g5"]
 [ext_resource type="Script" uid="uid://cyi60kjieg4iq" path="res://Code/Buttons/VolumeSlider.cs" id="10_ypipb"]
 
@@ -100,7 +100,8 @@ position = Vector2(172, 285)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("5_ldqj3")
 hframes = 12
-script = ExtResource("6_a5w2e")
+script = ExtResource("7_ypipb")
+_frameAmount = 12
 metadata/_edit_group_ = true
 
 [node name="Paws" type="Sprite2D" parent="MarginContainer"]

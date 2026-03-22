@@ -1,0 +1,15 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bagfqfrfyqmbu"]
+
+[ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="1_q7lcy"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wy7jp"]
+texture = ExtResource("1_q7lcy")
+texture_region_size = Vector2i(200, 200)
+0:0/next_alternative_id = 9
+0:0/0 = 0
+0:0/2 = 2
+
+[resource]
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+sources/1 = SubResource("TileSetAtlasSource_wy7jp")
