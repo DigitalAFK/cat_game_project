@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4fw1j603arbh"]
+
+[ext_resource type="Script" uid="uid://bxssf7mjhpf2l" path="res://Code/System/PieChart.cs" id="1_136m3"]
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_mkw3k"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_6cbgi"]
+
+[node name="Results" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_136m3")
+
+[node name="Icon" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(262, 111)
+texture = ExtResource("2_mkw3k")
+
+[node name="Label" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = 228.0
+offset_top = 355.0
+offset_right = 313.0
+offset_bottom = 386.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_6cbgi")
+theme_override_font_sizes/font_size = 20
+text = "Etsijä"

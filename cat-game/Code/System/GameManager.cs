@@ -86,16 +86,27 @@ public partial class GameManager : Node
 		}
 	}
 
+	//Change _maxScore if number of NPCs changes
 	private int _maxScore = 6;
+
+	public int GetMaxScore()
+	{
+		return _maxScore;
+	}
 	//Etsijä
-	private int _finderScore = 0;
+	private int _finderScore = 3;
 	//Etenijä
-	private int _advancerScore = 0;
+	private int _advancerScore = 2;
 	//Edistäjä
-	private int _promoterScore = 0;
+	private int _promoterScore = 1;
 
 	public void AddScore(ScoreType type)
 	{
+		if (!CheckScore())
+		{
+			GD.PrintErr("Player has too many points, the maximum is " + _maxScore);
+			return;
+		}
 		switch (type)
 		{
 			case ScoreType.Finder:
@@ -128,6 +139,16 @@ public partial class GameManager : Node
 				return _promoterScore;
 		}
 		throw new Exception("Score type not found");
+	}
+
+	private Boolean CheckScore()
+	{
+		int totalScore = _finderScore + _advancerScore + _promoterScore;
+		if (totalScore >= _maxScore)
+		{
+			return false;
+		}
+		return true;
 	}
 
 	#endregion
