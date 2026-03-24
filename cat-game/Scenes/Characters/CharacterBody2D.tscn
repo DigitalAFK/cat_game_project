@@ -5,23 +5,22 @@
 [ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedSprites.cs" id="3_v81wf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7odrv"]
-radius = 48.056915
-height = 134.04633
+radius = 20.98169
+height = 132.01514
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(523, 139)
 script = ExtResource("1_0cgs4")
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3, 2)
-scale = Vector2(1.2, 1.2)
+scale = Vector2(1.55, 1.55)
 texture = ExtResource("2_6rw57")
 hframes = 5
 script = ExtResource("3_v81wf")
 _frameAmount = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(10, 10)
+position = Vector2(6.9999995, 48.000004)
 rotation = 1.5865043
 shape = SubResource("CapsuleShape2D_7odrv")

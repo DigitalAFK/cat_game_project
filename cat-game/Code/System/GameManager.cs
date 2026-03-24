@@ -93,6 +93,8 @@ public partial class GameManager : Node
 	{
 		return _maxScore;
 	}
+
+	//TODO: Laita scoret nollaan
 	//Etsijä
 	private int _finderScore = 3;
 	//Etenijä
@@ -149,6 +151,30 @@ public partial class GameManager : Node
 			return false;
 		}
 		return true;
+	}
+
+	private readonly Dictionary<String, String> names = new();
+
+	public void setName(String id, String name)
+	{
+		if (names.ContainsKey(id))
+		{
+			throw new Exception("ID already set for " + id + ", " + name);
+		}
+		names[id] = name;
+	}
+
+	public String getName(String id)
+	{
+		try
+		{
+			return names[id];
+		}
+		catch (KeyNotFoundException)
+		{
+			GD.PrintErr("The name is not set for id " + id);
+			return "[Unknown]";
+		}
 	}
 
 	#endregion

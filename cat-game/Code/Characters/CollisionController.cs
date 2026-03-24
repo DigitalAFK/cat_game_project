@@ -7,6 +7,7 @@ public partial class CollisionController : Area2D
 	[Export] private String _targetScenePath = "res://";
 	[Export] private Boolean _reEnter = false;
 	[Export] private String _id = "[ISL]/[NPC]000";
+	[Export] private String name = "?";
 
 	public override void _EnterTree()
 	{
