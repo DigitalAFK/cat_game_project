@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://deflkqlxukl5"]
+
+[ext_resource type="Script" uid="uid://d4djx5kmkf4ux" path="res://Scenes/VirtualJoystick.cs" id="1_dqhcl"]
+[ext_resource type="Texture2D" uid="uid://t7i4gxio8mov" path="res://Art/UI/virtual-button.png" id="2_gjgsg"]
+[ext_resource type="Script" uid="uid://bbd72ctrivj7l" path="res://Scenes/VirtualKnob.cs" id="2_m4s77"]
+[ext_resource type="Texture2D" uid="uid://q5unrceow05i" path="res://Art/UI/joystick-ring.png" id="4_2elie"]
+
+[node name="Joystick" type="Node2D" node_paths=PackedStringArray("_knob")]
+script = ExtResource("1_dqhcl")
+_knob = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." node_paths=PackedStringArray("_joystickButton")]
+texture = ExtResource("2_gjgsg")
+script = ExtResource("2_m4s77")
+_joystickButton = NodePath("../TouchScreenButton")
+_maxLength = 32.0
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(-32, -32)
+texture_normal = ExtResource("4_2elie")

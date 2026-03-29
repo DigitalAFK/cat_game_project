@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b4fw1j603arbh"]
+[gd_scene load_steps=5 format=3 uid="uid://b4fw1j603arbh"]
 
 [ext_resource type="Script" uid="uid://bxssf7mjhpf2l" path="res://Code/System/PieChart.cs" id="1_136m3"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_mkw3k"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_6cbgi"]
+[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="4_pkf53"]
 
 [node name="Results" type="Control"]
 layout_mode = 3
@@ -12,21 +13,62 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_136m3")
+_pieChartX = 540
+_pieChartY = 1600
 
 [node name="Icon" type="Sprite2D" parent="."]
 top_level = true
-position = Vector2(262, 111)
+position = Vector2(579, 664)
+scale = Vector2(5, 5)
 texture = ExtResource("2_mkw3k")
+
+[node name="Label" type="Label" parent="Icon"]
+top_level = true
+offset_left = 441.0
+offset_top = 477.0
+offset_right = 741.0
+offset_bottom = 609.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_6cbgi")
+theme_override_font_sizes/font_size = 100
+text = "KISSA"
 
 [node name="Label" type="Label" parent="."]
 top_level = true
 layout_mode = 0
-offset_left = 228.0
-offset_top = 355.0
-offset_right = 313.0
-offset_bottom = 386.0
+offset_left = 753.0
+offset_top = 1314.0
+offset_right = 933.0
+offset_bottom = 1380.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_6cbgi")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 50
 text = "Etsijä"
+
+[node name="MenuButton" type="TextureButton" parent="."]
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.83900005
+anchor_top = 0.101
+anchor_right = 0.83900005
+anchor_bottom = 0.101
+offset_left = -136.12006
+offset_top = -135.92001
+offset_right = -0.12005615
+offset_bottom = 0.07998657
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_mkw3k")
+script = ExtResource("4_pkf53")
+_targetScenePath = "res://Scenes/StillScreens/MainMenu.tscn"
+
+[node name="Label" type="Label" parent="MenuButton"]
+layout_mode = 0
+offset_left = 22.499996
+offset_top = 12.500001
+offset_right = 109.5
+offset_bottom = 57.5
+theme_override_font_sizes/font_size = 30
+text = "Menu"

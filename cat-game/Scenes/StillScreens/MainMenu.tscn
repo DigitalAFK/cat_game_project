@@ -14,15 +14,14 @@
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 1920.0
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 1.0
-offset_right = 360.0
-offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 0
@@ -37,7 +36,6 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 texture = ExtResource("1_ldqj3")
-expand_mode = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
 custom_minimum_size = Vector2(0, 200)
@@ -54,21 +52,27 @@ theme_override_constants/separation = 10
 custom_minimum_size = Vector2(185, 50)
 layout_mode = 2
 texture_normal = ExtResource("2_84jhe")
-ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("3_ypipb")
 _targetScenePath = "res://Scenes/Characters/Sea.tscn"
 
 [node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/PlayButton"]
-layout_mode = 0
-offset_left = 34.0
-offset_top = 8.0
-offset_right = 124.0
-offset_bottom = 48.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.5
+offset_top = -32.0
+offset_right = 72.5
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_84jhe")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Pelaa"
 
 [node name="SettingsButton" type="TextureButton" parent="MarginContainer/CenterContainer/VBoxContainer"]
@@ -77,27 +81,30 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 2
 texture_normal = ExtResource("2_84jhe")
-ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("5_ypipb")
 _targetContainerPath = "../../../SettingsContainer"
 
 [node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/SettingsButton"]
-layout_mode = 0
-offset_left = 25.0
-offset_top = 10.0
-offset_right = 160.0
-offset_bottom = 44.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48000002
+anchor_right = 0.5
+anchor_bottom = 0.48000002
+offset_left = -128.5
+offset_top = -33.0
+offset_right = 141.5
+offset_bottom = 33.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_84jhe")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 50
 text = "Asetukset"
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
 show_behind_parent = true
-position = Vector2(172, 285)
-scale = Vector2(0.4, 0.4)
+position = Vector2(542, 960)
 texture = ExtResource("5_ldqj3")
 hframes = 12
 script = ExtResource("7_ypipb")
@@ -105,47 +112,54 @@ _frameAmount = 12
 metadata/_edit_group_ = true
 
 [node name="Paws" type="Sprite2D" parent="MarginContainer"]
-position = Vector2(171, 286)
-scale = Vector2(0.4, 0.4)
+position = Vector2(542, 960)
 texture = ExtResource("7_4kuwh")
 metadata/_edit_group_ = true
 
 [node name="SettingsContainer" type="VBoxContainer" parent="MarginContainer"]
 visible = false
-custom_minimum_size = Vector2(200, 200)
+custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="ExitButton" type="TextureButton" parent="MarginContainer/SettingsContainer"]
-custom_minimum_size = Vector2(185, 50)
+custom_minimum_size = Vector2(555, 150)
 layout_mode = 2
 texture_normal = ExtResource("2_84jhe")
 ignore_texture_size = true
-stretch_mode = 0
 script = ExtResource("5_ypipb")
 _targetContainerPath = "../"
 
 [node name="Label" type="Label" parent="MarginContainer/SettingsContainer/ExitButton"]
-layout_mode = 0
-offset_left = 55.0
-offset_top = 7.0
-offset_right = 134.0
-offset_bottom = 48.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.5
+offset_top = -35.0
+offset_right = 63.5
+offset_bottom = 31.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_84jhe")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Exit"
 
 [node name="Rectangle" type="Sprite2D" parent="MarginContainer/SettingsContainer"]
 show_behind_parent = true
-position = Vector2(101, 90)
+position = Vector2(278, 251.875)
+scale = Vector2(2.23166, 1.6886942)
 texture = ExtResource("9_iw5g5")
 
 [node name="HSlider" type="HSlider" parent="MarginContainer/SettingsContainer"]
-custom_minimum_size = Vector2(185, 30)
+custom_minimum_size = Vector2(555, 50)
 layout_mode = 2
+size_flags_vertical = 4
 step = 5.0
 scrollable = false
 script = ExtResource("10_ypipb")

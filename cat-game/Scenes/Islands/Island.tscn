@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cldicrsx3rjef"]
+[gd_scene load_steps=8 format=3 uid="uid://cldicrsx3rjef"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_qwfbv"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="2_h8dby"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="3_5086l"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="4_72pum"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="4_abs55"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/Characters/UI.tscn" id="5_72pum"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_abs55"]
@@ -13,6 +14,7 @@ radius = 40.7776
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_qwfbv")]
 position = Vector2(-5, 0)
+scale = Vector2(2.6, 2.6)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_target")]
 visibility_layer = 2
@@ -23,12 +25,23 @@ script = ExtResource("2_h8dby")
 _target = NodePath("../CharacterBody2D")
 
 [node name="NPC1" type="StaticBody2D" parent="."]
-position = Vector2(217, -486)
-scale = Vector2(2, 2)
-metadata/_edit_group_ = true
+position = Vector2(731.00006, -590.0001)
+scale = Vector2(2.6, 2.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC1"]
 texture = ExtResource("3_5086l")
+
+[node name="Label" type="Label" parent="NPC1/Sprite2D"]
+offset_left = -36.5
+offset_top = -19.0
+offset_right = 53.5
+offset_bottom = 21.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_abs55")
+theme_override_font_sizes/font_size = 30
+text = "Kissa"
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC1"]
 script = ExtResource("4_72pum")
@@ -41,12 +54,24 @@ scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_abs55")
 
 [node name="Result-NPC" type="StaticBody2D" parent="."]
-position = Vector2(-385, -727)
-scale = Vector2(2, 2)
-metadata/_edit_group_ = true
+position = Vector2(-862, -1687)
+scale = Vector2(2.6, 2.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Result-NPC"]
 texture = ExtResource("3_5086l")
+
+[node name="Label" type="Label" parent="Result-NPC/Sprite2D"]
+offset_left = -42.0
+offset_top = -44.5
+offset_right = 48.0
+offset_bottom = 38.5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_abs55")
+theme_override_font_sizes/font_size = 30
+text = "Vanha
+kissa"
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Result-NPC"]
 script = ExtResource("4_72pum")
@@ -59,12 +84,23 @@ scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_abs55")
 
 [node name="Leave" type="StaticBody2D" parent="."]
-position = Vector2(-55, 546)
-scale = Vector2(2, 2)
-metadata/_edit_group_ = true
+position = Vector2(-24.000004, 1775)
+scale = Vector2(2.6, 2.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Leave"]
 texture = ExtResource("3_5086l")
+
+[node name="Label" type="Label" parent="Leave/Sprite2D"]
+offset_left = -39.0
+offset_top = -17.5
+offset_right = 51.0
+offset_bottom = 22.5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_abs55")
+theme_override_font_sizes/font_size = 30
+text = "Laituri"
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Leave"]
 script = ExtResource("4_72pum")
@@ -80,9 +116,9 @@ shape = SubResource("CircleShape2D_abs55")
 [node name="UI" parent="." instance=ExtResource("5_72pum")]
 
 [node name="Label2" type="Label" parent="UI"]
-offset_left = 130.0
-offset_top = 32.0
-offset_right = 203.0
-offset_bottom = 74.0
-theme_override_font_sizes/font_size = 30
+offset_left = 375.0
+offset_top = 87.0
+offset_right = 586.0
+offset_bottom = 190.0
+theme_override_font_sizes/font_size = 75
 text = "SAARI"

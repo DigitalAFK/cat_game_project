@@ -10,10 +10,10 @@
 [node name="Control" type="CanvasLayer"]
 
 [node name="SettingsButton" type="TextureButton" parent="."]
-offset_left = 310.0
-offset_top = 102.0
-offset_right = 360.0
-offset_bottom = 152.0
+offset_left = 905.0
+offset_top = 545.0
+offset_right = 1055.0
+offset_bottom = 695.0
 size_flags_horizontal = 0
 size_flags_vertical = 2
 texture_normal = ExtResource("1_10032")
@@ -24,51 +24,55 @@ _targetContainerPath = "../PointsContainer"
 
 [node name="Label" type="Label" parent="SettingsButton"]
 layout_mode = 0
-offset_left = 6.0
-offset_top = 13.0
-offset_right = 42.0
-offset_bottom = 34.0
+offset_left = 1.0
+offset_top = 16.0
+offset_right = 52.0
+offset_bottom = 33.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_nb250")
-theme_override_font_sizes/font_size = 15
-text = "Open"
+theme_override_font_sizes/font_size = 30
+text = "Tracker"
 
 [node name="PointsContainer" type="VBoxContainer" parent="."]
 visible = false
-custom_minimum_size = Vector2(150, 200)
-offset_left = 207.0
-offset_top = 154.0
-offset_right = 357.0
-offset_bottom = 354.0
+offset_left = 701.0
+offset_top = 697.0
+offset_right = 1052.0
+offset_bottom = 913.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 10
 
 [node name="Rectangle" type="Sprite2D" parent="PointsContainer"]
 show_behind_parent = true
-position = Vector2(74.00001, 56.999992)
-scale = Vector2(0.6177606, 0.38853502)
+position = Vector2(172.99997, 106)
+scale = Vector2(1.4054052, 0.7261147)
 texture = ExtResource("3_28jkq")
 
 [node name="Island 1" type="FoldableContainer" parent="PointsContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
 folded = true
 title = "Island 1"
 script = ExtResource("4_b8v2r")
+_id = "ISL001"
+_containerUnfoldedSizeY = 245
+_containerFoldedSizeY = 63
 
 [node name="Label" type="Label" parent="PointsContainer/Island 1"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 40
 text = "NPC 1"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC001"
@@ -76,14 +80,15 @@ _id = "NPC001"
 [node name="Label2" type="Label" parent="PointsContainer/Island 1"]
 visible = false
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
 text = "NPC 2"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label2"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC002"
@@ -92,36 +97,42 @@ _id = "NPC002"
 visible = false
 layout_mode = 2
 size_flags_vertical = 8
+theme_override_font_sizes/font_size = 40
 text = "NPC 3"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label3"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC003"
 
 [node name="Island 2" type="FoldableContainer" parent="PointsContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
 folded = true
 title = "Island 2"
 script = ExtResource("4_b8v2r")
+_id = "ISL002"
+_containerUnfoldedSizeY = 245
+_containerFoldedSizeY = 63
 
 [node name="Label" type="Label" parent="PointsContainer/Island 2"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 40
 text = "NPC 1"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC004"
@@ -129,14 +140,15 @@ _id = "NPC004"
 [node name="Label2" type="Label" parent="PointsContainer/Island 2"]
 visible = false
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
 text = "NPC 2"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label2"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC005"
@@ -145,36 +157,42 @@ _id = "NPC005"
 visible = false
 layout_mode = 2
 size_flags_vertical = 8
+theme_override_font_sizes/font_size = 40
 text = "NPC 3"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label3"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC006"
 
 [node name="Island 3" type="FoldableContainer" parent="PointsContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
 folded = true
 title = "Island 3"
 script = ExtResource("4_b8v2r")
+_id = "ISL003"
+_containerUnfoldedSizeY = 245
+_containerFoldedSizeY = 63
 
 [node name="Label" type="Label" parent="PointsContainer/Island 3"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 40
 text = "NPC 1"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 3/Label"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC007"
@@ -182,14 +200,15 @@ _id = "NPC007"
 [node name="Label2" type="Label" parent="PointsContainer/Island 3"]
 visible = false
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
 text = "NPC 2"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 3/Label2"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC008"
@@ -198,14 +217,15 @@ _id = "NPC008"
 visible = false
 layout_mode = 2
 size_flags_vertical = 8
+theme_override_font_sizes/font_size = 40
 text = "NPC 3"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 3/Label3"]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
-offset_right = 139.0
-offset_bottom = 23.0
+offset_right = 159.0
+offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC009"

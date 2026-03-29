@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://3ykj85jiqfcw"
+path="res://.godot/imported/Cats Adventure.wav-eb8e4da65687d7e06c125cf9b46beb68.sample"
+
+[deps]
+
+source_file="res://Audio/OST/Cats Adventure.wav"
+dest_files=["res://.godot/imported/Cats Adventure.wav-eb8e4da65687d7e06c125cf9b46beb68.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

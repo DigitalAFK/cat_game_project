@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ca3jrgml2vaud"
+path="res://.godot/imported/Main Theme.wav-2c45e9ca0b20b3c6b6a7316ad137424a.sample"
+
+[deps]
+
+source_file="res://Audio/OST/Main Theme.wav"
+dest_files=["res://.godot/imported/Main Theme.wav-2c45e9ca0b20b3c6b6a7316ad137424a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

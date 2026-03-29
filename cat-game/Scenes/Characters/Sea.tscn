@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://cqkj06bx11avh"]
+[gd_scene load_steps=13 format=3 uid="uid://cqkj06bx11avh"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_ucktt"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_82053"]
 [ext_resource type="TileSet" uid="uid://bagfqfrfyqmbu" path="res://Art/Sea Scene/new_tile_set.tres" id="2_yutjy"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="3_82053"]
+[ext_resource type="Script" uid="uid://dq4p2uf1fl6yg" path="res://Code/Testing/InfiniteBackground.cs" id="3_ngrsy"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/Characters/UI.tscn" id="4_egrc0"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="5_egrc0"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="6_qfwcq"]
@@ -24,13 +25,16 @@ position = Vector2(582, 307)
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_ucktt")]
 top_level = true
 position = Vector2(569, 285)
+scale = Vector2(1.75, 1.75)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 visible = false
 visibility_layer = 2
 tile_set = ExtResource("2_yutjy")
+script = ExtResource("3_ngrsy")
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, 900)
 tile_set = ExtResource("2_yutjy")
 format = 2
 layer_0/z_index = -100
@@ -58,11 +62,11 @@ stretch_mode = 1
 
 [node name="Label2" type="Label" parent="UI"]
 top_level = true
-offset_left = 130.0
-offset_top = 32.0
-offset_right = 203.0
-offset_bottom = 74.0
-theme_override_font_sizes/font_size = 30
+offset_left = 430.0
+offset_top = 56.0
+offset_right = 503.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 60
 text = "MERI"
 
 [node name="Island1" type="StaticBody2D" parent="."]
@@ -87,8 +91,8 @@ scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_nlmf2")
 
 [node name="Island2" type="StaticBody2D" parent="."]
-position = Vector2(269, 429)
-scale = Vector2(2, 2)
+position = Vector2(499, 1096)
+scale = Vector2(3, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Island2"]
 position = Vector2(-8.5, -17.5)

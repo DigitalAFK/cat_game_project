@@ -25,7 +25,7 @@ public partial class PieChart : Control
 		new Color("blue")
 	};
 
-	public float Radius = 120f;
+	public float Radius = 240f;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -60,7 +60,7 @@ public partial class PieChart : Control
 
 			string label = $"{_scores[i]}";
 
-			DrawString(font, labelPosition, label, HorizontalAlignment.Center, -1, 24, new Color("black"));
+			DrawString(font, labelPosition, label, HorizontalAlignment.Center, -1, 40, new Color("black"));
 
 			//Update starting angle of slice:
 			startAngle += sweep;

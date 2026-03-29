@@ -7,6 +7,7 @@ public partial class FoldContainer : FoldableContainer
 	[Export] private int _backgroundOGSizeX = 259;
 	[Export] private int _backgroundOGSizeY = 314;
 	[Export] private int _containerUnfoldedSizeY = 120;
+	[Export] private int _containerFoldedSizeY = 31;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -23,19 +24,20 @@ public partial class FoldContainer : FoldableContainer
 	{
 		var sprite = GetNode<Sprite2D>("../Rectangle");
 		GD.Print(sprite);
-		float roundedY = (float)Math.Round((double)_containerUnfoldedSizeY / _backgroundOGSizeY, 3);
+		//rounded scale y of the space the unfolded container needs
+		float roundedY = (float)Math.Round((double)(_containerUnfoldedSizeY - _containerFoldedSizeY) / _backgroundOGSizeY, 3);
 		GD.Print(roundedY);
-		if (!folded)
+		if (!folded)    //make background bigger
 		{
 			CustomMinimumSize = new Vector2(0, _containerUnfoldedSizeY);
 			sprite.Scale = new Vector2(sprite.Scale.X, sprite.Scale.Y + roundedY);
-			sprite.Position = new Vector2(sprite.Position.X, sprite.Position.Y + (_containerUnfoldedSizeY / 2));
+			sprite.Position = new Vector2(sprite.Position.X, sprite.Position.Y + ((_containerUnfoldedSizeY - _containerFoldedSizeY) / 2));
 		}
-		else
+		else    //make background smaller
 		{
 			CustomMinimumSize = new Vector2(0, 0);
 			sprite.Scale = new Vector2(sprite.Scale.X, sprite.Scale.Y - roundedY);
-			sprite.Position = new Vector2(sprite.Position.X, sprite.Position.Y - (_containerUnfoldedSizeY / 2));
+			sprite.Position = new Vector2(sprite.Position.X, sprite.Position.Y - ((_containerUnfoldedSizeY - _containerFoldedSizeY) / 2));
 		}
 	}
 }

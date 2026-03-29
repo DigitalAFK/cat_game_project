@@ -1,9 +1,10 @@
+using GA.Common.UI;
 using Godot;
 using System;
 
 public partial class PlayerCharacter : CharacterBody2D
 {
-	public const float Speed = 300.0f;
+	public const float Speed = 450.0f;
 	private bool _isMovingLeft = false;
 	private bool _isMovingUp = false;
 	private bool _isMovingRight = false;
@@ -63,6 +64,10 @@ public partial class PlayerCharacter : CharacterBody2D
 		}
 		velocity.X *= 0.9f;
 		velocity.Y *= 0.9f;
+
+		//velocity.X = Mathf.MoveToward(Velocity.X, velocity.X, Speed);
+		//velocity.Y = Mathf.MoveToward(Velocity.Y, velocity.Y, Speed);
+
 		Velocity = velocity;
 		MoveAndSlide();
 	}
