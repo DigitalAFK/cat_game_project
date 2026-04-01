@@ -1,14 +1,20 @@
-[gd_scene load_steps=12 format=3 uid="uid://cqkj06bx11avh"]
+[gd_scene load_steps=15 format=3 uid="uid://cqkj06bx11avh"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_ucktt"]
+[ext_resource type="Texture2D" uid="uid://cp6h5e2dinwud" path="res://Art/Sea Scene/Sprite-0004 Ship Updated Animated-Sheet.png" id="2_5pms0"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_82053"]
 [ext_resource type="TileSet" uid="uid://bagfqfrfyqmbu" path="res://Art/Sea Scene/new_tile_set.tres" id="2_yutjy"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedSprites.cs" id="3_4wc1b"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="3_82053"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/Characters/UI.tscn" id="4_egrc0"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="5_egrc0"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="6_qfwcq"]
 [ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="7_3345n"]
 [ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/GUIPoints.tscn" id="9_5ju81"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
+radius = 20.98169
+height = 128.34167
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nlmf2"]
 radius = 40.7776
@@ -25,6 +31,19 @@ position = Vector2(582, 307)
 top_level = true
 position = Vector2(569, 285)
 scale = Vector2(1.75, 1.75)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(3, 2)
+scale = Vector2(1.55, 1.55)
+texture = ExtResource("2_5pms0")
+hframes = 5
+script = ExtResource("3_4wc1b")
+_frameAmount = 5
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(10.8571415, 49.14286)
+rotation = 1.5865043
+shape = SubResource("CapsuleShape2D_5pms0")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 visible = false

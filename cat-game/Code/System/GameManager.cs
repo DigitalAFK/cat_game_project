@@ -177,6 +177,16 @@ public partial class GameManager : Node
 		}
 	}
 
+	private Vector2 _playerDirection;
+	public void SetPlayerDirection(Vector2 direction)
+	{
+		_playerDirection = direction;
+	}
+	public Vector2 GetPlayerDirection()
+	{
+		return _playerDirection;
+	}
+
 	#endregion
 	public void GoToScene(string path)
 	{

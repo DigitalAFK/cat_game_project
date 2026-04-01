@@ -1,11 +1,17 @@
-[gd_scene load_steps=8 format=3 uid="uid://cldicrsx3rjef"]
+[gd_scene load_steps=11 format=3 uid="uid://cldicrsx3rjef"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_qwfbv"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="2_h8dby"]
+[ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_xu16t"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="3_5086l"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedSprites.cs" id="3_ucptk"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="4_72pum"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="4_abs55"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/Characters/UI.tscn" id="5_72pum"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xu16t"]
+radius = 21.923077
+height = 46.15385
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_abs55"]
 radius = 40.7776
@@ -13,8 +19,23 @@ radius = 40.7776
 [node name="Node2D" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_qwfbv")]
+top_level = true
 position = Vector2(-5, 0)
 scale = Vector2(2.6, 2.6)
+Friction = 1000.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(3, 2)
+scale = Vector2(1.55, 1.55)
+texture = ExtResource("2_xu16t")
+hframes = 7
+script = ExtResource("3_ucptk")
+_frameAmount = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2.6923077, 52.69231)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_xu16t")
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_target")]
 visibility_layer = 2
