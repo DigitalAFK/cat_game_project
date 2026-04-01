@@ -1,10 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://cqkj06bx11avh"]
+[gd_scene load_steps=12 format=3 uid="uid://cqkj06bx11avh"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_ucktt"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_82053"]
 [ext_resource type="TileSet" uid="uid://bagfqfrfyqmbu" path="res://Art/Sea Scene/new_tile_set.tres" id="2_yutjy"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="3_82053"]
-[ext_resource type="Script" uid="uid://dq4p2uf1fl6yg" path="res://Code/Testing/InfiniteBackground.cs" id="3_ngrsy"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/Characters/UI.tscn" id="4_egrc0"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="5_egrc0"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="6_qfwcq"]
@@ -31,7 +30,6 @@ scale = Vector2(1.75, 1.75)
 visible = false
 visibility_layer = 2
 tile_set = ExtResource("2_yutjy")
-script = ExtResource("3_ngrsy")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 900)
