@@ -1,16 +1,16 @@
 [gd_scene load_steps=15 format=3 uid="uid://cqkj06bx11avh"]
 
-[ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_ucktt"]
-[ext_resource type="Texture2D" uid="uid://cp6h5e2dinwud" path="res://Art/Sea Scene/Sprite-0004 Ship Updated Animated-Sheet.png" id="2_5pms0"]
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_82053"]
-[ext_resource type="TileSet" uid="uid://bagfqfrfyqmbu" path="res://Art/Sea Scene/new_tile_set.tres" id="2_yutjy"]
-[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_4wc1b"]
-[ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="3_82053"]
-[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="4_egrc0"]
-[ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="5_egrc0"]
-[ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="6_qfwcq"]
-[ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="7_3345n"]
-[ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="9_5ju81"]
+[ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_w6a2i"]
+[ext_resource type="Texture2D" uid="uid://cp6h5e2dinwud" path="res://Art/Sea Scene/Sprite-0004 Ship Updated Animated-Sheet.png" id="2_j7fxb"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_oc6m2"]
+[ext_resource type="TileSet" uid="uid://bagfqfrfyqmbu" path="res://Art/Sea Scene/new_tile_set.tres" id="4_onpox"]
+[ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="5_g1kvn"]
+[ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="6_d0kkp"]
+[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="7_iy63l"]
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="8_ypife"]
+[ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="9_fvbyo"]
+[ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="10_anqpm"]
+[ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="11_0ujc6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
 radius = 20.98169
@@ -27,7 +27,7 @@ height = 128.0
 visibility_layer = 2
 position = Vector2(582, 307)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_ucktt")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_w6a2i")]
 top_level = true
 position = Vector2(569, 285)
 scale = Vector2(1.75, 1.75)
@@ -35,9 +35,9 @@ scale = Vector2(1.75, 1.75)
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(3, 2)
 scale = Vector2(1.55, 1.55)
-texture = ExtResource("2_5pms0")
+texture = ExtResource("2_j7fxb")
 hframes = 5
-script = ExtResource("3_4wc1b")
+script = ExtResource("3_oc6m2")
 _frameAmount = 5
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -48,11 +48,11 @@ shape = SubResource("CapsuleShape2D_5pms0")
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 visible = false
 visibility_layer = 2
-tile_set = ExtResource("2_yutjy")
+tile_set = ExtResource("4_onpox")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 900)
-tile_set = ExtResource("2_yutjy")
+tile_set = ExtResource("4_onpox")
 format = 2
 layer_0/z_index = -100
 layer_0/tile_data = PackedInt32Array(65535, 1, 0, 11, 1, 0, -786421, 1, 0, -720897, 1, 0, -720909, 1, 0, 65523, 1, 0, 851955, 1, 0, 851967, 1, 0, 786443, 1, 0, -786409, 1, 0, 23, 1, 0, 786455, 1, 0, -1507341, 1, 0, -1507329, 1, 0, -1572853, 1, 0, -1572841, 1, 0, -1507353, 1, 0, -720921, 1, 0, 65511, 1, 0, 851943, 1, 0, 786467, 1, 0, 35, 1, 0, -786397, 1, 0, -1572829, 1, 0, -1572817, 1, 0, -786385, 1, 0, 47, 1, 0, 786479, 1, 0, 1572911, 1, 0, 2359343, 1, 0, 1572899, 1, 0, 2359331, 1, 0, 1572887, 1, 0, 1572875, 1, 0, 1638399, 1, 0, 1638387, 1, 0, 1638375, 1, 0, 2359319, 1, 0, 2359307, 1, 0, 2424831, 1, 0, 2424819, 1, 0, 2424807, 1, 0, 2424795, 1, 0, 1638363, 1, 0, 851931, 1, 0, 65499, 1, 0, -720933, 1, 0, -1507365, 1, 0, -2359249, 1, 0, -2359261, 1, 0, -2359273, 1, 0, -2359285, 1, 0, -2293761, 1, 0, -2293773, 1, 0, -2293785, 1, 0, -2293797, 1, 0, -2359237, 1, 0, -1572805, 1, 0, -786373, 1, 0, 59, 1, 0, 786491, 1, 0, 1572923, 1, 0, 2359355, 1, 0, -2359225, 1, 0, -1572793, 1, 0, -786361, 1, 0, 71, 1, 0)
@@ -62,7 +62,7 @@ visibility_layer = 2
 zoom = Vector2(0.5, 0.5)
 process_callback = 0
 position_smoothing_enabled = true
-script = ExtResource("3_82053")
+script = ExtResource("5_g1kvn")
 _target = NodePath("../CharacterBody2D")
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D"]
@@ -72,10 +72,10 @@ offset_left = -479.0
 offset_top = -655.0
 offset_right = 521.0
 offset_bottom = 670.0
-texture = ExtResource("7_3345n")
+texture = ExtResource("6_d0kkp")
 stretch_mode = 1
 
-[node name="UI" parent="." instance=ExtResource("4_egrc0")]
+[node name="UI" parent="." instance=ExtResource("7_iy63l")]
 
 [node name="Label2" type="Label" parent="UI"]
 top_level = true
@@ -93,11 +93,11 @@ scale = Vector2(2, 2)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Island1"]
-texture = ExtResource("2_82053")
+texture = ExtResource("8_ypife")
 
 [node name="Area2D" type="Area2D" parent="Island1"]
 monitoring = false
-script = ExtResource("5_egrc0")
+script = ExtResource("9_fvbyo")
 _targetScenePath = "res://Scenes/StillScreens/MainMenu.tscn"
 _reEnter = true
 _id = "ISL001"
@@ -114,10 +114,10 @@ scale = Vector2(3, 3)
 [node name="Sprite2D" type="Sprite2D" parent="Island2"]
 position = Vector2(-8.5, -17.5)
 scale = Vector2(2.75, 2.75)
-texture = ExtResource("6_qfwcq")
+texture = ExtResource("10_anqpm")
 
 [node name="Area2D" type="Area2D" parent="Island2"]
-script = ExtResource("5_egrc0")
+script = ExtResource("9_fvbyo")
 _targetScenePath = "res://Scenes/Islands/Island.tscn"
 _reEnter = true
 _id = "ISL002"
@@ -128,4 +128,4 @@ rotation = 1.5707964
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_qfwcq")
 
-[node name="Control" parent="." instance=ExtResource("9_5ju81")]
+[node name="Control" parent="." instance=ExtResource("11_0ujc6")]

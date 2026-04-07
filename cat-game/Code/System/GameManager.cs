@@ -24,15 +24,15 @@ public partial class GameManager : Node
 
 	public GameManager()
 	{
-		// Singleton takaa, että luokasta voidaan tehdä vain yksi olio kerrallaan.
+		//Singleton guarantees only one object of the class can be made at a time
 		if (Instance == null)
 		{
-			// Ainoata oliota ei ole vielä määritetty. Olkoon tämä olio se.
+			//There is no object yet, this will be it
 			Instance = this;
 		}
 		else if (Instance != this)
 		{
-			// Singleton-olio on jo olemassa! Tuhotaan juuri luotu olio.
+			//There's already a Singleton object, destroy the one that was just made
 			QueueFree();
 			return;
 		}
@@ -45,8 +45,10 @@ public partial class GameManager : Node
 
 	private SceneTree _sceneTree = null;
 
-	// Automatically initializing property. Loads the reference to the
-	// scene tree when it is needed for the first time.
+	/// <summary>
+	/// Automatically initializing property. Loads the reference to the
+	/// scene tree when it is needed for the first time.
+	/// </summary>
 	public SceneTree SceneTree
 	{
 		get
@@ -86,15 +88,19 @@ public partial class GameManager : Node
 		}
 	}
 
-	//Change _maxScore if number of NPCs changes
+	//Max score is equal to the number of NPCs asking questions
 	private int _maxScore = 6;
 
+	/// <summary>
+	/// Returns the maximum possible score
+	/// </summary>
+	/// <returns>max score</returns>
 	public int GetMaxScore()
 	{
 		return _maxScore;
 	}
 
-	//TODO: Laita scoret nollaan
+	//TODO: Set scores to zero
 	//Etsijä
 	private int _finderScore = 3;
 	//Etenijä
@@ -102,6 +108,11 @@ public partial class GameManager : Node
 	//Edistäjä
 	private int _promoterScore = 1;
 
+	/// <summary>
+	/// Called when we want to add a point to one of the scores.
+	/// Calls CheckScore to make sure the player doesn't already have the maximum amount of points.
+	/// </summary>
+	/// <param name="type">Type of the desired score</param>
 	public void AddScore(ScoreType type)
 	{
 		if (!CheckScore())
@@ -129,6 +140,12 @@ public partial class GameManager : Node
 		}
 	}
 
+	/// <summary>
+	/// Returns the score of the desired type
+	/// </summary>
+	/// <param name="type">Type of score</param>
+	/// <returns>Score of the type</returns>
+	/// <exception cref="Exception">If given score type was something not defined</exception>
 	public int GetScore(ScoreType type)
 	{
 		switch (type)
@@ -143,6 +160,10 @@ public partial class GameManager : Node
 		throw new Exception("Score type not found");
 	}
 
+	/// <summary>
+	/// Checks how many points the player has in total.
+	/// </summary>
+	/// <returns>False if too many points, otherwise true</returns>
 	private Boolean CheckScore()
 	{
 		int totalScore = _finderScore + _advancerScore + _promoterScore;
@@ -177,22 +198,41 @@ public partial class GameManager : Node
 		}
 	}
 
-	private Vector2 _playerDirection;
-	public void SetPlayerDirection(Vector2 direction)
+	private Vector2 _playerVelocity;
+	/// <summary>
+	/// Set the velocity of the player character.
+	/// </summary>
+	/// <param name="velocity">Desired velocity</param>
+	public void SetPlayerVelocity(Vector2 velocity)
 	{
-		_playerDirection = direction;
+		_playerVelocity = velocity;
 	}
-	public Vector2 GetPlayerDirection()
+
+	/// <summary>
+	/// Returns player character's velocity
+	/// </summary>
+	/// <returns>Velocity</returns>
+	public Vector2 GetPlayerVelocity()
 	{
-		return _playerDirection;
+		return _playerVelocity;
 	}
 
 	#endregion
+	/// <summary>
+	/// Goes to the given scene.
+	/// </summary>
+	/// <param name="path">Path of the desired scene</param>
 	public void GoToScene(string path)
 	{
+		//Deferred so that physics processes finish first
 		CallDeferred(MethodName.LoadScene, path);
+		SetPlayerVelocity(Vector2.Zero);   //Reset the player's velocity
 	}
 
+	/// <summary>
+	/// Fetches the scene and switches to it if it's loaded successfully.
+	/// </summary>
+	/// <param name="path">Path of the desired scene</param>
 	private void LoadScene(string path)
 	{
 		// Fetch the scene to be loaded.

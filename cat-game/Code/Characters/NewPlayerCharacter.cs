@@ -8,7 +8,7 @@ public partial class NewPlayerCharacter : CharacterBody2D
 
 	public override void _PhysicsProcess(double delta)
 	{
-		Vector2 targetVelocity = GameManager.Instance.GetPlayerDirection();
+		Vector2 targetVelocity = GameManager.Instance.GetPlayerVelocity();
 		if (targetVelocity == Vector2.Zero)
 		{
 			//Slows down
