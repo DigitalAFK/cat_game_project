@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://cldicrsx3rjef"]
 
-[ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_qwfbv"]
-[ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="2_h8dby"]
-[ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_xu16t"]
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="3_5086l"]
-[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_ucptk"]
-[ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="4_72pum"]
-[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="4_abs55"]
-[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="5_72pum"]
+[ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_aou04"]
+[ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_h7cj5"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_dfjbt"]
+[ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="4_4dey0"]
+[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="5_o1uan"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="6_76xnn"]
+[ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="7_1ogpp"]
+[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_gt5iu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xu16t"]
 radius = 21.923077
@@ -16,20 +16,21 @@ height = 46.15385
 [sub_resource type="CircleShape2D" id="CircleShape2D_abs55"]
 radius = 40.7776
 
-[node name="Node2D" type="Node2D"]
+[node name="Island1" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_qwfbv")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_aou04")]
 top_level = true
-position = Vector2(-5, 0)
+position = Vector2(-16, 1295)
 scale = Vector2(2.6, 2.6)
 Friction = 1000.0
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(3, 2)
 scale = Vector2(1.55, 1.55)
-texture = ExtResource("2_xu16t")
+texture = ExtResource("2_h7cj5")
 hframes = 7
-script = ExtResource("3_ucptk")
+script = ExtResource("3_dfjbt")
 _frameAmount = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -39,10 +40,11 @@ shape = SubResource("CapsuleShape2D_xu16t")
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_target")]
 visibility_layer = 2
+position = Vector2(-6, 1315)
 zoom = Vector2(0.5, 0.5)
 process_callback = 0
 position_smoothing_enabled = true
-script = ExtResource("2_h8dby")
+script = ExtResource("4_4dey0")
 _target = NodePath("../CharacterBody2D")
 
 [node name="NPC1" type="StaticBody2D" parent="."]
@@ -50,7 +52,7 @@ position = Vector2(731.00006, -590.0001)
 scale = Vector2(2.6, 2.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC1"]
-texture = ExtResource("3_5086l")
+texture = ExtResource("5_o1uan")
 
 [node name="Label" type="Label" parent="NPC1/Sprite2D"]
 offset_left = -36.5
@@ -59,13 +61,13 @@ offset_right = 53.5
 offset_bottom = 21.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_abs55")
+theme_override_fonts/font = ExtResource("6_76xnn")
 theme_override_font_sizes/font_size = 30
 text = "Kissa"
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC1"]
-script = ExtResource("4_72pum")
+script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
 _id = "NPC001"
 
@@ -79,7 +81,7 @@ position = Vector2(-862, -1687)
 scale = Vector2(2.6, 2.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Result-NPC"]
-texture = ExtResource("3_5086l")
+texture = ExtResource("5_o1uan")
 
 [node name="Label" type="Label" parent="Result-NPC/Sprite2D"]
 offset_left = -42.0
@@ -88,14 +90,14 @@ offset_right = 48.0
 offset_bottom = 38.5
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_abs55")
+theme_override_fonts/font = ExtResource("6_76xnn")
 theme_override_font_sizes/font_size = 30
 text = "Vanha
 kissa"
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Result-NPC"]
-script = ExtResource("4_72pum")
+script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/Results/Results.tscn"
 _reEnter = true
 _id = "NPC002"
@@ -110,7 +112,7 @@ position = Vector2(-24.000004, 1775)
 scale = Vector2(2.6, 2.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Leave"]
-texture = ExtResource("3_5086l")
+texture = ExtResource("5_o1uan")
 
 [node name="Label" type="Label" parent="Leave/Sprite2D"]
 offset_left = -39.0
@@ -119,23 +121,23 @@ offset_right = 51.0
 offset_bottom = 22.5
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_abs55")
+theme_override_fonts/font = ExtResource("6_76xnn")
 theme_override_font_sizes/font_size = 30
 text = "Laituri"
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Leave"]
-script = ExtResource("4_72pum")
+script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/Sea/Sea.tscn"
 _reEnter = true
-_id = "LEAVE001"
+_id = "DOCK001"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Leave/Area2D"]
 position = Vector2(0, -1.5)
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_abs55")
 
-[node name="UI" parent="." instance=ExtResource("5_72pum")]
+[node name="UI" parent="." instance=ExtResource("8_gt5iu")]
 
 [node name="Label2" type="Label" parent="UI"]
 offset_left = 375.0
@@ -143,4 +145,4 @@ offset_top = 87.0
 offset_right = 586.0
 offset_bottom = 190.0
 theme_override_font_sizes/font_size = 75
-text = "SAARI"
+text = "SAARI 1"

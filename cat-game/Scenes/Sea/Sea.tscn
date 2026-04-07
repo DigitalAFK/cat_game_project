@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cqkj06bx11avh"]
+[gd_scene load_steps=13 format=3 uid="uid://cqkj06bx11avh"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_w6a2i"]
 [ext_resource type="Texture2D" uid="uid://cp6h5e2dinwud" path="res://Art/Sea Scene/Sprite-0004 Ship Updated Animated-Sheet.png" id="2_j7fxb"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="5_g1kvn"]
 [ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="6_d0kkp"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="7_iy63l"]
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="8_ypife"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="9_fvbyo"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="10_anqpm"]
 [ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="11_0ujc6"]
@@ -15,9 +14,6 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
 radius = 20.98169
 height = 128.34167
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_nlmf2"]
-radius = 40.7776
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qfwcq"]
 radius = 32.0
@@ -87,25 +83,26 @@ theme_override_font_sizes/font_size = 60
 text = "MERI"
 
 [node name="Island1" type="StaticBody2D" parent="."]
-visible = false
-position = Vector2(217, -486)
-scale = Vector2(2, 2)
+position = Vector2(-709, -917)
+scale = Vector2(3, 3)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Island1"]
-texture = ExtResource("8_ypife")
+position = Vector2(-8.5, -17.5)
+scale = Vector2(2.75, 2.75)
+texture = ExtResource("10_anqpm")
 
 [node name="Area2D" type="Area2D" parent="Island1"]
-monitoring = false
 script = ExtResource("9_fvbyo")
-_targetScenePath = "res://Scenes/StillScreens/MainMenu.tscn"
+_targetScenePath = "res://Scenes/Islands/Island1.tscn"
 _reEnter = true
 _id = "ISL001"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Island1/Area2D"]
-position = Vector2(0, -1.5)
+position = Vector2(0, 15)
+rotation = 1.5707964
 scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_nlmf2")
+shape = SubResource("CapsuleShape2D_qfwcq")
 
 [node name="Island2" type="StaticBody2D" parent="."]
 position = Vector2(499, 1096)
@@ -118,7 +115,7 @@ texture = ExtResource("10_anqpm")
 
 [node name="Area2D" type="Area2D" parent="Island2"]
 script = ExtResource("9_fvbyo")
-_targetScenePath = "res://Scenes/Islands/Island.tscn"
+_targetScenePath = "res://Scenes/Islands/Island2.tscn"
 _reEnter = true
 _id = "ISL002"
 
