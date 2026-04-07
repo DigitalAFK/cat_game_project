@@ -23,6 +23,8 @@ public partial class CollisionController : Area2D
 	{
 		//Update game manager so that we know the next scene has been entered
 		GameManager.Instance.MarkVisitedScene(_id);
+		//Store the last exit's ID
+		GameManager.Instance.SetLastExitID(_id);
 		//Go to next scene
 		GameManager.Instance.GoToScene(_targetScenePath);
 	}

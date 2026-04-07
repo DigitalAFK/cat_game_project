@@ -217,6 +217,26 @@ public partial class GameManager : Node
 		return _playerVelocity;
 	}
 
+	private String _lastExitID;
+
+	/// <summary>
+	/// Store the exit the player used
+	/// </summary>
+	/// <param name="exit"></param>
+	public void SetLastExitID(String exit)
+	{
+		_lastExitID = exit;
+	}
+
+	/// <summary>
+	/// Get the last exit the player used
+	/// </summary>
+	/// <returns>Last exit used by the player</returns>
+	public String GetLastExitID()
+	{
+		return _lastExitID;
+	}
+
 	#endregion
 	/// <summary>
 	/// Goes to the given scene.
