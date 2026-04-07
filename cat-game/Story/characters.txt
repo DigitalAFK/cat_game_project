@@ -1,0 +1,220 @@
+Saarten nimet:
+
+Mäkelän Majakka (Hillside Lighthouse)
+Vanha Mökkisaari (Old Cottage Island)
+
+
+Vastaukset:
+
+a) tarkoittaa etsijä
+b) tarkoittaa etenijä
+c) tarkoittaa edistäjä
+
+
+Pelin nimi ja hahmot suomeksi:
+
+Laivakatit Laineilla
+
+1. Petro (raitapaita)
+
+2. Rose (shortsikissa)
+
+3. Lynx (puujalkakissa)
+
+4. Junko (hupparikissa)
+
+5. Haruka (hamekissa)
+
+6. Rambo (militarykissa)
+
+7. Shintaro (vanha kissa)
+
+
+Petro(numero yksi):
+"Hei! Kuulin että vesillä on uusi piraatti jonka nimi on Pörrö. Aavistan että se olet sinä."
+"Haluaisin esittää sinulle kysymyksen. Mihin olet matkalla ja mikä on elämäsi suunta kun seilaat näitä vesiä?"
+
+a) "En vielä tiedä, tuntuu että suuntaa ei ole vielä löytynyt."
+b) "Tiedän suunnilleen suuntani, mutta tarvitsen apua löytääkseni kokonaisuuden."
+c) "Olen löytänyt suuntani, mutta tarvitsen miehistön avustamaan suunnitelmani toteutuksessa."
+
+"Asia kunnossa! Oli mukava tavata, ehkä törmäämme vielä. Jos näät ystäväni Rosen, kerrotko hänelle terveiset."
+
+Lynx(numero kaksi):
+"Moro! Kutsuvat minua nimellä Lynx. Mikäs sinut tuo tänne? Anna kun arvaan, tarvitset neuvoja."
+"Neuvon sinua kunhan kerrot mitä tarvitset."
+
+a) Haluaisin neuvoja suuntani löytämiseen
+b) Haluaisin edetä kohti tavoitteitani
+c) Haluaisin tehdä omaa juttuani, ehkä jopa bisnestä
+
+"Kiitos!" Odota hetki niin tulostan sinulle neuvosi paperilla, niin et koskaan unohda niitä. Voi kehveli, tulostimestani loppuikin muste! No ei hätää, eiköhän me löydetä keino
+saada neuvosi sinulle. Otan sinuun yhteyttä kun keksin keinon, ellen unohda."
+
+
+
+Rose(numero kolme):
+
+"Hei Pörrö! Nimeni on Rose, hauska tutustua. Olen aika rauhallinen, ja mukavuudenhaluinen kissa, joka kaipaa lisää ystäviä."
+
+Haluaisin oppia tuntemaan sinut paremmin, joten mietiskelin tässä... Mitä tällä hetkellä tunnet kaipaavasi eniten?
+
+a) Tilaa pohtia, kuka minä olen ja mitä oikeasti haluan.
+b) Sparrausta ja suunnitelmaa, jonka avulla saavutan päämääräni.
+c) Konkreettisia askelia ja rohkaisua kokeilla jotain omaa.
+
+"Kiitos! Ihanaa! Kun löydät kaipaamasi, uskon että sinusta tulee jotain erikoista. Vaikutat hyvin mukavalta, joten toivon että meistä tulee hyviä ystäviä!
+Nähdään taas!"
+
+
+
+Rambo(numero neljä):
+
+"Ai moi. Olin juuri retkeilemässä, mutta haasteita tuntuu sattuvan joka nurkalla.
+Näyttää siltä, että sinullakin on jotakin mielen päällä. Mikä sinulle tällä hetkellä tuntuu haastavalta?"
+
+a) Tietää, mikä olisi "se oikea suunta" tai valinta.
+b) Saada asiat etenemään järjestelmällisesti.
+c) Uskoa omaan ideaani ja löytää tapa toteuttaa sitä.
+
+"Mielenkiintoista. Muista silti, että kaikista haasteista lopulta päästään yli, äläkä epäröi pyytää apua jos sitä tarvitset. Onnea matkaan!"
+
+
+
+
+Haruka(numero viisi):
+"Heiiiii! Miten voit? Minä olen Haruka! Kutsuvat minua saaren söpöimmäksi, ja kilteimmäksi kissaksi! Mikä sinun nimesi on?"
+"Hauska tavata Pörrö! Onpas sinulla kaunis nimi! Vaikutat myös kiltiltä! Haluaisitko lahjan?"
+"Kyllä? Millaisen lahjan haluaisit? Saat itse valita UwU!"
+
+a) Haluaisin syvällisyyden ja pohdiskelun amuletin.
+b) Haluaisin kannustuksen ja järjestelmällisyyden silmälapun.
+c) Haluaisin rohkeuden ja rehellisyyden sormuksen.
+
+"Toivottavasti pidät lahjastasi, ja että se palvelee sinua matkallasi! Oi, minua kutsutaan! Se on varmaankin äitini Panko, joka tarvitsee minua puutarhantöihin."
+"Minun on mentävä, toivottavasti tapaamme vielä uudestaan! Moi moi UwU!"
+
+
+
+Junko(numero kuusi):
+
+"Hei tulokas, mikä fiilis? Meikä on Junko, saaren kovin kissa."
+"Kertoisiks, mikä näist lauseist resonoi sun kaa eniten."
+
+a) “Olen liikkeellä, mutta en vielä tiedä, minne tie vie.”
+b) “Tiedän minne haluan mennä – nyt tarttis vaan mennä.”
+c) “Minulla on idea – mutta miten siitä tulee totta?”
+
+"Miten niin miksi kysyn? Oon vaan utelias :p. Ehkä kerron sulle joskus toiste miks mua kiinnostaa niin paljon, mutta saat jäädä odottamaan sitä kertaa."
+"No mitä viel kattelet siinä? Eikös sulla oo merta kynnettävänä? Tsau, keltanokka."
+
+
+Shintaro loppulaini:
+
+"Olet löytänyt Shintaron, vanhimman piraattikissoista."
+"Olen seurannut matkaasi halki näiden vesien, ja olet selvästi matkalla kohti suuria asioita."
+"Tie viisauteen on pitkä, mutta olet onnistunut saavuttamaan tavoitteesi. Joskus suurin aarre on sisäinen harmonia, joka ohjaa sinua elämässä."
+"Olet ansainnut palkintosi"
+
+
+
+
+
+
+Lontooksi:
+
+Pirate Cats On The Sea
+
+1. Petro
+2. Rose
+3. Lynx
+4. Junko
+5. Haruka
+6. Rambo
+7. Shintaro
+
+
+Petro first line:
+"Hey! I heard there's a new pirate sailing the high seas named Pörrö. I'm guessing it's you."
+"I would like to ask you a question. Where are you going and what is the direction of your life since you are sailing these high seas?"
+
+a) "I don't know yet, I feel like I don't really have a direction."
+b)  "I kind of know my direction, but I need help to get the full picture."
+c) "I know my way, but I need a crew to help me fulfill my plan."
+
+"Alright! Well, it was nice to meet you. Also, if you see my friend Rose, would you give her my regards. Thanks!"
+
+Lynx:
+"What's up, they call me Lynx. What brings you here? Let me guess, you need advice."
+"I'll help you, if you tell me what do you need."
+
+a) I need some advice on finding myself.
+b) I would like to have some advice on how to reach my goals
+c) I want some advice on how to get my own thing going, maybe a business
+
+"Okay, thanks. I'm going to print these for you, so you won't forget them. Oh crap, my printer ran out of ink! Damn! Well, I'm going to find a way to get these to you. 
+I'll contact you later when I have found a way, unless I forget."
+
+
+
+Rose(numero kolme):
+
+"Hi Pörrö! My name is Rose, nice to meet you. I'm a pretty calm and comfort seeking cat, that wants more friends."
+"I would like to get to know you better, so I was wondering... What is it you feel like you need the most right now?"
+ 
+a) Some space to think about who I am and what I really want.
+b) Sparring and a plan to help me reach my goal. 
+c) Concrete steps and encouragement to try something of my own.
+
+"Thank you! Wonderful! I think that when you find what you are looking for right now, you'll be something special. You seem very nice and I think
+we will be great friends! See you later!"
+
+
+Rambo(numero neljä):
+
+"Oh hey. I've been out hiking, but it seems you run into trouble at every corner out here."
+"It seems, however, that you have something on your mind as well. What do you feel challenged by these days?"
+
+a) Finding the right directions on my journey.
+b) Progressing things in an orderly manner.
+c) To believe in my own idea and find a way to execute it.
+
+"Intriguing. Do remember though, that ultimately you'll end up overcoming all your challenges regardless. Also don't hesitate to ask for help if you need it. Good luck on your journey!"
+
+
+
+
+Haruka:
+"Hiiiiii! How are you dear? My name is Haruka, and they call me the cutest and kindest kitty on the island! What's your name?"
+"Nice to meet you Pörrö! You have such a beautiful name! You also seem nice! Would you like a gift?"
+"Yeah? What kind of gift would you like to have? You can choose it yourself UwU!"
+
+a) I'd like the medallion of wisdom and reflection
+b) I'd like the eyepatch of encouragement and organization.
+c) I'd like the ring of courage and honesty.
+
+"I hope you like your gift, and may it serve you well! Oh, someone is calling me. It's likely my mother Panko, who is calling me to the garden."
+"I have to go work in there now, but hopefully we meet again Pörrö! Bye bye UwU!
+
+
+Junko(numero kuusi):
+
+
+"Hi newcomer, how you feelin'? I'm Junko, the coolest cat on the island."
+"Wanna tell me which one of these sentences resonates with you most?"
+
+a) "I'm on the move, but the destination is still unknown."
+b) "I know where I want to go - now I'd just need to get to it."
+c) "I have an idea, but how does it come true?"
+
+"What do you mean why I'm asking? Just curious! :p. Maybe I'll tell you some other time why I'm so interested, but you'll have to wait for that time rookie."
+"Well, what are you still doing here? Ain't you have some sea to sail or something? Ciao, noob!"
+
+
+
+Shintaro ending line:
+
+"You have found Shintaro, the eldest of the pirate cats."
+"I've observed your journey through these waters, and I think you are on your way to do great things."
+"The road to wisdom is sometimes long and tedious, but you have managed to achieve yours. Sometimes the greatest treasure is inner harmony, that guides you through life."
+"You deserve your prize."
