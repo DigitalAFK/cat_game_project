@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://crxh0v5cu8dmj" path="res://Art/Menu/menu-Sheet.png" id="5_ldqj3"]
 [ext_resource type="Script" uid="uid://86vwtjkdrlnr" path="res://Code/Buttons/TextureButtonContainerVisibility.cs" id="5_ypipb"]
 [ext_resource type="Texture2D" uid="uid://dkkdx5ffwdm2f" path="res://Art/Menu/SeperatedPaws/paws.png" id="7_4kuwh"]
-[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedSprites.cs" id="7_ypipb"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="7_ypipb"]
 [ext_resource type="Texture2D" uid="uid://rrenxaqkfg4u" path="res://Art/Menu/rectangle.png" id="9_iw5g5"]
 [ext_resource type="Script" uid="uid://cyi60kjieg4iq" path="res://Code/Buttons/VolumeSlider.cs" id="10_ypipb"]
 
@@ -54,7 +54,7 @@ layout_mode = 2
 texture_normal = ExtResource("2_84jhe")
 stretch_mode = 0
 script = ExtResource("3_ypipb")
-_targetScenePath = "res://Scenes/Characters/Sea.tscn"
+_targetScenePath = "res://Scenes/Sea/Sea.tscn"
 
 [node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/PlayButton"]
 layout_mode = 1

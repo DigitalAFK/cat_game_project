@@ -4,13 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://cp6h5e2dinwud" path="res://Art/Sea Scene/Sprite-0004 Ship Updated Animated-Sheet.png" id="2_5pms0"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="2_82053"]
 [ext_resource type="TileSet" uid="uid://bagfqfrfyqmbu" path="res://Art/Sea Scene/new_tile_set.tres" id="2_yutjy"]
-[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedSprites.cs" id="3_4wc1b"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_4wc1b"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="3_82053"]
-[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/Characters/UI.tscn" id="4_egrc0"]
+[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="4_egrc0"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="5_egrc0"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="6_qfwcq"]
 [ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="7_3345n"]
-[ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/GUIPoints.tscn" id="9_5ju81"]
+[ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="9_5ju81"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
 radius = 20.98169

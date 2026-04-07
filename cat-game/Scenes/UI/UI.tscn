@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_jomne"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="2_jomne"]
-[ext_resource type="PackedScene" uid="uid://6dgh21re842a" path="res://Scenes/NewJoystick.tscn" id="4_srnn6"]
+[ext_resource type="PackedScene" uid="uid://6dgh21re842a" path="res://Scenes/Joystick/NewJoystick.tscn" id="4_srnn6"]
 
 [node name="UI" type="CanvasLayer"]
 

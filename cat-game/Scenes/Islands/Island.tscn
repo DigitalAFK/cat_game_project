@@ -4,10 +4,10 @@
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="2_h8dby"]
 [ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_xu16t"]
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="3_5086l"]
-[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedSprites.cs" id="3_ucptk"]
+[ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_ucptk"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="4_72pum"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="4_abs55"]
-[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/Characters/UI.tscn" id="5_72pum"]
+[ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="5_72pum"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xu16t"]
 radius = 21.923077
@@ -97,6 +97,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Area2D" type="Area2D" parent="Result-NPC"]
 script = ExtResource("4_72pum")
 _targetScenePath = "res://Scenes/Results/Results.tscn"
+_reEnter = true
 _id = "NPC002"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Result-NPC/Area2D"]
@@ -125,7 +126,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Leave"]
 script = ExtResource("4_72pum")
-_targetScenePath = "res://Scenes/Characters/Sea.tscn"
+_targetScenePath = "res://Scenes/Sea/Sea.tscn"
 _reEnter = true
 _id = "LEAVE001"
 
