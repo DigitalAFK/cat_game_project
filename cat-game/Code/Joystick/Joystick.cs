@@ -47,6 +47,6 @@ public partial class Joystick : Control
 	//Give input to Game Manager so it can be taken from there
 	public void SetDirection()
 	{
-		GameManager.Instance.SetPlayerDirection(_input);
+		GameManager.Instance.SetPlayerVelocity(_input);
 	}
 }
