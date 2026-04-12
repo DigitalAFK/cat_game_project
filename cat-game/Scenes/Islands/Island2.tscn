@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://by6mdubnkfrna"]
+[gd_scene load_steps=16 format=3 uid="uid://by6mdubnkfrna"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_d7at8"]
 [ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_4nmkg"]
+[ext_resource type="Script" uid="uid://eh302unprlj7" path="res://Code/Characters/AnimatedCat.cs" id="3_idbrg"]
 [ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_ns76p"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="4_npr2w"]
 [ext_resource type="Texture2D" uid="uid://byx1k5awwx00u" path="res://Art/Inside Island/NPCs/Ranbo.png" id="5_hsite"]
@@ -36,8 +37,7 @@ position = Vector2(3, 2)
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("2_4nmkg")
 hframes = 7
-script = ExtResource("3_ns76p")
-_frameAmount = 7
+script = ExtResource("3_idbrg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(2.6923194, 60.000008)
