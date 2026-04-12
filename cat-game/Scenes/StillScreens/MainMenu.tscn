@@ -37,18 +37,24 @@ size_flags_horizontal = 0
 size_flags_vertical = 8
 texture = ExtResource("1_ldqj3")
 
-[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(0, 1740)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/AspectRatioContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/AspectRatioContainer/CenterContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="PlayButton" type="TextureButton" parent="MarginContainer/CenterContainer/VBoxContainer"]
+[node name="PlayButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(185, 50)
 layout_mode = 2
 texture_normal = ExtResource("2_84jhe")
@@ -56,7 +62,7 @@ stretch_mode = 0
 script = ExtResource("3_ypipb")
 _targetScenePath = "res://Scenes/Sea/Sea.tscn"
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/PlayButton"]
+[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/PlayButton"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -75,7 +81,7 @@ theme_override_fonts/font = ExtResource("3_84jhe")
 theme_override_font_sizes/font_size = 50
 text = "Pelaa"
 
-[node name="SettingsButton" type="TextureButton" parent="MarginContainer/CenterContainer/VBoxContainer"]
+[node name="SettingsButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(185, 50)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -83,9 +89,9 @@ size_flags_vertical = 2
 texture_normal = ExtResource("2_84jhe")
 stretch_mode = 0
 script = ExtResource("5_ypipb")
-_targetContainerPath = "../../../SettingsContainer"
+_targetContainerPath = "../../../../SettingsContainer"
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer/SettingsButton"]
+[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/SettingsButton"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -101,6 +107,33 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_84jhe")
 theme_override_font_sizes/font_size = 50
 text = "Asetukset"
+
+[node name="CreditsButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(185, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+texture_normal = ExtResource("2_84jhe")
+stretch_mode = 0
+script = ExtResource("3_ypipb")
+_targetScenePath = "res://Scenes/StillScreens/Credits.tscn"
+
+[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/CreditsButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48000002
+anchor_right = 0.5
+anchor_bottom = 0.48000002
+offset_left = -128.5
+offset_top = -33.0
+offset_right = 141.5
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_84jhe")
+theme_override_font_sizes/font_size = 50
+text = "Tekijät"
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
 show_behind_parent = true
