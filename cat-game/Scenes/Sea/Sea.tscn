@@ -41,11 +41,6 @@ position = Vector2(10.8571415, 49.14286)
 rotation = 1.5865043
 shape = SubResource("CapsuleShape2D_5pms0")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
-visible = false
-visibility_layer = 2
-tile_set = ExtResource("4_onpox")
-
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 900)
 tile_set = ExtResource("4_onpox")

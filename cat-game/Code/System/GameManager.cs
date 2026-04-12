@@ -244,9 +244,10 @@ public partial class GameManager : Node
 	/// <param name="path">Path of the desired scene</param>
 	public void GoToScene(string path)
 	{
+		//Reset the player's velocity
+		SetPlayerVelocity(Vector2.Zero);
 		//Deferred so that physics processes finish first
 		CallDeferred(MethodName.LoadScene, path);
-		SetPlayerVelocity(Vector2.Zero);   //Reset the player's velocity
 	}
 
 	/// <summary>

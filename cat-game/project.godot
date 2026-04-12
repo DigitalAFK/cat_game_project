@@ -21,7 +21,7 @@ config/icon="res://Art/Sprites/icon.svg"
 
 [autoload]
 
-GameManager="*res://Code/System/GameManager.cs"
+GameManager="res://Code/System/GameManager.cs"
 
 [display]
 
