@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cldicrsx3rjef"]
+[gd_scene load_steps=16 format=3 uid="uid://cldicrsx3rjef"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_aou04"]
 [ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_h7cj5"]
@@ -8,12 +8,18 @@
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="5_o1uan"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="6_76xnn"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="7_1ogpp"]
+[ext_resource type="Texture2D" uid="uid://d0npgc0uew6gp" path="res://Art/Inside Island/NPCs/Junko.png" id="8_4dey0"]
 [ext_resource type="Texture2D" uid="uid://tiehseojtr37" path="res://Art/Inside Island/NPCs/oldcat.png" id="8_dfjbt"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_gt5iu"]
+[ext_resource type="Texture2D" uid="uid://dphbeiite636j" path="res://Art/Inside Island/NPCs/Lynx.png" id="9_o1uan"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xu16t"]
 radius = 21.923077
 height = 54.615387
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dfjbt"]
+radius = 35.384617
+height = 70.76923
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_abs55"]
 radius = 46.786766
@@ -78,12 +84,82 @@ _targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
 _id = "NPC001"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1/Area2D"]
-position = Vector2(0, -1.5)
+position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_abs55")
+shape = SubResource("CapsuleShape2D_dfjbt")
+
+[node name="NPC2" type="StaticBody2D" parent="."]
+position = Vector2(710.00006, -1634)
+scale = Vector2(2.6, 2.6)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC2"]
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("8_4dey0")
+hframes = 2
+script = ExtResource("3_dfjbt")
+_animationSpeed = 15
+
+[node name="Label" type="Label" parent="NPC2/Sprite2D"]
+visible = false
+offset_left = -36.5
+offset_top = -19.0
+offset_right = 53.5
+offset_bottom = 21.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_76xnn")
+theme_override_font_sizes/font_size = 30
+text = "Kissa"
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="NPC2"]
+script = ExtResource("7_1ogpp")
+_targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
+_id = "NPC002"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2/Area2D"]
+position = Vector2(-2.348423e-05, 50.00005)
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_dfjbt")
+
+[node name="NPC3" type="StaticBody2D" parent="."]
+position = Vector2(-1019, -668.00024)
+scale = Vector2(2.6, 2.6)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC3"]
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("9_o1uan")
+hframes = 2
+script = ExtResource("3_dfjbt")
+_animationSpeed = 15
+
+[node name="Label" type="Label" parent="NPC3/Sprite2D"]
+visible = false
+offset_left = -36.5
+offset_top = -19.0
+offset_right = 53.5
+offset_bottom = 21.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_76xnn")
+theme_override_font_sizes/font_size = 30
+text = "Kissa"
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="NPC3"]
+script = ExtResource("7_1ogpp")
+_targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
+_id = "NPC003"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/Area2D"]
+position = Vector2(-2.348423e-05, 50.00005)
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_dfjbt")
 
 [node name="Result-NPC" type="StaticBody2D" parent="."]
-position = Vector2(-862, -1687)
+position = Vector2(-1150, -2031)
 scale = Vector2(2.6, 2.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Result-NPC"]
@@ -111,12 +187,12 @@ metadata/_edit_use_anchors_ = true
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/Results/Results.tscn"
 _reEnter = true
-_id = "NPC002"
+_id = "NPC007"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Result-NPC/Area2D"]
-position = Vector2(0, -1.5)
+position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_abs55")
+shape = SubResource("CapsuleShape2D_dfjbt")
 
 [node name="Dock" type="StaticBody2D" parent="."]
 position = Vector2(-24.000004, 1775)
@@ -163,3 +239,12 @@ position = Vector2(13, 1210)
 
 [node name="SpawnFromNPC001" type="Marker2D" parent="."]
 position = Vector2(565, -215)
+
+[node name="SpawnFromNPC002" type="Marker2D" parent="."]
+position = Vector2(394, -1287)
+
+[node name="SpawnFromNPC003" type="Marker2D" parent="."]
+position = Vector2(-719, -326)
+
+[node name="SpawnFromNPC007" type="Marker2D" parent="."]
+position = Vector2(-946, -1610)
