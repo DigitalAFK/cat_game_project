@@ -24,7 +24,7 @@ public partial class AnimatedShip : Sprite2D
 		{
 			FlipH = true;
 		}
-		else
+		else if (directionX < 0)
 		{
 			FlipH = false;
 		}

@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bagfqfrfyqmbu"]
+[gd_resource type="TileSet" format=3 uid="uid://bagfqfrfyqmbu"]
 
 [ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="1_q7lcy"]
 

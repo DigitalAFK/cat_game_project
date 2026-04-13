@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ccill4u7ll78d"]
+[gd_scene format=3 uid="uid://ccill4u7ll78d"]
 
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_ldqj3"]
 [ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="2_84jhe"]
@@ -10,14 +10,15 @@
 [ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="7_ypipb"]
 [ext_resource type="Texture2D" uid="uid://rrenxaqkfg4u" path="res://Art/Menu/rectangle.png" id="9_iw5g5"]
 [ext_resource type="Script" uid="uid://cyi60kjieg4iq" path="res://Code/Buttons/VolumeSlider.cs" id="10_ypipb"]
+[ext_resource type="Texture2D" uid="uid://oyhp4qmropsu" path="res://Art/Menu/menu_bg.png" id="11_a5w2e"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=2094765158]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1080.0
 offset_bottom = 1920.0
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=402512076]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -30,31 +31,31 @@ theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 30
 
-[node name="MuteButton" type="TextureRect" parent="MarginContainer"]
+[node name="MuteButton" type="TextureRect" parent="MarginContainer" unique_id=1795433276]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 texture = ExtResource("1_ldqj3")
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MarginContainer"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MarginContainer" unique_id=1578528549]
 custom_minimum_size = Vector2(0, 1740)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 
-[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/AspectRatioContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/AspectRatioContainer" unique_id=1866594138]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/AspectRatioContainer/CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/AspectRatioContainer/CenterContainer" unique_id=808001429]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="PlayButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer"]
+[node name="PlayButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer" unique_id=387576522]
 custom_minimum_size = Vector2(185, 50)
 layout_mode = 2
 texture_normal = ExtResource("2_84jhe")
@@ -62,7 +63,7 @@ stretch_mode = 0
 script = ExtResource("3_ypipb")
 _targetScenePath = "res://Scenes/Sea/Sea.tscn"
 
-[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/PlayButton"]
+[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/PlayButton" unique_id=899001566]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -81,7 +82,7 @@ theme_override_fonts/font = ExtResource("3_84jhe")
 theme_override_font_sizes/font_size = 50
 text = "Pelaa"
 
-[node name="SettingsButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer"]
+[node name="SettingsButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer" unique_id=339829300]
 custom_minimum_size = Vector2(185, 50)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -91,7 +92,7 @@ stretch_mode = 0
 script = ExtResource("5_ypipb")
 _targetContainerPath = "../../../../SettingsContainer"
 
-[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/SettingsButton"]
+[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/SettingsButton" unique_id=2003536322]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -108,7 +109,7 @@ theme_override_fonts/font = ExtResource("3_84jhe")
 theme_override_font_sizes/font_size = 50
 text = "Asetukset"
 
-[node name="CreditsButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer"]
+[node name="CreditsButton" type="TextureButton" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer" unique_id=1732276139]
 custom_minimum_size = Vector2(185, 50)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -118,7 +119,7 @@ stretch_mode = 0
 script = ExtResource("3_ypipb")
 _targetScenePath = "res://Scenes/StillScreens/Credits.tscn"
 
-[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/CreditsButton"]
+[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/CenterContainer/VBoxContainer/CreditsButton" unique_id=564869027]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -135,7 +136,7 @@ theme_override_fonts/font = ExtResource("3_84jhe")
 theme_override_font_sizes/font_size = 50
 text = "Tekijät"
 
-[node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer" unique_id=378885689]
 show_behind_parent = true
 position = Vector2(542, 960)
 texture = ExtResource("5_ldqj3")
@@ -144,19 +145,19 @@ script = ExtResource("7_ypipb")
 _frameAmount = 12
 metadata/_edit_group_ = true
 
-[node name="Paws" type="Sprite2D" parent="MarginContainer"]
+[node name="Paws" type="Sprite2D" parent="MarginContainer" unique_id=911560516]
 position = Vector2(542, 960)
 texture = ExtResource("7_4kuwh")
 metadata/_edit_group_ = true
 
-[node name="SettingsContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="SettingsContainer" type="VBoxContainer" parent="MarginContainer" unique_id=848556929]
 visible = false
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="ExitButton" type="TextureButton" parent="MarginContainer/SettingsContainer"]
+[node name="ExitButton" type="TextureButton" parent="MarginContainer/SettingsContainer" unique_id=1154276732]
 custom_minimum_size = Vector2(555, 150)
 layout_mode = 2
 texture_normal = ExtResource("2_84jhe")
@@ -164,7 +165,7 @@ ignore_texture_size = true
 script = ExtResource("5_ypipb")
 _targetContainerPath = "../"
 
-[node name="Label" type="Label" parent="MarginContainer/SettingsContainer/ExitButton"]
+[node name="Label" type="Label" parent="MarginContainer/SettingsContainer/ExitButton" unique_id=881373628]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -183,16 +184,25 @@ theme_override_fonts/font = ExtResource("3_84jhe")
 theme_override_font_sizes/font_size = 50
 text = "Exit"
 
-[node name="Rectangle" type="Sprite2D" parent="MarginContainer/SettingsContainer"]
+[node name="Rectangle" type="Sprite2D" parent="MarginContainer/SettingsContainer" unique_id=1118033721]
 show_behind_parent = true
 position = Vector2(278, 251.875)
 scale = Vector2(2.23166, 1.6886942)
 texture = ExtResource("9_iw5g5")
 
-[node name="HSlider" type="HSlider" parent="MarginContainer/SettingsContainer"]
+[node name="HSlider" type="HSlider" parent="MarginContainer/SettingsContainer" unique_id=1670332058]
 custom_minimum_size = Vector2(555, 50)
 layout_mode = 2
 size_flags_vertical = 4
 step = 5.0
 scrollable = false
 script = ExtResource("10_ypipb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=278126966]
+show_behind_parent = true
+position = Vector2(545, 960)
+texture = ExtResource("11_a5w2e")
+hframes = 12
+script = ExtResource("7_ypipb")
+_frameAmount = 12
+_animationSpeed = 2
