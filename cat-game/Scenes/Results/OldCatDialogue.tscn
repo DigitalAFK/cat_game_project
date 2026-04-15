@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://tgbef2dlcdyn"]
 
-[ext_resource type="Texture2D" uid="uid://tiehseojtr37" path="res://Art/Inside Island/NPCs/oldcat.png" id="1_hxnke"]
 [ext_resource type="Texture2D" uid="uid://ceub5e2tmtkx0" path="res://Art/UI/oldcat_upperbody.png" id="1_oq6m3"]
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="2_hxnke"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="3_3obln"]
@@ -68,11 +67,3 @@ vertical_alignment = 1
 autowrap_mode = 2
 clip_text = true
 text_overrun_behavior = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1691189151]
-visible = false
-position = Vector2(558, 447)
-scale = Vector2(7, 7)
-texture = ExtResource("1_hxnke")
-hframes = 2
-frame = 1
