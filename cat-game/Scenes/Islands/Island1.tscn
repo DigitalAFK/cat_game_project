@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://cldicrsx3rjef"]
+[gd_scene format=4 uid="uid://cldicrsx3rjef"]
 
+[ext_resource type="TileSet" uid="uid://c0tl8e82cl0ig" path="res://Art/Inside Island/Island One/island.tres" id="1_1ogpp"]
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_aou04"]
 [ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_h7cj5"]
 [ext_resource type="Script" uid="uid://eh302unprlj7" path="res://Code/Characters/AnimatedCat.cs" id="3_76xnn"]
@@ -25,15 +26,21 @@ height = 70.76923
 [sub_resource type="CircleShape2D" id="CircleShape2D_abs55"]
 radius = 46.786766
 
-[node name="Island1" type="Node2D"]
+[node name="Island1" type="Node2D" unique_id=877432933]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_aou04")]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1538086822]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD6//z/CwAAAAAAAAD6//3/CwAAAAAAAAD6/wMACwAAAAAAAAD6/wEACwAAAAAAAAD6/wIACwAAAAAAAAD6/wAACwAAAAAAAAD6////CwAAAAAAAAD7////CwAAAAAAAAD7//7/CwAAAAAAAAD7//3/CwAAAAAAAAD6//7/CwAAAAAAAAD8//3/CwAAAAAAAAD9//3/CwAAAAAAAAD+//3/CwAAAAAAAAD///3/CQAAAAAAAAAAAP3/AwAAAAAAAAD+//7/CwAAAAAAAAD9//7/CwAAAAAAAAD9////CwAAAAAAAAD8////CwAAAAAAAAD7/wAACwAAAAAAAAD8/wAACwAAAAAAAAD7/wEACwAAAAAAAAD7/wIACwAAAAAAAAD8//7/CwAAAAAAAAD+//z/CwAAAAAAAAD///z/CgAAAAAAAAD9/wAACwAAAAAAAAD8/wEACwAAAAAAAAD7/wMACwAAAAAAAAD6/wQACwAAAAAAAAD6/wUACwAAAAAAAAD6/wYACwAAAAAAAAD7/wUACwAAAAAAAAD7/wQACwAAAAAAAAD8/wIACwAAAAAAAAD+////CwAAAAAAAAD+/wAACwAAAAAAAAD9/wEACwAAAAAAAAD9/wIACwAAAAAAAAD8/wMACwAAAAAAAAD6/wcACwAAAAAAAAD6/wgACwAAAAAAAAD8/wUACwAAAAAAAAD9/wQACwAAAAAAAAD9/wMACwAAAAAAAAD+/wIACwAAAAAAAAD+/wEACwAAAAAAAAD//wAACgAAAAAAAAAAAP//BwAAAAAAAAABAP7/AwAAAAAAAAABAP3/AwAAAAAAAAAAAAAABwAAAAAAAAD//wEACAAAAAAAAAD+/wMACwAAAAAAAAD8/wYACwAAAAAAAAD7/wcACwAAAAAAAAD7/wgACwAAAAAAAAD6/wkACwAAAAAAAAD9/wUACwAAAAAAAAD//wIACgAAAAAAAAABAP//BwAAAAAAAAAAAAEABwAAAAAAAAD7/wYACwAAAAAAAAD8/wQACwAAAAAAAAD/////CQAAAAAAAAAAAP7/AwAAAAAAAAABAPz/AwAAAAAAAAD///7/CgAAAAAAAAD+/wQACwAAAAAAAAD8/wcACwAAAAAAAAD9/wYACwAAAAAAAAD+/wUACwAAAAAAAAD//wMACQAAAAAAAAAAAAIABwAAAAAAAAABAAAABwAAAAAAAAACAP//BwAAAAAAAAACAP7/AwAAAAAAAAADAP3/AwAAAAAAAAAEAP3/AwAAAAAAAAAEAPz/AQAAAAAAAAADAP7/AwAAAAAAAAD8/wgACwAAAAAAAAACAAAABwAAAAAAAAABAAEABwAAAAAAAAABAAIABwAAAAAAAAAAAAMABwAAAAAAAAAAAAQACgAAAAAAAGD//wUACwAAAAAAAAD+/wYACwAAAAAAAAD9/wcACwAAAAAAAAD9/wgACwAAAAAAAAABAAMABwAAAAAAAAACAAIABwAAAAAAAAABAAQACQAAAAAAAGD//wYACwAAAAAAAAD+/wcACwAAAAAAAAD7//z/CwAAAAAAAAD7/wkACwAAAAAAAAD8//z/CwAAAAAAAAD8/wkACwAAAAAAAAD9//z/CwAAAAAAAAD9/wkACwAAAAAAAAD+/wgACwAAAAAAAAD+/wkACwAAAAAAAAD//wQABgAAAAAAAGD//wcACwAAAAAAAAD//wgACwAAAAAAAAD//wkACwAAAAAAAAAAAPz/AwAAAAAAAAAAAAUACwAAAAAAAAAAAAYACwAAAAAAAAAAAAcACwAAAAAAAAAAAAgACwAAAAAAAAAAAAkACwAAAAAAAAABAAUACwAAAAAAAAABAAYACwAAAAAAAAABAAcACwAAAAAAAAABAAgACwAAAAAAAAABAAkACwAAAAAAAAACAPz/AwAAAAAAAAACAP3/AwAAAAAAAAACAAEABwAAAAAAAAACAAMABwAAAAAAAAACAAQACgAAAAAAAGACAAUACwAAAAAAAAACAAYACwAAAAAAAAACAAcACwAAAAAAAAACAAgACwAAAAAAAAACAAkACwAAAAAAAAADAPz/AwAAAAAAAAADAP//BwAAAAAAAAADAAAABwAAAAAAAAADAAEABwAAAAAAAAADAAIABwAAAAAAAAADAAMABwAAAAAAAAADAAQACQAAAAAAAGADAAUACwAAAAAAAAADAAYACwAAAAAAAAADAAcACwAAAAAAAAADAAgACwAAAAAAAAADAAkACwAAAAAAAAAEAP7/AQAAAAAAAAAEAP//BwAAAAAAAAAEAAAABwAAAAAAAAAEAAEABwAAAAAAAAAEAAIABwAAAAAAAAAEAAMABwAAAAAAAAAEAAQACgAAAAAAAGAEAAUACwAAAAAAAAAEAAYACwAAAAAAAAAEAAcACwAAAAAAAAAEAAgACwAAAAAAAAAEAAkACwAAAAAAAAAFAAUACwAAAAAAAAAFAAYACwAAAAAAAAAFAAcACwAAAAAAAAAFAAgACwAAAAAAAAAFAAkACwAAAAAAAAAGAAUACwAAAAAAAAAGAAYACwAAAAAAAAAGAAcACwAAAAAAAAAGAAgACwAAAAAAAAAGAAkACwAAAAAAAAAHAAUACwAAAAAAAAAHAAYACwAAAAAAAAAHAAcACwAAAAAAAAAHAAgACwAAAAAAAAAHAAkACwAAAAAAAAAIAPz/CQAAAAAAADAIAP3/CgAAAAAAADAIAP7/CQAAAAAAADAIAP//CgAAAAAAADAIAAAACQAAAAAAADAIAAEACgAAAAAAADAIAAIACQAAAAAAADAIAAMACgAAAAAAADAIAAQABgAAAAAAADAIAAUACwAAAAAAAAAIAAYACwAAAAAAAAAIAAcACwAAAAAAAAAIAAgACwAAAAAAAAAIAAkACwAAAAAAAAAJAPz/CwAAAAAAAAAJAP3/CwAAAAAAAAAJAP7/CwAAAAAAAAAJAP//CwAAAAAAAAAJAAAACwAAAAAAAAAJAAEACwAAAAAAAAAJAAIACwAAAAAAAAAJAAMACwAAAAAAAAAJAAQACwAAAAAAAAAJAAUACwAAAAAAAAAJAAYACwAAAAAAAAAJAAcACwAAAAAAAAAJAAgACwAAAAAAAAAJAAkACwAAAAAAAAAKAAcACwAAAAAAAAAKAAgACwAAAAAAAAAKAAkACwAAAAAAAAALAAcACwAAAAAAAAALAAgACwAAAAAAAAALAAkACwAAAAAAAAD7//v/CwAAAAAAAAD6//b/CwAAAAAAAAD6//f/CwAAAAAAAAD6//j/CwAAAAAAAAD6//n/CwAAAAAAAAD6//r/CwAAAAAAAAD6//v/CwAAAAAAAAD7//b/CwAAAAAAAAD7//f/CwAAAAAAAAD7//j/CwAAAAAAAAD7//n/CwAAAAAAAAD7//r/CwAAAAAAAAD8//b/CwAAAAAAAAD8//f/CwAAAAAAAAD8//j/CwAAAAAAAAD8//n/CwAAAAAAAAD8//r/CwAAAAAAAAD8//v/CwAAAAAAAAD9//b/CwAAAAAAAAD9//f/CwAAAAAAAAD9//j/CwAAAAAAAAD9//n/CwAAAAAAAAD9//r/CwAAAAAAAAD9//v/CwAAAAAAAAD+//b/CwAAAAAAAAD+//f/CwAAAAAAAAD+//j/CwAAAAAAAAD+//n/CwAAAAAAAAD+//r/CwAAAAAAAAD+//v/CwAAAAAAAAD///b/CwAAAAAAAAD///f/BgAAAAAAAAD///j/CgAAAAAAAAD///n/CQAAAAAAAAD///r/CgAAAAAAAAD///v/CQAAAAAAAAAAAPb/CwAAAAAAAAAAAPf/CQAAAAAAAFAAAPj/AwAAAAAAAAAAAPn/AwAAAAAAAAAAAPr/AwAAAAAAAAAAAPv/AwAAAAAAAAABAPb/CwAAAAAAAAABAPf/CgAAAAAAAFABAPj/AQAAAAAAAAABAPn/AwAAAAAAAAABAPr/AAAAAAAAAAABAPv/AwAAAAAAAAACAPb/CwAAAAAAAAACAPf/CQAAAAAAAFACAPj/AQAAAAAAAAACAPn/AQAAAAAAAAACAPr/AwAAAAAAAAACAPv/AwAAAAAAAAADAPb/CwAAAAAAAAADAPf/CgAAAAAAAFADAPj/AQAAAAAAAAADAPn/AQAAAAAAAAADAPr/AwAAAAAAAAADAPv/AwAAAAAAAAAEAPb/CwAAAAAAAAAEAPf/CQAAAAAAAFAEAPj/AQAAAAAAAAAEAPn/AQAAAAAAAAAEAPr/AQAAAAAAAAAEAPv/AQAAAAAAAAAIAPb/CwAAAAAAAAAIAPf/BgAAAAAAAFAIAPj/CQAAAAAAADAIAPn/CgAAAAAAADAIAPr/CQAAAAAAADAIAPv/CgAAAAAAADAJAPb/CwAAAAAAAAAJAPf/CwAAAAAAAAAJAPj/CwAAAAAAAAAJAPn/CwAAAAAAAAAJAPr/CwAAAAAAAAAJAPv/CwAAAAAAAAAKAPb/CwAAAAAAAAAKAPf/CwAAAAAAAAAKAPj/CwAAAAAAAAAKAPn/CwAAAAAAAAAKAPr/CwAAAAAAAAAKAPv/CwAAAAAAAAAKAPz/CwAAAAAAAAAKAP3/CwAAAAAAAAAKAP7/CwAAAAAAAAAKAP//CwAAAAAAAAAKAAAACwAAAAAAAAALAPb/CwAAAAAAAAALAPf/CwAAAAAAAAALAPj/CwAAAAAAAAALAPn/CwAAAAAAAAALAPr/CwAAAAAAAAALAPv/CwAAAAAAAAALAPz/CwAAAAAAAAALAP3/CwAAAAAAAAALAP7/CwAAAAAAAAALAP//CwAAAAAAAAALAAAACwAAAAAAAAAMAPb/CwAAAAAAAAAMAPf/CwAAAAAAAAAMAPj/CwAAAAAAAAAMAPn/CwAAAAAAAAAMAPr/CwAAAAAAAAAMAPv/CwAAAAAAAAAMAPz/CwAAAAAAAAAMAP3/CwAAAAAAAAAMAP7/CwAAAAAAAAAMAP//CwAAAAAAAAAMAAAACwAAAAAAAAAKAAEACwAAAAAAAAAKAAIACwAAAAAAAAAKAAMACwAAAAAAAAAKAAQACwAAAAAAAAAKAAUACwAAAAAAAAAKAAYACwAAAAAAAAALAAEACwAAAAAAAAALAAIACwAAAAAAAAALAAMACwAAAAAAAAALAAQACwAAAAAAAAALAAUACwAAAAAAAAALAAYACwAAAAAAAAAMAAEACwAAAAAAAAAMAAIACwAAAAAAAAAMAAMACwAAAAAAAAAMAAQACwAAAAAAAAAMAAUACwAAAAAAAAAMAAYACwAAAAAAAAAMAAcACwAAAAAAAAAMAAgACwAAAAAAAAAMAAkACwAAAAAAAAANAAAACwAAAAAAAAANAAEACwAAAAAAAAANAAIACwAAAAAAAAANAAMACwAAAAAAAAANAAQACwAAAAAAAAANAAUACwAAAAAAAAANAAYACwAAAAAAAAANAAcACwAAAAAAAAANAAgACwAAAAAAAAANAAkACwAAAAAAAAAOAAAACwAAAAAAAAAOAAEACwAAAAAAAAAOAAIACwAAAAAAAAAOAAMACwAAAAAAAAAOAAQACwAAAAAAAAAOAAUACwAAAAAAAAAOAAYACwAAAAAAAAAOAAcACwAAAAAAAAAOAAgACwAAAAAAAAAOAAkACwAAAAAAAAAPAAAACwAAAAAAAAAPAAEACwAAAAAAAAAPAAIACwAAAAAAAAAPAAMACwAAAAAAAAAPAAQACwAAAAAAAAAPAAUACwAAAAAAAAAPAAYACwAAAAAAAAAPAAcACwAAAAAAAAAPAAgACwAAAAAAAAAPAAkACwAAAAAAAAAQAAAACwAAAAAAAAAQAAEACwAAAAAAAAAQAAIACwAAAAAAAAAQAAMACwAAAAAAAAAQAAQACwAAAAAAAAAQAAUACwAAAAAAAAAQAAYACwAAAAAAAAAQAAcACwAAAAAAAAAQAAgACwAAAAAAAAAQAAkACwAAAAAAAAD6//P/CwAAAAAAAAD6//T/CwAAAAAAAAD6//X/CwAAAAAAAAD7//P/CwAAAAAAAAD7//T/CwAAAAAAAAD7//X/CwAAAAAAAAD8//P/CwAAAAAAAAD8//T/CwAAAAAAAAD8//X/CwAAAAAAAAD9//P/CwAAAAAAAAD9//T/CwAAAAAAAAD9//X/CwAAAAAAAAD+//P/CwAAAAAAAAD+//T/CwAAAAAAAAD+//X/CwAAAAAAAAD///P/CwAAAAAAAAD///T/CwAAAAAAAAD///X/CwAAAAAAAAAAAPP/CwAAAAAAAAAAAPT/CwAAAAAAAAAAAPX/CwAAAAAAAAABAPP/CwAAAAAAAAABAPT/CwAAAAAAAAABAPX/CwAAAAAAAAACAPP/CwAAAAAAAAACAPT/CwAAAAAAAAACAPX/CwAAAAAAAAADAPP/CwAAAAAAAAADAPT/CwAAAAAAAAADAPX/CwAAAAAAAAAEAPP/CwAAAAAAAAAEAPT/CwAAAAAAAAAEAPX/CwAAAAAAAAAFAPP/CwAAAAAAAAAFAPT/CwAAAAAAAAAFAPX/CwAAAAAAAAAGAPP/CwAAAAAAAAAGAPT/CwAAAAAAAAAGAPX/CwAAAAAAAAAHAPP/CwAAAAAAAAAHAPT/CwAAAAAAAAAHAPX/CwAAAAAAAAAIAPP/CwAAAAAAAAAIAPT/CwAAAAAAAAAIAPX/CwAAAAAAAAAJAPP/CwAAAAAAAAAJAPT/CwAAAAAAAAAJAPX/CwAAAAAAAAAKAPP/CwAAAAAAAAAKAPT/CwAAAAAAAAAKAPX/CwAAAAAAAAALAPP/CwAAAAAAAAALAPT/CwAAAAAAAAALAPX/CwAAAAAAAAAMAPP/CwAAAAAAAAAMAPT/CwAAAAAAAAAMAPX/CwAAAAAAAAANAPP/CwAAAAAAAAANAPT/CwAAAAAAAAANAPX/CwAAAAAAAAANAPb/CwAAAAAAAAANAPf/CwAAAAAAAAANAPj/CwAAAAAAAAANAPn/CwAAAAAAAAANAPr/CwAAAAAAAAANAPv/CwAAAAAAAAANAPz/CwAAAAAAAAANAP3/CwAAAAAAAAANAP7/CwAAAAAAAAANAP//CwAAAAAAAAAOAPP/CwAAAAAAAAAOAPT/CwAAAAAAAAAOAPX/CwAAAAAAAAAOAPb/CwAAAAAAAAAOAPf/CwAAAAAAAAAOAPj/CwAAAAAAAAAOAPn/CwAAAAAAAAAOAPr/CwAAAAAAAAAOAPv/CwAAAAAAAAAOAPz/CwAAAAAAAAAOAP3/CwAAAAAAAAAOAP7/CwAAAAAAAAAOAP//CwAAAAAAAAAPAPP/CwAAAAAAAAAPAPT/CwAAAAAAAAAPAPX/CwAAAAAAAAAPAPb/CwAAAAAAAAAPAPf/CwAAAAAAAAAPAPj/CwAAAAAAAAAPAPn/CwAAAAAAAAAPAPr/CwAAAAAAAAAPAPv/CwAAAAAAAAAPAPz/CwAAAAAAAAAPAP3/CwAAAAAAAAAPAP7/CwAAAAAAAAAPAP//CwAAAAAAAAAQAPP/CwAAAAAAAAAQAPT/CwAAAAAAAAAQAPX/CwAAAAAAAAAQAPb/CwAAAAAAAAAQAPf/CwAAAAAAAAAQAPj/CwAAAAAAAAAQAPn/CwAAAAAAAAAQAPr/CwAAAAAAAAAQAPv/CwAAAAAAAAAQAPz/CwAAAAAAAAAQAP3/CwAAAAAAAAAQAP7/CwAAAAAAAAAQAP//CwAAAAAAAAAHAPb/CwAAAAAAAAAHAPf/CgAAAAAAAFAHAPj/AQAAAAAAAAAHAPn/AQAAAAAAAAAHAPr/AQAAAAAAAAAHAPv/AQAAAAAAAAAHAPz/AQAAAAAAAAAHAP3/AQAAAAAAAAAHAP7/AQAAAAAAAAAHAP//BwAAAAAAAAAHAAAABwAAAAAAAAAHAAEABwAAAAAAAAAHAAIABwAAAAAAAAAHAAMABwAAAAAAAAAHAAQACQAAAAAAAGAFAPf/CgAAAAAAAFAFAPj/AQAAAAAAAAAFAPn/AQAAAAAAAAAFAPr/AQAAAAAAAAAFAPv/AQAAAAAAAAAFAPz/AQAAAAAAAAAFAP3/AQAAAAAAAAAFAP7/AQAAAAAAAAAFAP//BwAAAAAAAAAFAAAABwAAAAAAAAAFAAEABwAAAAAAAAAFAAIABwAAAAAAAAAFAAMABwAAAAAAAAAFAAQACQAAAAAAAGAGAPf/CQAAAAAAAFAGAPj/AQAAAAAAAAAGAPn/AQAAAAAAAAAGAPr/AQAAAAAAAAAGAPv/AQAAAAAAAAAGAPz/AQAAAAAAAAAGAP3/AQAAAAAAAAAGAP7/AQAAAAAAAAAGAP//BwAAAAAAAAAGAAAABwAAAAAAAAAGAAEABwAAAAAAAAAGAAIABwAAAAAAAAAGAAMABwAAAAAAAAAGAAQACgAAAAAAAGAGAPb/CwAAAAAAAAAFAPb/CwAAAAAAAAA=")
+tile_set = ExtResource("1_1ogpp")
+
+[node name="CharacterBody2D" parent="." unique_id=870324145 instance=ExtResource("1_aou04")]
 top_level = true
-position = Vector2(-145, 325)
+position = Vector2(-88.00003, 1441.0001)
 scale = Vector2(2.6, 2.6)
 Friction = 1000.0
+metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1746877788]
 position = Vector2(3, 2)
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("2_h7cj5")
@@ -41,12 +48,12 @@ hframes = 7
 script = ExtResource("3_76xnn")
 _frameAmount = 7
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=203567211]
 position = Vector2(2.6923077, 66.53847)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_xu16t")
 
-[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_target")]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1833556632 node_paths=PackedStringArray("_target")]
 visibility_layer = 2
 position = Vector2(-135, 345)
 zoom = Vector2(0.5, 0.5)
@@ -55,18 +62,19 @@ position_smoothing_enabled = true
 script = ExtResource("4_4dey0")
 _target = NodePath("../CharacterBody2D")
 
-[node name="NPC1" type="StaticBody2D" parent="."]
-position = Vector2(731.00006, -590.0001)
+[node name="NPC1" type="StaticBody2D" parent="." unique_id=529117118]
+position = Vector2(1133, 710)
 scale = Vector2(2.6, 2.6)
+metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC1"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC1" unique_id=1236450369]
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("5_h7cj5")
 hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC1/Sprite2D"]
+[node name="Label" type="Label" parent="NPC1/Sprite2D" unique_id=1433744423]
 visible = false
 offset_left = -36.5
 offset_top = -19.0
@@ -79,29 +87,29 @@ theme_override_font_sizes/font_size = 30
 text = "Kissa"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="NPC1"]
+[node name="Area2D" type="Area2D" parent="NPC1" unique_id=850743107]
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
 _id = "NPC001"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1/Area2D" unique_id=62073866]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_dfjbt")
 
-[node name="NPC2" type="StaticBody2D" parent="."]
-position = Vector2(710.00006, -1634)
+[node name="NPC2" type="StaticBody2D" parent="." unique_id=341684123]
+position = Vector2(5011.0005, -4932)
 scale = Vector2(2.6, 2.6)
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC2"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC2" unique_id=1761774098]
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("8_4dey0")
 hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC2/Sprite2D"]
+[node name="Label" type="Label" parent="NPC2/Sprite2D" unique_id=856239025]
 visible = false
 offset_left = -36.5
 offset_top = -19.0
@@ -114,29 +122,29 @@ theme_override_font_sizes/font_size = 30
 text = "Kissa"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="NPC2"]
+[node name="Area2D" type="Area2D" parent="NPC2" unique_id=277101697]
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
 _id = "NPC002"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2/Area2D" unique_id=399416475]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_dfjbt")
 
-[node name="NPC3" type="StaticBody2D" parent="."]
-position = Vector2(-1019, -668.00024)
+[node name="NPC3" type="StaticBody2D" parent="." unique_id=2090099417]
+position = Vector2(2663, -2455)
 scale = Vector2(2.6, 2.6)
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC3"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC3" unique_id=7296456]
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("9_o1uan")
 hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC3/Sprite2D"]
+[node name="Label" type="Label" parent="NPC3/Sprite2D" unique_id=632302309]
 visible = false
 offset_left = -36.5
 offset_top = -19.0
@@ -149,28 +157,29 @@ theme_override_font_sizes/font_size = 30
 text = "Kissa"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="NPC3"]
+[node name="Area2D" type="Area2D" parent="NPC3" unique_id=713379256]
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
 _id = "NPC003"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/Area2D" unique_id=547289449]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_dfjbt")
 
-[node name="Result-NPC" type="StaticBody2D" parent="."]
-position = Vector2(-1150, -2031)
+[node name="Result-NPC" type="StaticBody2D" parent="." unique_id=204056580]
+position = Vector2(1616, -5378)
 scale = Vector2(2.6, 2.6)
+metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Result-NPC"]
+[node name="Sprite2D" type="Sprite2D" parent="Result-NPC" unique_id=1427397751]
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("8_dfjbt")
 hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 25
 
-[node name="Label" type="Label" parent="Result-NPC/Sprite2D"]
+[node name="Label" type="Label" parent="Result-NPC/Sprite2D" unique_id=2093551902]
 visible = false
 offset_left = -42.0
 offset_top = -44.5
@@ -184,25 +193,27 @@ text = "Vanha
 kissa"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="Result-NPC"]
+[node name="Area2D" type="Area2D" parent="Result-NPC" unique_id=319217714]
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/Results/Results.tscn"
 _reEnter = true
 _id = "NPC007"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Result-NPC/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Result-NPC/Area2D" unique_id=500755288]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_dfjbt")
 
-[node name="Dock" type="StaticBody2D" parent="."]
-position = Vector2(-24.000004, 1775)
+[node name="Dock" type="StaticBody2D" parent="." unique_id=865298420]
+position = Vector2(-566, 1573.0001)
 scale = Vector2(2.6, 2.6)
+metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Dock"]
+[node name="Sprite2D" type="Sprite2D" parent="Dock" unique_id=348695894]
+visible = false
 texture = ExtResource("5_o1uan")
 
-[node name="Label" type="Label" parent="Dock/Sprite2D"]
+[node name="Label" type="Label" parent="Dock/Sprite2D" unique_id=286150241]
 offset_left = -39.0
 offset_top = -17.5
 offset_right = 51.0
@@ -214,20 +225,20 @@ theme_override_font_sizes/font_size = 30
 text = "Laituri"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="Dock"]
+[node name="Area2D" type="Area2D" parent="Dock" unique_id=1569787027]
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/Sea/Sea.tscn"
 _reEnter = true
 _id = "DOCK001"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Dock/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dock/Area2D" unique_id=2082575417]
 position = Vector2(0, -1.5)
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_abs55")
 
-[node name="UI" parent="." instance=ExtResource("8_gt5iu")]
+[node name="UI" parent="." unique_id=2077705792 instance=ExtResource("8_gt5iu")]
 
-[node name="Label2" type="Label" parent="UI"]
+[node name="Label2" type="Label" parent="UI" unique_id=1658349752]
 offset_left = 375.0
 offset_top = 87.0
 offset_right = 586.0
@@ -235,17 +246,17 @@ offset_bottom = 190.0
 theme_override_font_sizes/font_size = 75
 text = "SAARI 1"
 
-[node name="SpawnFromISL001" type="Marker2D" parent="."]
+[node name="SpawnFromISL001" type="Marker2D" parent="." unique_id=1216961556]
 position = Vector2(13, 1210)
 
-[node name="SpawnFromNPC001" type="Marker2D" parent="."]
+[node name="SpawnFromNPC001" type="Marker2D" parent="." unique_id=1784665141]
 position = Vector2(565, -215)
 
-[node name="SpawnFromNPC002" type="Marker2D" parent="."]
+[node name="SpawnFromNPC002" type="Marker2D" parent="." unique_id=1790151946]
 position = Vector2(394, -1287)
 
-[node name="SpawnFromNPC003" type="Marker2D" parent="."]
+[node name="SpawnFromNPC003" type="Marker2D" parent="." unique_id=1492153524]
 position = Vector2(-719, -326)
 
-[node name="SpawnFromNPC007" type="Marker2D" parent="."]
+[node name="SpawnFromNPC007" type="Marker2D" parent="." unique_id=367494416]
 position = Vector2(-946, -1610)
