@@ -10,6 +10,7 @@ texture_region_size = Vector2i(200, 200)
 0:0/2 = 2
 
 [resource]
+tile_size = Vector2i(200, 200)
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 sources/1 = SubResource("TileSetAtlasSource_wy7jp")
