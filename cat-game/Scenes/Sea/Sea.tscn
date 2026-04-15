@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="9_fvbyo"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="10_anqpm"]
 [ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="11_0ujc6"]
+[ext_resource type="AudioStream" uid="uid://3ykj85jiqfcw" path="res://Audio/OST/Cats Adventure.wav" id="11_w6a2i"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
 radius = 20.98169
@@ -136,3 +137,9 @@ position = Vector2(-228, 236)
 
 [node name="SpawnFromDOCK001" type="Marker2D" parent="." unique_id=1678337191]
 position = Vector2(-1325, -824)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=118835669]
+stream = ExtResource("11_w6a2i")
+volume_db = -5.474
+autoplay = true
+bus = &"Music"

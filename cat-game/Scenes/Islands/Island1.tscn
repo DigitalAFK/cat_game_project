@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://tiehseojtr37" path="res://Art/Inside Island/NPCs/oldcat.png" id="8_dfjbt"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_gt5iu"]
 [ext_resource type="Texture2D" uid="uid://dphbeiite636j" path="res://Art/Inside Island/NPCs/Lynx.png" id="9_o1uan"]
+[ext_resource type="AudioStream" uid="uid://caavyg4ryvgh2" path="res://Audio/OST/On The Island.wav" id="15_gt5iu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xu16t"]
 radius = 21.923077
@@ -260,3 +261,9 @@ position = Vector2(-719, -326)
 
 [node name="SpawnFromNPC007" type="Marker2D" parent="." unique_id=367494416]
 position = Vector2(-946, -1610)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=53992951]
+stream = ExtResource("15_gt5iu")
+volume_db = -5.474
+autoplay = true
+bus = &"Music"

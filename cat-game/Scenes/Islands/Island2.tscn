@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://by6mdubnkfrna"]
+[gd_scene format=3 uid="uid://by6mdubnkfrna"]
 
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_d7at8"]
 [ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_4nmkg"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bs4lsv6722x4r" path="res://Art/Inside Island/NPCs/Roosa.png" id="8_81k0p"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_m6umt"]
 [ext_resource type="Texture2D" uid="uid://xhbe8okydujh" path="res://Art/Inside Island/NPCs/Haruka.png" id="9_idbrg"]
+[ext_resource type="AudioStream" uid="uid://caavyg4ryvgh2" path="res://Audio/OST/On The Island.wav" id="13_epene"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kd8tv"]
 radius = 27.307695
@@ -24,15 +25,15 @@ height = 70.76923
 [sub_resource type="CircleShape2D" id="CircleShape2D_npr2w"]
 radius = 40.7776
 
-[node name="Island2" type="Node2D"]
+[node name="Island2" type="Node2D" unique_id=1358441459]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_d7at8")]
+[node name="CharacterBody2D" parent="." unique_id=164669784 instance=ExtResource("1_d7at8")]
 top_level = true
 position = Vector2(-470.00003, -172.00002)
 scale = Vector2(2.6, 2.6)
 Friction = 1000.0
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1076126990]
 position = Vector2(3, 2)
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("2_4nmkg")
@@ -40,12 +41,12 @@ hframes = 7
 script = ExtResource("3_idbrg")
 _frameAmount = 7
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1316635167]
 position = Vector2(2.6923194, 60.000008)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_kd8tv")
 
-[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_target")]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=578328912 node_paths=PackedStringArray("_target")]
 visibility_layer = 2
 position = Vector2(-469, -153)
 zoom = Vector2(0.5, 0.5)
@@ -54,18 +55,18 @@ position_smoothing_enabled = true
 script = ExtResource("4_npr2w")
 _target = NodePath("../CharacterBody2D")
 
-[node name="NPC4" type="StaticBody2D" parent="."]
+[node name="NPC4" type="StaticBody2D" parent="." unique_id=581621259]
 position = Vector2(523.00006, -829)
 scale = Vector2(2.6, 2.6)
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC4"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC4" unique_id=468715269]
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("5_hsite")
 hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC4/Sprite2D"]
+[node name="Label" type="Label" parent="NPC4/Sprite2D" unique_id=1333747354]
 visible = false
 offset_left = -36.5
 offset_top = -19.0
@@ -78,29 +79,29 @@ theme_override_font_sizes/font_size = 30
 text = "Kissa"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="NPC4"]
+[node name="Area2D" type="Area2D" parent="NPC4" unique_id=605035892]
 script = ExtResource("7_hsite")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue2.tscn"
 _id = "NPC004"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4/Area2D" unique_id=2126688955]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_81k0p")
 
-[node name="NPC5" type="StaticBody2D" parent="."]
+[node name="NPC5" type="StaticBody2D" parent="." unique_id=1318636463]
 position = Vector2(-1409, -1829.0001)
 scale = Vector2(2.6, 2.6)
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC5"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC5" unique_id=2085522538]
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("8_81k0p")
 hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC5/Sprite2D"]
+[node name="Label" type="Label" parent="NPC5/Sprite2D" unique_id=1061558535]
 visible = false
 offset_left = -36.5
 offset_top = -19.0
@@ -113,29 +114,29 @@ theme_override_font_sizes/font_size = 30
 text = "Kissa"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="NPC5"]
+[node name="Area2D" type="Area2D" parent="NPC5" unique_id=587753935]
 script = ExtResource("7_hsite")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue2.tscn"
 _id = "NPC005"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC5/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC5/Area2D" unique_id=1349651189]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_81k0p")
 
-[node name="NPC6" type="StaticBody2D" parent="."]
+[node name="NPC6" type="StaticBody2D" parent="." unique_id=817200252]
 position = Vector2(575.00006, -2174)
 scale = Vector2(2.6, 2.6)
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC6"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC6" unique_id=1361833951]
 scale = Vector2(1.75, 1.75)
 texture = ExtResource("9_idbrg")
 hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC6/Sprite2D"]
+[node name="Label" type="Label" parent="NPC6/Sprite2D" unique_id=2117871681]
 visible = false
 offset_left = -36.5
 offset_top = -19.0
@@ -148,24 +149,24 @@ theme_override_font_sizes/font_size = 30
 text = "Kissa"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="NPC6"]
+[node name="Area2D" type="Area2D" parent="NPC6" unique_id=643156302]
 script = ExtResource("7_hsite")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue2.tscn"
 _id = "NPC006"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC6/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC6/Area2D" unique_id=1803035866]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_81k0p")
 
-[node name="Dock" type="StaticBody2D" parent="."]
+[node name="Dock" type="StaticBody2D" parent="." unique_id=220716636]
 position = Vector2(-24.000004, 1775)
 scale = Vector2(2.6, 2.6)
 
-[node name="Sprite2D" type="Sprite2D" parent="Dock"]
+[node name="Sprite2D" type="Sprite2D" parent="Dock" unique_id=1227382902]
 texture = ExtResource("5_m6umt")
 
-[node name="Label" type="Label" parent="Dock/Sprite2D"]
+[node name="Label" type="Label" parent="Dock/Sprite2D" unique_id=1004088060]
 offset_left = -39.0
 offset_top = -17.5
 offset_right = 51.0
@@ -177,20 +178,20 @@ theme_override_font_sizes/font_size = 30
 text = "Laituri"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="Dock"]
+[node name="Area2D" type="Area2D" parent="Dock" unique_id=1147286434]
 script = ExtResource("7_hsite")
 _targetScenePath = "res://Scenes/Sea/Sea.tscn"
 _reEnter = true
 _id = "DOCK002"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Dock/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dock/Area2D" unique_id=1985704773]
 position = Vector2(0, -1.5)
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_npr2w")
 
-[node name="UI" parent="." instance=ExtResource("8_m6umt")]
+[node name="UI" parent="." unique_id=49815632 instance=ExtResource("8_m6umt")]
 
-[node name="Label2" type="Label" parent="UI"]
+[node name="Label2" type="Label" parent="UI" unique_id=1895196665]
 offset_left = 375.0
 offset_top = 87.0
 offset_right = 586.0
@@ -198,14 +199,20 @@ offset_bottom = 190.0
 theme_override_font_sizes/font_size = 75
 text = "SAARI 2"
 
-[node name="SpawnFromISL002" type="Marker2D" parent="."]
+[node name="SpawnFromISL002" type="Marker2D" parent="." unique_id=1487236101]
 position = Vector2(-4, 1299)
 
-[node name="SpawnFromNPC004" type="Marker2D" parent="."]
+[node name="SpawnFromNPC004" type="Marker2D" parent="." unique_id=1586691614]
 position = Vector2(402, -358)
 
-[node name="SpawnFromNPC005" type="Marker2D" parent="."]
+[node name="SpawnFromNPC005" type="Marker2D" parent="." unique_id=1887554818]
 position = Vector2(-1121, -1471)
 
-[node name="SpawnFromNPC006" type="Marker2D" parent="."]
+[node name="SpawnFromNPC006" type="Marker2D" parent="." unique_id=128655875]
 position = Vector2(280, -1765)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1945074019]
+stream = ExtResource("13_epene")
+volume_db = -5.474
+autoplay = true
+bus = &"Music"

@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://rrenxaqkfg4u" path="res://Art/Menu/rectangle.png" id="9_iw5g5"]
 [ext_resource type="Script" uid="uid://cyi60kjieg4iq" path="res://Code/Buttons/VolumeSlider.cs" id="10_ypipb"]
 [ext_resource type="Texture2D" uid="uid://oyhp4qmropsu" path="res://Art/Menu/menu_bg.png" id="11_a5w2e"]
+[ext_resource type="AudioStream" uid="uid://ca3jrgml2vaud" path="res://Audio/OST/Main Theme.wav" id="12_tx32t"]
 
 [node name="MainMenu" type="Control" unique_id=2094765158]
 layout_mode = 3
@@ -206,3 +207,9 @@ hframes = 12
 script = ExtResource("7_ypipb")
 _frameAmount = 12
 _animationSpeed = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=125398879]
+stream = ExtResource("12_tx32t")
+volume_db = -5.474
+autoplay = true
+bus = &"Music"
