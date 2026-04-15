@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cyw8ct7gb74dt"]
+[gd_scene format=3 uid="uid://cyw8ct7gb74dt"]
 
 [ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="1_10032"]
 [ext_resource type="Script" uid="uid://86vwtjkdrlnr" path="res://Code/Buttons/TextureButtonContainerVisibility.cs" id="2_riwa6"]
@@ -7,9 +7,9 @@
 [ext_resource type="Script" uid="uid://ciwkqn5mb0465" path="res://Code/Buttons/FoldContainer.cs" id="4_b8v2r"]
 [ext_resource type="Script" uid="uid://q85mbsr6uqs3" path="res://Code/UI/CheckMarkSwitch.cs" id="6_riwa6"]
 
-[node name="Control" type="CanvasLayer"]
+[node name="Control" type="CanvasLayer" unique_id=2034184474]
 
-[node name="SettingsButton" type="TextureButton" parent="."]
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=1300873399]
 offset_left = 905.0
 offset_top = 545.0
 offset_right = 1055.0
@@ -22,7 +22,7 @@ stretch_mode = 0
 script = ExtResource("2_riwa6")
 _targetContainerPath = "../PointsContainer"
 
-[node name="Label" type="Label" parent="SettingsButton"]
+[node name="Label" type="Label" parent="SettingsButton" unique_id=1491744065]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 16.0
@@ -34,7 +34,7 @@ theme_override_fonts/font = ExtResource("3_nb250")
 theme_override_font_sizes/font_size = 30
 text = "Tracker"
 
-[node name="PointsContainer" type="VBoxContainer" parent="."]
+[node name="PointsContainer" type="VBoxContainer" parent="." unique_id=372582226]
 visible = false
 offset_left = 701.0
 offset_top = 697.0
@@ -44,13 +44,13 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 10
 
-[node name="Rectangle" type="Sprite2D" parent="PointsContainer"]
+[node name="Rectangle" type="Sprite2D" parent="PointsContainer" unique_id=1937807048]
 show_behind_parent = true
 position = Vector2(172.99997, 68.99997)
 scale = Vector2(1.4054052, 0.49044573)
 texture = ExtResource("3_28jkq")
 
-[node name="Island 1" type="FoldableContainer" parent="PointsContainer"]
+[node name="Island 1" type="FoldableContainer" parent="PointsContainer" unique_id=1603228932]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 folded = true
@@ -60,14 +60,14 @@ _id = "ISL001"
 _containerUnfoldedSizeY = 245
 _containerFoldedSizeY = 63
 
-[node name="Label" type="Label" parent="PointsContainer/Island 1"]
+[node name="Label" type="Label" parent="PointsContainer/Island 1" unique_id=1533480515]
 visible = false
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 40
 text = "NPC 1"
 
-[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label"]
+[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label" unique_id=768091832]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
@@ -77,13 +77,13 @@ expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC001"
 
-[node name="Label2" type="Label" parent="PointsContainer/Island 1"]
+[node name="Label2" type="Label" parent="PointsContainer/Island 1" unique_id=232386934]
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "NPC 2"
 
-[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label2"]
+[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label2" unique_id=1548726874]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
@@ -93,14 +93,14 @@ expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC002"
 
-[node name="Label3" type="Label" parent="PointsContainer/Island 1"]
+[node name="Label3" type="Label" parent="PointsContainer/Island 1" unique_id=1252412112]
 visible = false
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 40
 text = "NPC 3"
 
-[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label3"]
+[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label3" unique_id=119175484]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
@@ -110,7 +110,7 @@ expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC003"
 
-[node name="Island 2" type="FoldableContainer" parent="PointsContainer"]
+[node name="Island 2" type="FoldableContainer" parent="PointsContainer" unique_id=239207188]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 folded = true
@@ -120,14 +120,14 @@ _id = "ISL002"
 _containerUnfoldedSizeY = 245
 _containerFoldedSizeY = 63
 
-[node name="Label" type="Label" parent="PointsContainer/Island 2"]
+[node name="Label" type="Label" parent="PointsContainer/Island 2" unique_id=866925569]
 visible = false
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 40
 text = "NPC 1"
 
-[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label"]
+[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label" unique_id=895297013]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
@@ -137,13 +137,13 @@ expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC004"
 
-[node name="Label2" type="Label" parent="PointsContainer/Island 2"]
+[node name="Label2" type="Label" parent="PointsContainer/Island 2" unique_id=159586224]
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "NPC 2"
 
-[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label2"]
+[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label2" unique_id=1846434894]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
@@ -153,14 +153,14 @@ expand_mode = 1
 script = ExtResource("6_riwa6")
 _id = "NPC005"
 
-[node name="Label3" type="Label" parent="PointsContainer/Island 2"]
+[node name="Label3" type="Label" parent="PointsContainer/Island 2" unique_id=1297755160]
 visible = false
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 40
 text = "NPC 3"
 
-[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label3"]
+[node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label3" unique_id=838140386]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 3.0
