@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://tgbef2dlcdyn"]
+
+[ext_resource type="Texture2D" uid="uid://tiehseojtr37" path="res://Art/Inside Island/NPCs/oldcat.png" id="1_hxnke"]
+[ext_resource type="Texture2D" uid="uid://ceub5e2tmtkx0" path="res://Art/UI/oldcat_upperbody.png" id="1_oq6m3"]
+[ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="2_hxnke"]
+[ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="3_3obln"]
+[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="3_hxnke"]
+[ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="6_trro1"]
+
+[node name="OldCatDialogue" type="Control" unique_id=281008952]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=816290816]
+show_behind_parent = true
+custom_minimum_size = Vector2(1080, 1920)
+layout_mode = 0
+offset_right = 1080.0
+offset_bottom = 1920.0
+texture = ExtResource("6_trro1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1546705908]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 34.000015
+offset_right = 247.0
+offset_bottom = 234.0
+scale = Vector2(5, 5)
+texture = ExtResource("1_oq6m3")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1081027132]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 1859.0
+offset_right = 1144.0
+offset_bottom = 3779.0
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+action_mode = 0
+texture_normal = ExtResource("2_hxnke")
+script = ExtResource("3_hxnke")
+_targetScenePath = "res://Scenes/Results/Results.tscn"
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureButton" unique_id=1173260271]
+clip_contents = true
+layout_mode = 0
+offset_left = 984.0
+offset_top = 89.300095
+offset_right = 2726.7
+offset_bottom = 973.3001
+rotation = 1.5707964
+
+[node name="Label" type="Label" parent="TextureButton/MarginContainer" unique_id=1181173198]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_3obln")
+theme_override_font_sizes/font_size = 75
+text = "Hei minä olen vanha kissa (unohdin nimeni) 
+Kerron sinulle blablablabla
+Tätä nappia painamalla pääset tällä hetkellä tuloksiisi :)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1691189151]
+visible = false
+position = Vector2(558, 447)
+scale = Vector2(7, 7)
+texture = ExtResource("1_hxnke")
+hframes = 2
+frame = 1

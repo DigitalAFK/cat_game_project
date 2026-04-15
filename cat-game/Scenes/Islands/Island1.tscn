@@ -195,7 +195,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Result-NPC" unique_id=319217714]
 script = ExtResource("7_1ogpp")
-_targetScenePath = "res://Scenes/Results/Results.tscn"
+_targetScenePath = "res://Scenes/Results/OldCatDialogue.tscn"
 _reEnter = true
 _id = "NPC007"
 
