@@ -25,6 +25,7 @@ public partial class NewPlayerCharacter : CharacterBody2D
 			}
 		}
 		GlobalPosition = GetNode<Marker2D>("../DefaultSpawn").GlobalPosition;
+		Velocity = Vector2.Zero;
 	}
 
 	public override void _PhysicsProcess(double delta)
