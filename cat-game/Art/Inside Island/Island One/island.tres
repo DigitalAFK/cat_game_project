@@ -5,13 +5,23 @@
 [ext_resource type="Texture2D" uid="uid://c3ayfyhks86vi" path="res://Art/Inside Island/Beach/Straight Beach 2.png" id="3_10d0b"]
 [ext_resource type="Texture2D" uid="uid://cufqqhst3frhl" path="res://Art/Inside Island/Island One/Grass center with Palmut.png" id="4_3i1lt"]
 [ext_resource type="Texture2D" uid="uid://bjcccxrf1y3xd" path="res://Art/Sea Scene/BiggerWaves.png" id="4_3ntdh"]
+[ext_resource type="Texture2D" uid="uid://begbf2jdjbq03" path="res://Art/Inside Island/Island One/Pond frogg.png" id="5_b57b3"]
 [ext_resource type="Texture2D" uid="uid://dbnsphcul2k55" path="res://Art/Inside Island/Island One/Grass middle.png" id="5_q6a7a"]
+[ext_resource type="Texture2D" uid="uid://bhkngv6i8kajp" path="res://Art/Inside Island/Island One/Well.png" id="6_47jw6"]
 [ext_resource type="Texture2D" uid="uid://bptu4gu1muba8" path="res://Art/Inside Island/Island One/Lighthouse bottom.png" id="6_j15bq"]
 [ext_resource type="Texture2D" uid="uid://dfxd2v3ji6qlf" path="res://Art/Inside Island/Island One/Lighthouse top.png" id="7_s1iga"]
+[ext_resource type="Texture2D" uid="uid://b72o26yqkkngf" path="res://Art/Inside Island/Island One/Cabin Path Corner.png" id="7_xffky"]
 [ext_resource type="Texture2D" uid="uid://i41cf1l5tlfs" path="res://Art/Inside Island/Beach/Beach Corner.png" id="8_2eknd"]
+[ext_resource type="Texture2D" uid="uid://dxqe8tx55kwxn" path="res://Art/Inside Island/Island One/Cabin Path start.png" id="8_unafq"]
 [ext_resource type="Texture2D" uid="uid://c54xjvh5cpcdf" path="res://Art/Inside Island/Beach/Beach Middle.png" id="9_hdmsa"]
+[ext_resource type="Texture2D" uid="uid://dyaqcnesy8ski" path="res://Art/Inside Island/Island One/Grass corner.png" id="9_ns4no"]
 [ext_resource type="Texture2D" uid="uid://cif0gdwdgqnj1" path="res://Art/Inside Island/Beach/Beach tile with dock.png" id="10_8b1pd"]
+[ext_resource type="Texture2D" uid="uid://4r8ropn1052k" path="res://Art/Inside Island/Island One/Grass palmu 2.png" id="10_ghhdi"]
 [ext_resource type="Texture2D" uid="uid://0tfb6x1o2nny" path="res://Art/Inside Island/Beach/Straight Beach 1.png" id="11_ks61i"]
+[ext_resource type="Texture2D" uid="uid://cgjt6ppcyqnut" path="res://Art/Inside Island/Island One/Grass straight.png" id="11_pceqh"]
+[ext_resource type="Texture2D" uid="uid://dxcutt7mhr1e8" path="res://Art/Inside Island/Island One/Lighthouse bottom (with rocks).png" id="13_5fptx"]
+[ext_resource type="Texture2D" uid="uid://hkmlypsonvmn" path="res://Art/Inside Island/Island One/Lighthouse shadow.png" id="14_yxtnq"]
+[ext_resource type="Texture2D" uid="uid://21bhdcfm4ebq" path="res://Art/Inside Island/Beach/Beach turtle.png" id="15_k0y7e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b57b3"]
 texture = ExtResource("1_oxbc7")
@@ -153,6 +163,41 @@ texture_region_size = Vector2i(1000, 1000)
 3:4/0 = 0
 4:4/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6fj5u"]
+texture = ExtResource("5_b57b3")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ijae"]
+texture = ExtResource("6_47jw6")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ptywc"]
+texture = ExtResource("7_xffky")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_byxn0"]
+texture = ExtResource("8_unafq")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yu0l1"]
+texture = ExtResource("9_ns4no")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ms0sv"]
+texture = ExtResource("10_ghhdi")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l66n4"]
+texture = ExtResource("11_pceqh")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_unafq"]
 texture = ExtResource("4_3i1lt")
 texture_region_size = Vector2i(1000, 1000)
@@ -205,6 +250,21 @@ texture_region_size = Vector2i(1000, 1000)
 4:6/0 = 0
 5:6/0 = 0
 6:6/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oa6xr"]
+texture = ExtResource("13_5fptx")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_08oht"]
+texture = ExtResource("14_yxtnq")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_prgoj"]
+texture = ExtResource("15_k0y7e")
+texture_region_size = Vector2i(998, 998)
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ns4no"]
 texture = ExtResource("5_q6a7a")
@@ -543,3 +603,13 @@ sources/8 = SubResource("TileSetAtlasSource_k0y7e")
 sources/9 = SubResource("TileSetAtlasSource_funq2")
 sources/10 = SubResource("TileSetAtlasSource_xffky")
 sources/11 = SubResource("TileSetAtlasSource_10d0b")
+sources/13 = SubResource("TileSetAtlasSource_6fj5u")
+sources/14 = SubResource("TileSetAtlasSource_2ijae")
+sources/15 = SubResource("TileSetAtlasSource_ptywc")
+sources/16 = SubResource("TileSetAtlasSource_byxn0")
+sources/17 = SubResource("TileSetAtlasSource_yu0l1")
+sources/18 = SubResource("TileSetAtlasSource_ms0sv")
+sources/19 = SubResource("TileSetAtlasSource_l66n4")
+sources/20 = SubResource("TileSetAtlasSource_oa6xr")
+sources/21 = SubResource("TileSetAtlasSource_08oht")
+sources/22 = SubResource("TileSetAtlasSource_prgoj")
