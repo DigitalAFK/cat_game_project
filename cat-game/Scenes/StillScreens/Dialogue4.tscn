@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://cjg8rdqe8ycs7"]
+[gd_scene format=3 uid="uid://wxjtihgcl5jt"]
 
-[ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_hq6fu"]
-[ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_5m3l0"]
-[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_y0lvc"]
-[ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="4_b6qxw"]
-[ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="5_xuqc3"]
-[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="6_36jma"]
-[ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="7_acon6"]
-[ext_resource type="Texture2D" uid="uid://k8g6qnaf3wyt" path="res://Art/UI/petroUpperBody.png" id="8_gkw7c"]
+[ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_xfy8s"]
+[ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_ygnp6"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_6bjdc"]
+[ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="4_b8gbd"]
+[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="5_kdtsp"]
+[ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="6_p58fp"]
+[ext_resource type="Texture2D" uid="uid://k8g6qnaf3wyt" path="res://Art/UI/petroUpperBody.png" id="7_iscem"]
+[ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="8_08j7u"]
 
-[node name="Control" type="Control" unique_id=800211842]
+[node name="Control" type="Control" unique_id=505828676]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,7 +17,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=649159804]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=272777072]
 layout_mode = 0
 offset_left = 67.0
 offset_top = 1397.0
@@ -25,17 +25,17 @@ offset_right = 1027.0
 offset_bottom = 1855.0
 theme_override_constants/separation = 10
 
-[node name="FinderButton" type="TextureButton" parent="VBoxContainer" unique_id=77015215]
+[node name="FinderButton" type="TextureButton" parent="VBoxContainer" unique_id=620198344]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("1_hq6fu")
+texture_normal = ExtResource("1_xfy8s")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_5m3l0")
+script = ExtResource("2_ygnp6")
 _targetScenePath = "res://Scenes/Islands/Island1.tscn"
 
-[node name="Label" type="Label" parent="VBoxContainer/FinderButton" unique_id=85003989]
+[node name="Label" type="Label" parent="VBoxContainer/FinderButton" unique_id=1460038484]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -49,23 +49,23 @@ offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
-theme_override_fonts/font = ExtResource("3_y0lvc")
+theme_override_fonts/font = ExtResource("3_6bjdc")
 theme_override_font_sizes/font_size = 45
 text = "Vaihtoehto 1
 (etsijä)"
 
-[node name="AdvancerButton" type="TextureButton" parent="VBoxContainer" unique_id=1919688238]
+[node name="AdvancerButton" type="TextureButton" parent="VBoxContainer" unique_id=554979813]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("1_hq6fu")
+texture_normal = ExtResource("1_xfy8s")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_5m3l0")
+script = ExtResource("2_ygnp6")
 type = 1
 _targetScenePath = "res://Scenes/Islands/Island1.tscn"
 
-[node name="Label" type="Label" parent="VBoxContainer/AdvancerButton" unique_id=1317657548]
+[node name="Label" type="Label" parent="VBoxContainer/AdvancerButton" unique_id=1945845145]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -79,23 +79,23 @@ offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
-theme_override_fonts/font = ExtResource("3_y0lvc")
+theme_override_fonts/font = ExtResource("3_6bjdc")
 theme_override_font_sizes/font_size = 45
 text = "Vaihtoehto 2
 (etenijä)"
 
-[node name="PromoterButton" type="TextureButton" parent="VBoxContainer" unique_id=488734298]
+[node name="PromoterButton" type="TextureButton" parent="VBoxContainer" unique_id=410712214]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("1_hq6fu")
+texture_normal = ExtResource("1_xfy8s")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_5m3l0")
+script = ExtResource("2_ygnp6")
 type = 2
 _targetScenePath = "res://Scenes/Islands/Island1.tscn"
 
-[node name="Label" type="Label" parent="VBoxContainer/PromoterButton" unique_id=1212486562]
+[node name="Label" type="Label" parent="VBoxContainer/PromoterButton" unique_id=135562310]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -109,20 +109,12 @@ offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
-theme_override_fonts/font = ExtResource("3_y0lvc")
+theme_override_fonts/font = ExtResource("3_6bjdc")
 theme_override_font_sizes/font_size = 45
 text = "Vaihtoehto 3
 (edistäjä)"
 
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=482511950]
-show_behind_parent = true
-custom_minimum_size = Vector2(1080, 1920)
-layout_mode = 0
-offset_right = 1080.0
-offset_bottom = 1920.0
-texture = ExtResource("4_b6qxw")
-
-[node name="TextureButton" type="TextureButton" parent="." unique_id=254442603]
+[node name="TextureButton" type="TextureButton" parent="." unique_id=414079673]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 1350.0
@@ -131,11 +123,11 @@ offset_bottom = 3270.0
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
 action_mode = 0
-texture_normal = ExtResource("5_xuqc3")
-script = ExtResource("6_36jma")
+texture_normal = ExtResource("4_b8gbd")
+script = ExtResource("5_kdtsp")
 _targetScenePath = "res://Scenes/Results/Results.tscn"
 
-[node name="MarginContainer" type="MarginContainer" parent="TextureButton" unique_id=419011692]
+[node name="MarginContainer" type="MarginContainer" parent="TextureButton" unique_id=1781896269]
 clip_contents = true
 layout_mode = 0
 offset_left = 984.0
@@ -144,12 +136,12 @@ offset_right = 2726.7
 offset_bottom = 973.3001
 rotation = 1.5707964
 
-[node name="Label" type="Label" parent="TextureButton/MarginContainer" unique_id=1752241937]
+[node name="Label" type="Label" parent="TextureButton/MarginContainer" unique_id=634776057]
 custom_minimum_size = Vector2(1742, 884)
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_acon6")
+theme_override_fonts/font = ExtResource("6_p58fp")
 theme_override_font_sizes/font_size = 75
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -157,11 +149,19 @@ autowrap_mode = 2
 clip_text = true
 text_overrun_behavior = 2
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1859273668]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=15170116]
 layout_mode = 0
 offset_left = 154.0
 offset_top = 16.000002
 offset_right = 306.0
 offset_bottom = 167.99998
 scale = Vector2(5, 5)
-texture = ExtResource("8_gkw7c")
+texture = ExtResource("7_iscem")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=80326690]
+show_behind_parent = true
+custom_minimum_size = Vector2(1080, 1920)
+layout_mode = 0
+offset_right = 1080.0
+offset_bottom = 1920.0
+texture = ExtResource("8_08j7u")

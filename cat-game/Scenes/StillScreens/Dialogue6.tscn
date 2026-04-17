@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://cjg8rdqe8ycs7"]
+[gd_scene format=3 uid="uid://4iqq58dwnlcq"]
 
-[ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_hq6fu"]
-[ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_5m3l0"]
-[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_y0lvc"]
-[ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="4_b6qxw"]
-[ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="5_xuqc3"]
-[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="6_36jma"]
-[ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="7_acon6"]
-[ext_resource type="Texture2D" uid="uid://k8g6qnaf3wyt" path="res://Art/UI/petroUpperBody.png" id="8_gkw7c"]
+[ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_vm6ae"]
+[ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_sxlh5"]
+[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_nyyx4"]
+[ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="4_mwbrn"]
+[ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="5_7yn12"]
+[ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="6_fkc4a"]
+[ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="7_0w5hp"]
+[ext_resource type="Texture2D" uid="uid://k8g6qnaf3wyt" path="res://Art/UI/petroUpperBody.png" id="8_dtqly"]
 
 [node name="Control" type="Control" unique_id=800211842]
 layout_mode = 3
@@ -29,10 +29,10 @@ theme_override_constants/separation = 10
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("1_hq6fu")
+texture_normal = ExtResource("1_vm6ae")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_5m3l0")
+script = ExtResource("2_sxlh5")
 _targetScenePath = "res://Scenes/Islands/Island1.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/FinderButton" unique_id=85003989]
@@ -49,7 +49,7 @@ offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
-theme_override_fonts/font = ExtResource("3_y0lvc")
+theme_override_fonts/font = ExtResource("3_nyyx4")
 theme_override_font_sizes/font_size = 45
 text = "Vaihtoehto 1
 (etsijä)"
@@ -58,10 +58,10 @@ text = "Vaihtoehto 1
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("1_hq6fu")
+texture_normal = ExtResource("1_vm6ae")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_5m3l0")
+script = ExtResource("2_sxlh5")
 type = 1
 _targetScenePath = "res://Scenes/Islands/Island1.tscn"
 
@@ -79,7 +79,7 @@ offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
-theme_override_fonts/font = ExtResource("3_y0lvc")
+theme_override_fonts/font = ExtResource("3_nyyx4")
 theme_override_font_sizes/font_size = 45
 text = "Vaihtoehto 2
 (etenijä)"
@@ -88,10 +88,10 @@ text = "Vaihtoehto 2
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("1_hq6fu")
+texture_normal = ExtResource("1_vm6ae")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_5m3l0")
+script = ExtResource("2_sxlh5")
 type = 2
 _targetScenePath = "res://Scenes/Islands/Island1.tscn"
 
@@ -109,7 +109,7 @@ offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
-theme_override_fonts/font = ExtResource("3_y0lvc")
+theme_override_fonts/font = ExtResource("3_nyyx4")
 theme_override_font_sizes/font_size = 45
 text = "Vaihtoehto 3
 (edistäjä)"
@@ -120,7 +120,7 @@ custom_minimum_size = Vector2(1080, 1920)
 layout_mode = 0
 offset_right = 1080.0
 offset_bottom = 1920.0
-texture = ExtResource("4_b6qxw")
+texture = ExtResource("4_mwbrn")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=254442603]
 layout_mode = 0
@@ -131,8 +131,8 @@ offset_bottom = 3270.0
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
 action_mode = 0
-texture_normal = ExtResource("5_xuqc3")
-script = ExtResource("6_36jma")
+texture_normal = ExtResource("5_7yn12")
+script = ExtResource("6_fkc4a")
 _targetScenePath = "res://Scenes/Results/Results.tscn"
 
 [node name="MarginContainer" type="MarginContainer" parent="TextureButton" unique_id=419011692]
@@ -149,7 +149,7 @@ custom_minimum_size = Vector2(1742, 884)
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_acon6")
+theme_override_fonts/font = ExtResource("7_0w5hp")
 theme_override_font_sizes/font_size = 75
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -164,4 +164,4 @@ offset_top = 16.000002
 offset_right = 306.0
 offset_bottom = 167.99998
 scale = Vector2(5, 5)
-texture = ExtResource("8_gkw7c")
+texture = ExtResource("8_dtqly")

@@ -90,7 +90,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC1" unique_id=850743107]
 script = ExtResource("7_1ogpp")
-_targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
+_targetScenePath = "res://Scenes/StillScreens/Dialogue1.tscn"
 _id = "NPC001"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1/Area2D" unique_id=62073866]
@@ -125,7 +125,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC2" unique_id=277101697]
 script = ExtResource("7_1ogpp")
-_targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
+_targetScenePath = "res://Scenes/StillScreens/Dialogue2.tscn"
 _id = "NPC002"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2/Area2D" unique_id=399416475]
@@ -160,7 +160,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC3" unique_id=713379256]
 script = ExtResource("7_1ogpp")
-_targetScenePath = "res://Scenes/StillScreens/Dialogue.tscn"
+_targetScenePath = "res://Scenes/StillScreens/Dialogue3.tscn"
 _id = "NPC003"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/Area2D" unique_id=547289449]
@@ -266,4 +266,3 @@ position = Vector2(-946, -1610)
 stream = ExtResource("15_gt5iu")
 volume_db = -5.474
 autoplay = true
-bus = &"Music"
