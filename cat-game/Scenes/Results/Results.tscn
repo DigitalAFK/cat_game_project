@@ -6,44 +6,46 @@
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="4_pkf53"]
 [ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="6_ufc66"]
 [ext_resource type="Texture2D" uid="uid://bi0cxklx0yg2e" path="res://Art/UI/BlackTriangleDown.png" id="7_20tu8"]
+[ext_resource type="Texture2D" uid="uid://cw00ekdq3rfg6" path="res://Art/UI/red.png" id="8_20tu8"]
 [ext_resource type="Texture2D" uid="uid://csb543c7gtqip" path="res://Art/UI/BlackTriangleRight.png" id="8_ngb3v"]
-[ext_resource type="Texture2D" uid="uid://rrenxaqkfg4u" path="res://Art/Menu/rectangle.png" id="8_ufc66"]
+[ext_resource type="Texture2D" uid="uid://d341s8n2cbx32" path="res://Art/UI/burgundy.png" id="9_ngb3v"]
+[ext_resource type="Texture2D" uid="uid://duns278aqvupu" path="res://Art/UI/purple.png" id="10_8sbi2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ejca1"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("8_20tu8")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ufc66"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("8_20tu8")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_20tu8"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("8_20tu8")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ngb3v"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("8_20tu8")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8sbi2"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("9_ngb3v")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_05on5"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("9_ngb3v")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gw387"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("9_ngb3v")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c3dxr"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("9_ngb3v")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6vqep"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("10_8sbi2")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_txbst"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("10_8sbi2")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_afjxa"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("10_8sbi2")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3xtid"]
-texture = ExtResource("8_ufc66")
+texture = ExtResource("10_8sbi2")
 
 [node name="Results" type="Control" unique_id=759814304]
 layout_mode = 3
