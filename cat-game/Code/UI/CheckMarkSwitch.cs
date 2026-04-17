@@ -23,11 +23,11 @@ public partial class CheckMarkSwitch : TextureRect
 		//TODO: Get real graphics
 		if (mark)
 		{
-			Texture = ResourceLoader.Load<Texture2D>("res://Art/Sprites/CheckMarkTest.jpg");
+			Texture = ResourceLoader.Load<Texture2D>("res://Art/UI/checkmark.png");
 		}
 		else
 		{
-			Texture = ResourceLoader.Load<Texture2D>("res://Art/Sprites/XMarkTest.jpg");
+			Texture = ResourceLoader.Load<Texture2D>("res://Art/UI/X.png");
 		}
 	}
 

@@ -1,12 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2coer7l1x84u"]
+[gd_scene format=3 uid="uid://b2coer7l1x84u"]
 
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_jomne"]
+[ext_resource type="Texture2D" uid="uid://dtj3sqvtw5ub2" path="res://Art/UI/menubutton.png" id="1_akgwn"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="2_jomne"]
 [ext_resource type="PackedScene" uid="uid://6dgh21re842a" path="res://Scenes/Joystick/NewJoystick.tscn" id="4_srnn6"]
 
-[node name="UI" type="CanvasLayer"]
+[node name="UI" type="CanvasLayer" unique_id=1301513023]
 
-[node name="MenuButton" type="TextureButton" parent="."]
+[node name="MenuButton" type="TextureButton" parent="." unique_id=769496526]
 top_level = true
 custom_minimum_size = Vector2(500, 500)
 anchors_preset = -1
@@ -19,28 +19,29 @@ offset_top = -62.240005
 offset_right = 376.91998
 offset_bottom = 437.76
 scale = Vector2(0.4, 0.4)
-texture_normal = ExtResource("1_jomne")
+texture_normal = ExtResource("1_akgwn")
 stretch_mode = 0
 script = ExtResource("2_jomne")
 _targetScenePath = "res://Scenes/StillScreens/MainMenu.tscn"
 
-[node name="Label" type="Label" parent="MenuButton"]
+[node name="Label" type="Label" parent="MenuButton" unique_id=1823889610]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -105.0
-offset_top = -180.00002
-offset_right = 103.0
-offset_bottom = -77.000015
+offset_left = -142.0
+offset_top = -114.5
+offset_right = 135.0
+offset_bottom = 22.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 100
 text = "Menu"
 
-[node name="NewJoystick" parent="." instance=ExtResource("4_srnn6")]
+[node name="NewJoystick" parent="." unique_id=1445209722 instance=ExtResource("4_srnn6")]
 anchor_left = 0.5
 anchor_top = 0.89500004
 anchor_right = 0.5

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ccill4u7ll78d"]
 
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="1_ldqj3"]
+[ext_resource type="Texture2D" uid="uid://pmrn3mpi68ma" path="res://Art/UI/soundon.png" id="1_tx32t"]
 [ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="2_84jhe"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_84jhe"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="3_ypipb"]
@@ -24,6 +24,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 3.8499756
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 0
@@ -37,7 +38,7 @@ custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
-texture = ExtResource("1_ldqj3")
+texture = ExtResource("1_tx32t")
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="MarginContainer" unique_id=1578528549]
 custom_minimum_size = Vector2(0, 1740)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b4fw1j603arbh"]
 
 [ext_resource type="Script" uid="uid://bxssf7mjhpf2l" path="res://Code/System/PieChart.cs" id="1_136m3"]
-[ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="1_rjhre"]
+[ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="1_ufc66"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="3_6703e"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="4_pkf53"]
 [ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="6_ufc66"]
@@ -57,7 +57,7 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 1080.0
 offset_bottom = 1920.0
-texture = ExtResource("1_rjhre")
+texture = ExtResource("1_ufc66")
 
 [node name="RichTextLabel" type="Label" parent="." unique_id=223779545]
 visible = false
