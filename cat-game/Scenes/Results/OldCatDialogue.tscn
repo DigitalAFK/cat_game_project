@@ -35,22 +35,23 @@ texture = ExtResource("1_oq6m3")
 layout_mode = 0
 offset_left = 64.0
 offset_top = 1859.0
-offset_right = 1144.0
+offset_right = 1665.7832
 offset_bottom = 3779.0
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
 action_mode = 0
 texture_normal = ExtResource("2_hxnke")
+stretch_mode = 0
 script = ExtResource("3_hxnke")
 _targetScenePath = "res://Scenes/Results/Results.tscn"
 
 [node name="MarginContainer" type="MarginContainer" parent="TextureButton" unique_id=1173260271]
 clip_contents = true
 layout_mode = 0
-offset_left = 984.0
-offset_top = 89.300095
-offset_right = 2726.7
-offset_bottom = 973.3001
+offset_left = 1522.0
+offset_top = 89.30012
+offset_right = 3264.7
+offset_bottom = 1511.3002
 rotation = 1.5707964
 
 [node name="Label" type="Label" parent="TextureButton/MarginContainer" unique_id=1181173198]
@@ -58,10 +59,11 @@ layout_mode = 2
 size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_3obln")
-theme_override_font_sizes/font_size = 75
-text = "Hei minä olen vanha kissa (unohdin nimeni) 
-Kerron sinulle blablablabla
-Tätä nappia painamalla pääset tällä hetkellä tuloksiisi :)"
+theme_override_font_sizes/font_size = 81
+text = "\"Olet löytänyt Shintaron, vanhimman piraattikissoista.\"
+\"Olen seurannut matkaasi halki näiden vesien, ja olet selvästi matkalla kohti suuria asioita.\"
+\"Tie viisauteen on pitkä, mutta olet onnistunut saavuttamaan tavoitteesi. Joskus suurin aarre on sisäinen harmonia, joka ohjaa sinua elämässä.\"
+\"Olet ansainnut palkintosi\""
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
