@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://4iqq58dwnlcq"]
 
+[ext_resource type="Texture2D" uid="uid://duilueo2tyfjr" path="res://Art/UI/Junko_upperbody.png" id="1_jlkuo"]
 [ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_vm6ae"]
 [ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_sxlh5"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_nyyx4"]
 [ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="4_mwbrn"]
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="5_7yn12"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="7_0w5hp"]
-[ext_resource type="Texture2D" uid="uid://k8g6qnaf3wyt" path="res://Art/UI/petroUpperBody.png" id="8_dtqly"]
 
 [node name="Control" type="Control" unique_id=800211842]
 layout_mode = 3
@@ -20,10 +20,10 @@ grow_vertical = 2
 layout_mode = 0
 offset_left = 154.0
 offset_top = 16.000002
-offset_right = 306.0
-offset_bottom = 167.99998
+offset_right = 306.39996
+offset_bottom = 168.59999
 scale = Vector2(5, 5)
-texture = ExtResource("8_dtqly")
+texture = ExtResource("1_jlkuo")
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=482511950]
 show_behind_parent = true

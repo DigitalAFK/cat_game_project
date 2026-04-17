@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cunv81nyw1hs2"]
 
 [ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_5vbgp"]
+[ext_resource type="Texture2D" uid="uid://ccxtr34cncgdl" path="res://Art/UI/Haruka_upperbody.png" id="1_8aigo"]
 [ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_6wkav"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_21v5l"]
 [ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="4_ybbtn"]
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="5_hqp13"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="7_4ts2j"]
-[ext_resource type="Texture2D" uid="uid://k8g6qnaf3wyt" path="res://Art/UI/petroUpperBody.png" id="8_nfe3l"]
 
 [node name="Control" type="Control" unique_id=800211842]
 layout_mode = 3
@@ -23,7 +23,7 @@ offset_top = 16.000002
 offset_right = 306.0
 offset_bottom = 167.99998
 scale = Vector2(5, 5)
-texture = ExtResource("8_nfe3l")
+texture = ExtResource("1_8aigo")
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=482511950]
 show_behind_parent = true
