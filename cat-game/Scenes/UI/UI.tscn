@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b2coer7l1x84u"]
 
-[ext_resource type="Texture2D" uid="uid://dtj3sqvtw5ub2" path="res://Art/UI/menubutton.png" id="1_akgwn"]
+[ext_resource type="Texture2D" uid="uid://d3mmvh8m6qlkw" path="res://Art/UI/menubutton.png" id="1_akgwn"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="2_jomne"]
 [ext_resource type="PackedScene" uid="uid://6dgh21re842a" path="res://Scenes/Joystick/NewJoystick.tscn" id="4_srnn6"]
 

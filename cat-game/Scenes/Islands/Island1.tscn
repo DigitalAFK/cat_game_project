@@ -24,8 +24,14 @@ height = 54.615387
 radius = 35.384617
 height = 70.76923
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_abs55"]
-radius = 46.786766
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gt5iu"]
+size = Vector2(110.19232, 39.61537)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_poy7c"]
+size = Vector2(650, 10613.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0igae"]
+size = Vector2(1014, 17636)
 
 [node name="Island1" type="Node2D" unique_id=877432933]
 
@@ -36,7 +42,7 @@ tile_set = ExtResource("1_1ogpp")
 
 [node name="CharacterBody2D" parent="." unique_id=870324145 instance=ExtResource("1_aou04")]
 top_level = true
-position = Vector2(-88.00003, 1441.0001)
+position = Vector2(385, 984.0001)
 scale = Vector2(2.6, 2.6)
 Friction = 1000.0
 metadata/_edit_group_ = true
@@ -233,9 +239,9 @@ _reEnter = true
 _id = "DOCK001"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dock/Area2D" unique_id=2082575417]
-position = Vector2(0, -1.5)
+position = Vector2(-7.115387, 1.9229736)
 scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_abs55")
+shape = SubResource("RectangleShape2D_gt5iu")
 
 [node name="UI" parent="." unique_id=2077705792 instance=ExtResource("8_gt5iu")]
 
@@ -248,21 +254,59 @@ theme_override_font_sizes/font_size = 75
 text = "SAARI 1"
 
 [node name="SpawnFromISL001" type="Marker2D" parent="." unique_id=1216961556]
-position = Vector2(13, 1210)
+position = Vector2(-81, 1590)
 
 [node name="SpawnFromNPC001" type="Marker2D" parent="." unique_id=1784665141]
-position = Vector2(565, -215)
+position = Vector2(1601, 1135)
 
 [node name="SpawnFromNPC002" type="Marker2D" parent="." unique_id=1790151946]
-position = Vector2(394, -1287)
+position = Vector2(9011, -716)
 
 [node name="SpawnFromNPC003" type="Marker2D" parent="." unique_id=1492153524]
-position = Vector2(-719, -326)
+position = Vector2(5144, 981)
 
 [node name="SpawnFromNPC007" type="Marker2D" parent="." unique_id=367494416]
-position = Vector2(-946, -1610)
+position = Vector2(2417, 2502)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=53992951]
 stream = ExtResource("15_gt5iu")
 volume_db = -5.474
 autoplay = true
+
+[node name="UpperLeftWall" type="StaticBody2D" parent="." unique_id=1512690059]
+position = Vector2(-657, 3210)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpperLeftWall" unique_id=1322156054]
+position = Vector2(-87, -7062.9375)
+shape = SubResource("RectangleShape2D_poy7c")
+
+[node name="LowerLeftWall" type="StaticBody2D" parent="." unique_id=1223650257]
+position = Vector2(-665, 14127)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerLeftWall" unique_id=700203406]
+position = Vector2(-87, -7098.125)
+shape = SubResource("RectangleShape2D_poy7c")
+
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=1360595505]
+position = Vector2(12745, 722)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=1968504903]
+position = Vector2(68, -2870)
+shape = SubResource("RectangleShape2D_0igae")
+
+[node name="UpperWall" type="StaticBody2D" parent="." unique_id=1017408166]
+position = Vector2(6179, -4922)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpperWall" unique_id=1802575148]
+position = Vector2(-22, 53)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_0igae")
+
+[node name="LowerWall" type="StaticBody2D" parent="." unique_id=1846152388]
+position = Vector2(5982, 4701)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerWall" unique_id=501851889]
+position = Vector2(8, 3)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_0igae")

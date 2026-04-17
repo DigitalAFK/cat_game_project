@@ -20,6 +20,12 @@ height = 140.67975
 radius = 32.0
 height = 128.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w6a2i"]
+size = Vector2(2257, 13752.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j7fxb"]
+size = Vector2(3273.5, 17636)
+
 [node name="Node2D" type="Node2D" unique_id=1739633806]
 visibility_layer = 2
 position = Vector2(582, 307)
@@ -28,6 +34,7 @@ position = Vector2(582, 307)
 top_level = true
 position = Vector2(569, 285)
 scale = Vector2(1.75, 1.75)
+Speed = 1000.0
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=660019673]
 position = Vector2(3, 2)
@@ -130,16 +137,48 @@ shape = SubResource("CapsuleShape2D_qfwcq")
 [node name="Control" parent="." unique_id=791260962 instance=ExtResource("11_0ujc6")]
 
 [node name="SpawnFromDOCK002" type="Marker2D" parent="." unique_id=732680039]
-position = Vector2(-115, 1182)
+position = Vector2(35, 1797)
 
 [node name="DefaultSpawn" type="Marker2D" parent="." unique_id=888267981]
 position = Vector2(-228, 236)
 
 [node name="SpawnFromDOCK001" type="Marker2D" parent="." unique_id=1678337191]
-position = Vector2(-1325, -824)
+position = Vector2(-1841, -1827)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=118835669]
 stream = ExtResource("11_w6a2i")
 volume_db = -5.474
 autoplay = true
 bus = &"Music"
+
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=959761072]
+position = Vector2(-6631, 5281)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=1783562347]
+position = Vector2(716.5, -5493.4375)
+shape = SubResource("RectangleShape2D_w6a2i")
+
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=1907315178]
+position = Vector2(6771, 2793)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=808676296]
+position = Vector2(-633.25, -2870)
+shape = SubResource("RectangleShape2D_j7fxb")
+
+[node name="UpperWall" type="StaticBody2D" parent="." unique_id=75535320]
+position = Vector2(332, -5352)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpperWall" unique_id=417224055]
+position = Vector2(101, -138)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_j7fxb")
+
+[node name="LowerWall" type="StaticBody2D" parent="." unique_id=1034251258]
+position = Vector2(-25, 6048)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerWall" unique_id=1929868152]
+position = Vector2(38, 263)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_j7fxb")

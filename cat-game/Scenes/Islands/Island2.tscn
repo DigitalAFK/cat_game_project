@@ -23,8 +23,14 @@ height = 56.923065
 radius = 35.384617
 height = 70.76923
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_npr2w"]
-radius = 40.7776
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j61o7"]
+size = Vector2(108.26924, 42.519226)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xlg44"]
+size = Vector2(650, 10627.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6vj34"]
+size = Vector2(1014, 17636)
 
 [node name="Island2" type="Node2D" unique_id=1358441459]
 
@@ -34,9 +40,10 @@ tile_set = ExtResource("1_j61o7")
 
 [node name="CharacterBody2D" parent="." unique_id=164669784 instance=ExtResource("1_d7at8")]
 top_level = true
-position = Vector2(-470.00003, -172.00002)
+position = Vector2(513, 854)
 scale = Vector2(2.6, 2.6)
 Friction = 1000.0
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1076126990]
 position = Vector2(3, 2)
@@ -53,12 +60,13 @@ shape = SubResource("CapsuleShape2D_kd8tv")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=578328912 node_paths=PackedStringArray("_target")]
 visibility_layer = 2
-position = Vector2(-469, -153)
+position = Vector2(514, 873)
 zoom = Vector2(0.5, 0.5)
 process_callback = 0
 position_smoothing_enabled = true
 script = ExtResource("4_npr2w")
 _target = NodePath("../CharacterBody2D")
+metadata/_edit_group_ = true
 
 [node name="NPC4" type="StaticBody2D" parent="." unique_id=581621259]
 position = Vector2(8587, -4207)
@@ -167,8 +175,9 @@ scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_81k0p")
 
 [node name="Dock" type="StaticBody2D" parent="." unique_id=220716636]
-position = Vector2(-24.000004, 1775)
+position = Vector2(-588, 1583.0001)
 scale = Vector2(2.6, 2.6)
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Dock" unique_id=1227382902]
 visible = false
@@ -193,9 +202,9 @@ _reEnter = true
 _id = "DOCK002"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dock/Area2D" unique_id=1985704773]
-position = Vector2(0, -1.5)
+position = Vector2(0.76924133, 3.0768642)
 scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_npr2w")
+shape = SubResource("RectangleShape2D_j61o7")
 
 [node name="UI" parent="." unique_id=49815632 instance=ExtResource("8_m6umt")]
 
@@ -208,18 +217,57 @@ theme_override_font_sizes/font_size = 75
 text = "SAARI 2"
 
 [node name="SpawnFromISL002" type="Marker2D" parent="." unique_id=1487236101]
-position = Vector2(-4, 1299)
+position = Vector2(-79, 1617)
 
 [node name="SpawnFromNPC004" type="Marker2D" parent="." unique_id=1586691614]
-position = Vector2(402, -358)
+position = Vector2(8575, -3658)
 
 [node name="SpawnFromNPC005" type="Marker2D" parent="." unique_id=1887554818]
-position = Vector2(-1121, -1471)
+position = Vector2(1890, 2152)
 
 [node name="SpawnFromNPC006" type="Marker2D" parent="." unique_id=128655875]
-position = Vector2(280, -1765)
+position = Vector2(2195, -1627)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1945074019]
 stream = ExtResource("13_epene")
 volume_db = -5.474
 autoplay = true
+
+[node name="UpperLeftWall" type="StaticBody2D" parent="." unique_id=1787861486]
+position = Vector2(-657, 3210)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpperLeftWall" unique_id=291384290]
+position = Vector2(-87, -7056)
+shape = SubResource("RectangleShape2D_xlg44")
+
+[node name="LowerLeftWall" type="StaticBody2D" parent="." unique_id=37059427]
+position = Vector2(-665, 14127)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerLeftWall" unique_id=1691992296]
+position = Vector2(-87, -7098.125)
+shape = SubResource("RectangleShape2D_xlg44")
+
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=743324974]
+position = Vector2(12745, 722)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=1844256085]
+position = Vector2(68, -2870)
+shape = SubResource("RectangleShape2D_6vj34")
+
+[node name="UpperWall" type="StaticBody2D" parent="." unique_id=468727350]
+position = Vector2(6402, -5981)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpperWall" unique_id=1615549413]
+position = Vector2(68, -2870)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_6vj34")
+
+[node name="LowerWall" type="StaticBody2D" parent="." unique_id=1546245036]
+position = Vector2(5982, 4701)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerWall" unique_id=22207722]
+position = Vector2(8, 3)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_6vj34")
