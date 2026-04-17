@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bs4lsv6722x4r" path="res://Art/Inside Island/NPCs/Roosa.png" id="8_81k0p"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_m6umt"]
 [ext_resource type="Texture2D" uid="uid://d0npgc0uew6gp" path="res://Art/Inside Island/NPCs/Junko.png" id="11_j61o7"]
+[ext_resource type="Script" uid="uid://dvtpvnjlvwr6v" path="res://Code/System/ResultNPCVisible.cs" id="12_6vj34"]
 [ext_resource type="Texture2D" uid="uid://tiehseojtr37" path="res://Art/Inside Island/NPCs/oldcat.png" id="12_xlg44"]
 [ext_resource type="AudioStream" uid="uid://caavyg4ryvgh2" path="res://Audio/OST/On The Island.wav" id="13_epene"]
 
@@ -47,6 +48,7 @@ tile_set = ExtResource("1_j61o7")
 top_level = true
 position = Vector2(513, 854)
 scale = Vector2(2.6, 2.6)
+Speed = 750.0
 Friction = 1000.0
 metadata/_edit_group_ = true
 
@@ -180,8 +182,10 @@ scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_81k0p")
 
 [node name="Result-NPC" type="StaticBody2D" parent="." unique_id=533999633]
+visible = false
 position = Vector2(6105, -2213)
 scale = Vector2(2.6, 2.6)
+script = ExtResource("12_6vj34")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Result-NPC" unique_id=2114980537]
@@ -249,14 +253,6 @@ scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_j61o7")
 
 [node name="UI" parent="." unique_id=49815632 instance=ExtResource("8_m6umt")]
-
-[node name="Label2" type="Label" parent="UI" unique_id=1895196665]
-offset_left = 375.0
-offset_top = 87.0
-offset_right = 586.0
-offset_bottom = 190.0
-theme_override_font_sizes/font_size = 75
-text = "SAARI 2"
 
 [node name="SpawnFromISL002" type="Marker2D" parent="." unique_id=1487236101]
 position = Vector2(-79, 1617)

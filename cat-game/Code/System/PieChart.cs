@@ -20,9 +20,9 @@ public partial class PieChart : Control
 	//Colors of the pie chart:
 	public Color[] Colors =
 	{
-		new Color("red"),
-		new Color("green"),
-		new Color("blue")
+		new Color("#c02931"),
+		new Color("#a13d77"),
+		new Color("#3c1c43")
 	};
 
 	public float Radius = 240f;

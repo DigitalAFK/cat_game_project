@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="5_g1kvn"]
 [ext_resource type="Texture2D" uid="uid://dsfpa5gi130c" path="res://Art/Sea Scene/Waves.png" id="6_d0kkp"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="7_iy63l"]
+[ext_resource type="Script" uid="uid://c1qipf38sv0ii" path="res://Code/System/LabelVisible.cs" id="8_j7fxb"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="9_fvbyo"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="10_anqpm"]
 [ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="11_0ujc6"]
@@ -79,14 +80,22 @@ stretch_mode = 1
 
 [node name="UI" parent="." unique_id=317430085 instance=ExtResource("7_iy63l")]
 
-[node name="Label2" type="Label" parent="UI" unique_id=1171645858]
+[node name="Label" type="Label" parent="UI" unique_id=1171645858]
+visible = false
 top_level = true
-offset_left = 430.0
-offset_top = 56.0
-offset_right = 503.0
-offset_bottom = 98.0
+custom_minimum_size = Vector2(700, 0)
+anchors_preset = -1
+offset_left = 47.0
+offset_top = 63.0
+offset_right = 747.0
+offset_bottom = 662.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
-text = "MERI"
+text = "Shintaro, on valmis jakamaan viisauttaan kanssasi!
+Hänet voi löytää majakan juurelta!"
+autowrap_mode = 2
+script = ExtResource("8_j7fxb")
 metadata/_edit_use_anchors_ = true
 
 [node name="Island1" type="StaticBody2D" parent="." unique_id=901929796]

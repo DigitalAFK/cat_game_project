@@ -102,11 +102,16 @@ public partial class GameManager : Node
 
 	//TODO: Set scores to zero
 	//Etsijä
-	private int _finderScore = 3;
+	private int _finderScore = 0;
 	//Etenijä
-	private int _advancerScore = 2;
+	private int _advancerScore = 0;
 	//Edistäjä
-	private int _promoterScore = 1;
+	private int _promoterScore = 0;
+
+	public int GetTotalScore()
+	{
+		return _finderScore + _advancerScore + _promoterScore;
+	}
 
 	/// <summary>
 	/// Called when we want to add a point to one of the scores.
@@ -136,6 +141,9 @@ public partial class GameManager : Node
 				_promoterScore++;
 				_promoterScore = Mathf.Clamp(_promoterScore, 0, _maxScore);
 				GD.Print($"Edistäjän pisteet nyt: {_promoterScore}");
+				break;
+			default:
+				GD.PrintErr("No score type found for " + type);
 				break;
 		}
 	}

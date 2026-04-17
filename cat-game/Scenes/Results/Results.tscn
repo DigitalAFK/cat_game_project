@@ -88,7 +88,7 @@ script = ExtResource("1_136m3")
 _pieChartX = 540
 _pieChartY = 1550
 
-[node name="MenuButton" type="TextureButton" parent="." unique_id=128773969]
+[node name="ExitButton" type="TextureButton" parent="." unique_id=128773969]
 top_level = true
 layout_mode = 1
 anchors_preset = -1
@@ -102,9 +102,9 @@ offset_right = -12.360046
 offset_bottom = 61.839996
 scale = Vector2(2, 2)
 script = ExtResource("4_pkf53")
-_targetScenePath = "res://Scenes/Islands/Island1.tscn"
+_targetScenePath = "res://Scenes/Islands/Island2.tscn"
 
-[node name="Label" type="Label" parent="MenuButton" unique_id=211430481]
+[node name="Label" type="Label" parent="ExitButton" unique_id=211430481]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.532
