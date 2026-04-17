@@ -49,7 +49,7 @@ texture_normal = ExtResource("1_5vbgp")
 ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("2_6wkav")
-_targetScenePath = "res://Scenes/Islands/Island1.tscn"
+_targetScenePath = "res://Scenes/Islands/Island2.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/FinderButton" unique_id=85003989]
 layout_mode = 1
@@ -79,7 +79,7 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("2_6wkav")
 type = 1
-_targetScenePath = "res://Scenes/Islands/Island1.tscn"
+_targetScenePath = "res://Scenes/Islands/Island2.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/AdvancerButton" unique_id=1317657548]
 layout_mode = 1
@@ -109,7 +109,7 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("2_6wkav")
 type = 2
-_targetScenePath = "res://Scenes/Islands/Island1.tscn"
+_targetScenePath = "res://Scenes/Islands/Island2.tscn"
 
 [node name="Label" type="Label" parent="VBoxContainer/PromoterButton" unique_id=1212486562]
 layout_mode = 1

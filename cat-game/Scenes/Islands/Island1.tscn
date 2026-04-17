@@ -10,10 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="5_o1uan"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="6_76xnn"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="7_1ogpp"]
-[ext_resource type="Texture2D" uid="uid://d0npgc0uew6gp" path="res://Art/Inside Island/NPCs/Junko.png" id="8_4dey0"]
-[ext_resource type="Texture2D" uid="uid://tiehseojtr37" path="res://Art/Inside Island/NPCs/oldcat.png" id="8_dfjbt"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_gt5iu"]
 [ext_resource type="Texture2D" uid="uid://dphbeiite636j" path="res://Art/Inside Island/NPCs/Lynx.png" id="9_o1uan"]
+[ext_resource type="Texture2D" uid="uid://bs4lsv6722x4r" path="res://Art/Inside Island/NPCs/Roosa.png" id="11_gt5iu"]
 [ext_resource type="AudioStream" uid="uid://caavyg4ryvgh2" path="res://Audio/OST/On The Island.wav" id="15_gt5iu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xu16t"]
@@ -111,7 +110,7 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC2" unique_id=1761774098]
 scale = Vector2(1.75, 1.75)
-texture = ExtResource("8_4dey0")
+texture = ExtResource("9_o1uan")
 hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
@@ -146,7 +145,7 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC3" unique_id=7296456]
 scale = Vector2(1.75, 1.75)
-texture = ExtResource("9_o1uan")
+texture = ExtResource("11_gt5iu")
 hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
@@ -170,43 +169,6 @@ _targetScenePath = "res://Scenes/StillScreens/Dialogue3.tscn"
 _id = "NPC003"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/Area2D" unique_id=547289449]
-position = Vector2(-2.348423e-05, 50.00005)
-scale = Vector2(2, 2)
-shape = SubResource("CapsuleShape2D_dfjbt")
-
-[node name="Result-NPC" type="StaticBody2D" parent="." unique_id=204056580]
-position = Vector2(1808, 2414)
-scale = Vector2(2.6, 2.6)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Result-NPC" unique_id=1427397751]
-scale = Vector2(1.75, 1.75)
-texture = ExtResource("8_dfjbt")
-hframes = 2
-script = ExtResource("3_dfjbt")
-_animationSpeed = 25
-
-[node name="Label" type="Label" parent="Result-NPC/Sprite2D" unique_id=2093551902]
-visible = false
-offset_left = -42.0
-offset_top = -44.5
-offset_right = 48.0
-offset_bottom = 38.5
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_76xnn")
-theme_override_font_sizes/font_size = 30
-text = "Vanha
-kissa"
-metadata/_edit_use_anchors_ = true
-
-[node name="Area2D" type="Area2D" parent="Result-NPC" unique_id=319217714]
-script = ExtResource("7_1ogpp")
-_targetScenePath = "res://Scenes/Results/OldCatDialogue.tscn"
-_reEnter = true
-_id = "NPC007"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Result-NPC/Area2D" unique_id=500755288]
 position = Vector2(-2.348423e-05, 50.00005)
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_dfjbt")
