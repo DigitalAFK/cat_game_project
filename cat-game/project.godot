@@ -17,7 +17,11 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Cat Game"
 run/main_scene="uid://ccill4u7ll78d"
 config/features=PackedStringArray("4.6", "C#", "Mobile")
-config/icon="res://Art/Sprites/icon.svg"
+config/icon="uid://dxumwj67b0hry"
+
+[audio]
+
+buses/default_bus_layout="uid://c4x1w880n221d"
 
 [autoload]
 
