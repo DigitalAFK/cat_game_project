@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://tgbef2dlcdyn"]
 
 [ext_resource type="Texture2D" uid="uid://ceub5e2tmtkx0" path="res://Art/UI/oldcat_upperbody.png" id="1_oq6m3"]
+[ext_resource type="Script" uid="uid://c8vtqfb00vre7" path="res://Code/Audio/Audio.cs" id="1_trro1"]
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="2_hxnke"]
+[ext_resource type="AudioStream" uid="uid://c5q0rl72r5cpl" path="res://Audio/OST/Results May Wary.wav" id="2_ytycb"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="3_3obln"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="3_hxnke"]
 [ext_resource type="Texture2D" uid="uid://bi0cxklx0yg2e" path="res://Art/UI/BlackTriangleDown.png" id="6_oq6m3"]
@@ -14,6 +16,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_trro1")
+stream = ExtResource("2_ytycb")
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=816290816]
 show_behind_parent = true

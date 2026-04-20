@@ -5,6 +5,7 @@ public partial class TextureButtonContainerVisibility : TextureButton
 {
 	private VBoxContainer _targetContainer;
 	[Export] private String _targetContainerPath = "";
+	[Export] private AudioStream stream = GD.Load<AudioStream>("res://Audio/SFX/Button_Press.wav");
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -15,8 +16,7 @@ public partial class TextureButtonContainerVisibility : TextureButton
 	public override void _Pressed()
 	{
 		base._Pressed();
-		//TODO: Remove
-		GD.Print("Pressed");
+		MusicManager.Instance.PlaySound(stream);
 		_targetContainer.Visible = !_targetContainer.Visible;
 
 	}

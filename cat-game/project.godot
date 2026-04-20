@@ -25,7 +25,8 @@ buses/default_bus_layout="uid://c4x1w880n221d"
 
 [autoload]
 
-GameManager="res://Code/System/GameManager.cs"
+GameManager="*res://Code/System/GameManager.cs"
+MusicManager="*uid://c44pa1hct5sx2"
 
 [display]
 

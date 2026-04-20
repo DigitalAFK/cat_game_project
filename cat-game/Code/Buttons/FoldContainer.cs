@@ -8,6 +8,8 @@ public partial class FoldContainer : FoldableContainer
 	[Export] private int _backgroundOGSizeY = 314;
 	[Export] private int _containerUnfoldedSizeY = 120;
 	[Export] private int _containerFoldedSizeY = 31;
+	[Export] private AudioStream stream = GD.Load<AudioStream>("res://Audio/SFX/Button_Press.wav");
+
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -22,11 +24,10 @@ public partial class FoldContainer : FoldableContainer
 
 	private void OnFolded(bool folded)
 	{
+		MusicManager.Instance.PlaySound(stream);
 		var sprite = GetNode<Sprite2D>("../Rectangle");
-		GD.Print(sprite);
 		//rounded scale y of the space the unfolded container needs
 		float roundedY = (float)Math.Round((double)(_containerUnfoldedSizeY - _containerFoldedSizeY) / _backgroundOGSizeY, 3);
-		GD.Print(roundedY);
 		if (!folded)    //make background bigger
 		{
 			CustomMinimumSize = new Vector2(0, _containerUnfoldedSizeY);

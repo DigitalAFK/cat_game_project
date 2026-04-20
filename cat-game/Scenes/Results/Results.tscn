@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://b4fw1j603arbh"]
 
 [ext_resource type="Script" uid="uid://bxssf7mjhpf2l" path="res://Code/System/PieChart.cs" id="1_136m3"]
+[ext_resource type="Script" uid="uid://c8vtqfb00vre7" path="res://Code/Audio/Audio.cs" id="1_ngb3v"]
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="1_ufc66"]
+[ext_resource type="AudioStream" uid="uid://c5q0rl72r5cpl" path="res://Audio/OST/Results May Wary.wav" id="2_8sbi2"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="3_6703e"]
 [ext_resource type="Texture2D" uid="uid://2q4kuj216u5c" path="res://Art/UI/X.png" id="4_20tu8"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="4_pkf53"]
@@ -54,6 +56,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ngb3v")
+stream = ExtResource("2_8sbi2")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1484601660]
 layout_mode = 0

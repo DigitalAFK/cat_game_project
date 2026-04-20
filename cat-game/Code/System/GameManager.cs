@@ -13,9 +13,9 @@ public enum ScoreType
 public partial class GameManager : Node
 {
 	#region Singleton
-	// Staattinen autoproperty.
-	// Get on public, jotta GameManageriin päästään käsiksi mistä vain.
-	// Set private, jotta sitä ei voisi helposti ylikirjoittaa.
+	// Static autoproperty.
+	// Get on public, so MusicManager can be accessed from anywhere.
+	// Set private, so it can't be easily overwritten.
 	public static GameManager Instance
 	{
 		get;

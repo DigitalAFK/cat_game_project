@@ -5,6 +5,7 @@ public partial class AnswerButtonFunction : TextureButton
 {
 	[Export] private ScoreType type = ScoreType.Finder;
 	[Export] private String _targetScenePath = "res://Scenes/Islands/";
+	[Export] private AudioStream stream = GD.Load<AudioStream>("res://Audio/SFX/Button_Press.wav");
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -17,8 +18,7 @@ public partial class AnswerButtonFunction : TextureButton
 	public override void _Pressed()
 	{
 		base._Pressed();
-		//TODO: Remove
-		GD.Print("Pressed");
+		MusicManager.Instance.PlaySound(stream);
 		GameManager.Instance.AddScore(type);
 		GameManager.Instance.GoToScene(_targetScenePath);
 	}

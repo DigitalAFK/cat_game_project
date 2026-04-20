@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://c0tl8e82cl0ig" path="res://Art/Inside Island/Island One/island.tres" id="1_1ogpp"]
 [ext_resource type="PackedScene" uid="uid://do4ocgd2ffir5" path="res://Scenes/Characters/CharacterBody2D.tscn" id="1_aou04"]
+[ext_resource type="Script" uid="uid://c8vtqfb00vre7" path="res://Code/Audio/Audio.cs" id="1_gt5iu"]
 [ext_resource type="Texture2D" uid="uid://s0qwkvwmxew" path="res://Art/Sprites/catsprite.png" id="2_h7cj5"]
 [ext_resource type="Script" uid="uid://eh302unprlj7" path="res://Code/Characters/AnimatedCat.cs" id="3_76xnn"]
 [ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_dfjbt"]
@@ -33,6 +34,8 @@ size = Vector2(650, 10613.875)
 size = Vector2(1014, 17636)
 
 [node name="Island1" type="Node2D" unique_id=877432933]
+script = ExtResource("1_gt5iu")
+stream = ExtResource("15_gt5iu")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1538086822]
 y_sort_enabled = true
@@ -222,11 +225,6 @@ position = Vector2(5144, 981)
 
 [node name="SpawnFromNPC007" type="Marker2D" parent="." unique_id=367494416]
 position = Vector2(2417, 2502)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=53992951]
-stream = ExtResource("15_gt5iu")
-volume_db = -5.474
-autoplay = true
 
 [node name="UpperLeftWall" type="StaticBody2D" parent="." unique_id=1512690059]
 position = Vector2(-657, 3210)
