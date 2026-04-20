@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="2_hxnke"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="3_3obln"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="3_hxnke"]
+[ext_resource type="Texture2D" uid="uid://bi0cxklx0yg2e" path="res://Art/UI/BlackTriangleDown.png" id="6_oq6m3"]
 [ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="6_trro1"]
 
 [node name="OldCatDialogue" type="Control" unique_id=281008952]
@@ -69,3 +70,16 @@ vertical_alignment = 1
 autowrap_mode = 2
 clip_text = true
 text_overrun_behavior = 2
+
+[node name="TextureRect" type="TextureRect" parent="TextureButton" unique_id=1746499706]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16100001
+anchor_top = 0.906
+anchor_right = 0.16100001
+anchor_bottom = 0.906
+offset_left = -49.887177
+offset_top = -49.52002
+offset_right = 50.112823
+offset_bottom = 50.47998
+texture = ExtResource("6_oq6m3")

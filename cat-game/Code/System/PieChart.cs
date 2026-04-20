@@ -55,13 +55,6 @@ public partial class PieChart : Control
 			float midAngleDeg = startAngle + sweep / 2f;
 			float midAngleRad = Mathf.DegToRad(midAngleDeg);
 
-			//Position the label halfway between center and radius
-			Vector2 labelPosition = new Vector2(Mathf.Cos(midAngleRad), Mathf.Sin(midAngleRad)) * (Radius * 0.6f);
-
-			string label = $"{_scores[i]}";
-
-			DrawString(font, labelPosition, label, HorizontalAlignment.Center, -1, 40, new Color("black"));
-
 			//Update starting angle of slice:
 			startAngle += sweep;
 		}

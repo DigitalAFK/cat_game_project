@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://bxssf7mjhpf2l" path="res://Code/System/PieChart.cs" id="1_136m3"]
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="1_ufc66"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="3_6703e"]
+[ext_resource type="Texture2D" uid="uid://2q4kuj216u5c" path="res://Art/UI/X.png" id="4_20tu8"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="4_pkf53"]
-[ext_resource type="Texture2D" uid="uid://cv3oaehkph24x" path="res://Art/Sprites/button.png" id="6_ufc66"]
 [ext_resource type="Texture2D" uid="uid://bi0cxklx0yg2e" path="res://Art/UI/BlackTriangleDown.png" id="7_20tu8"]
 [ext_resource type="Texture2D" uid="uid://cw00ekdq3rfg6" path="res://Art/UI/red.png" id="8_20tu8"]
 [ext_resource type="Texture2D" uid="uid://csb543c7gtqip" path="res://Art/UI/BlackTriangleRight.png" id="8_ngb3v"]
@@ -92,54 +92,19 @@ _pieChartY = 1550
 top_level = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.91700006
-anchor_top = 0.023000002
-anchor_right = 0.91700006
-anchor_bottom = 0.023000002
-offset_left = -89.36005
-offset_top = -23.160004
-offset_right = -12.360046
-offset_bottom = 61.839996
-scale = Vector2(2, 2)
+anchor_left = 0.93100005
+anchor_top = 0.040000003
+anchor_right = 0.93100005
+anchor_bottom = 0.040000003
+offset_left = -79.48004
+offset_top = -80.8
+offset_right = 120.51996
+offset_bottom = 119.2
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("4_20tu8")
+stretch_mode = 0
 script = ExtResource("4_pkf53")
 _targetScenePath = "res://Scenes/Islands/Island2.tscn"
-
-[node name="Label" type="Label" parent="ExitButton" unique_id=211430481]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.532
-anchor_top = 0.5
-anchor_right = 0.532
-anchor_bottom = 0.5
-offset_left = -23.464005
-offset_top = -57.0
-offset_right = 23.536
-offset_bottom = 46.0
-theme_override_font_sizes/font_size = 75
-text = "X"
-
-[node name="Button" type="Button" parent="." unique_id=1503653256]
-visible = false
-layout_mode = 0
-offset_left = 354.0
-offset_top = 403.0
-offset_right = 680.0
-offset_bottom = 582.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_6703e")
-theme_override_font_sizes/font_size = 65
-action_mode = 0
-text = "Etsijä"
-flat = true
-
-[node name="TextureButton" type="TextureButton" parent="." unique_id=783462329]
-visible = false
-layout_mode = 0
-offset_left = 183.0
-offset_top = 291.0
-offset_right = 738.0
-offset_bottom = 441.0
-texture_normal = ExtResource("6_ufc66")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=118636730]
 layout_mode = 0

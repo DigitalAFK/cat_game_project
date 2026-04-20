@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://86vwtjkdrlnr" path="res://Code/Buttons/TextureButtonContainerVisibility.cs" id="5_ypipb"]
 [ext_resource type="Texture2D" uid="uid://dkkdx5ffwdm2f" path="res://Art/Menu/SeperatedPaws/paws.png" id="7_4kuwh"]
 [ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="7_ypipb"]
-[ext_resource type="Texture2D" uid="uid://bhvc8rf4j7ptg" path="res://Art/UI/blankbutton.png" id="9_lylok"]
+[ext_resource type="Texture2D" uid="uid://2q4kuj216u5c" path="res://Art/UI/X.png" id="9_lylok"]
 [ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="10_6g85m"]
 [ext_resource type="Script" uid="uid://cyi60kjieg4iq" path="res://Code/Buttons/VolumeSlider.cs" id="10_ypipb"]
 [ext_resource type="Texture2D" uid="uid://oyhp4qmropsu" path="res://Art/Menu/menu_bg.png" id="11_a5w2e"]
@@ -169,25 +169,6 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("5_ypipb")
 _targetContainerPath = "../"
-
-[node name="Label" type="Label" parent="MarginContainer/SettingsContainer/ExitButton" unique_id=881373628]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -45.0
-offset_top = -110.0
-offset_right = 45.0
-offset_bottom = 88.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_84jhe")
-theme_override_font_sizes/font_size = 150
-text = "x"
 
 [node name="Rectangle" type="Sprite2D" parent="MarginContainer/SettingsContainer" unique_id=1118033721]
 show_behind_parent = true

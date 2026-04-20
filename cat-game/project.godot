@@ -17,7 +17,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Cat Game"
 run/main_scene="uid://ccill4u7ll78d"
 config/features=PackedStringArray("4.6", "C#", "Mobile")
-config/icon="uid://dxumwj67b0hry"
+config/icon="uid://c30jpyheifsc8"
 
 [audio]
 
