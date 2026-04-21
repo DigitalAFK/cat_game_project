@@ -25,7 +25,7 @@ public partial class PieChart : Control
 		new Color("#3c1c43")
 	};
 
-	public float Radius = 240f;
+	public float radius = 240f;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -34,7 +34,7 @@ public partial class PieChart : Control
 	}
 
 	/// <summary>
-	/// Draws the pie chart by calling method DrawPieSlice and then labels the slices.
+	/// Draws the pie chart by calling method DrawPieSlice or DrawCircle
 	/// </summary>
 	public override void _Draw()
 	{
@@ -48,6 +48,14 @@ public partial class PieChart : Control
 		{
 			//Sweep tells how much area the percentage covers
 			float sweep = 360f * (Percentages[i] / 100f);
+			GD.Print(sweep);
+			if (sweep == 360)
+			{
+				//Draw the circle at (0, 0) because the node's position has already been set
+				DrawCircle(new Vector2(0, 0), radius, Colors[i]);
+				GD.Print(radius);
+				return;
+			}
 
 			DrawPieSlice(startAngle, sweep, Colors[i]);
 
@@ -81,7 +89,7 @@ public partial class PieChart : Control
 		for (int i = 0; i <= segments; i++)
 		{
 			float t = startRad + sweepRad * ((float)i / segments);
-			points[i + 1] = new Vector2(Mathf.Cos(t), Mathf.Sin(t)) * Radius;
+			points[i + 1] = new Vector2(Mathf.Cos(t), Mathf.Sin(t)) * radius;
 		}
 
 		//Draws the polygon of one score:
