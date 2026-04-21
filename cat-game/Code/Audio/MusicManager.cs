@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.ComponentModel;
+using System.IO;
 
 public partial class MusicManager : Node
 {
@@ -34,27 +35,52 @@ public partial class MusicManager : Node
 	#region MusicData
 	[Export] private AudioStreamPlayer musicPlayer;
 	[Export] private AudioStreamPlayer soundPlayer;
+	[Export] private AudioStream musicOfWhereMuteButtonIs;
+	private bool muted = false;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		//Make it play if it isnt already, makes sure the music or sound doesn't restart if it was playing already:
-		if (!musicPlayer.Playing)
+		if (!muted)
 		{
-			musicPlayer.Play();
+			//Make it play if it isnt already, makes sure the music or sound doesn't restart if it was playing already:
+			if (!musicPlayer.Playing)
+			{
+				musicPlayer.Play();
+			}
+			if (!soundPlayer.Playing)
+			{
+				soundPlayer.Play();
+			}
 		}
-		if (!soundPlayer.Playing)
-		{
-			soundPlayer.Play();
-		}
+	}
+
+	public void MuteAllSounds()
+	{
+		muted = true;
+		StopMusic();
+	}
+
+	public void UnmuteAllSounds()
+	{
+		muted = false;
+		musicPlayer.Play();
+	}
+
+	public bool GetMuteStatus()
+	{
+		return muted;
 	}
 
 	//Play the wanted sound:
 	public void PlayMusic(AudioStream music)
 	{
-		if (musicPlayer.Stream != music)
+		if (!muted)
 		{
-			musicPlayer.Stream = music;
-			musicPlayer.Play();
+			if (musicPlayer.Stream != music)
+			{
+				musicPlayer.Stream = music;
+				musicPlayer.Play();
+			}
 		}
 	}
 
@@ -66,8 +92,11 @@ public partial class MusicManager : Node
 
 	public void PlaySound(AudioStream sound)
 	{
-		soundPlayer.Stream = sound;
-		soundPlayer.Play();
+		if (!muted)
+		{
+			soundPlayer.Stream = sound;
+			soundPlayer.Play();
+		}
 	}
 	#endregion
 }

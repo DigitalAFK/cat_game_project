@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="10_anqpm"]
 [ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="11_0ujc6"]
 [ext_resource type="AudioStream" uid="uid://3ykj85jiqfcw" path="res://Audio/OST/Cats Adventure.wav" id="11_w6a2i"]
+[ext_resource type="Script" uid="uid://in7cvxr6vy6d" path="res://Code/Audio/SeaBackgroundSound.cs" id="14_onpox"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
 radius = 20.98169
@@ -196,3 +197,4 @@ shape = SubResource("RectangleShape2D_j7fxb")
 stream = SubResource("AudioStreamWAV_oc6m2")
 volume_db = -15.0
 autoplay = true
+script = ExtResource("14_onpox")
