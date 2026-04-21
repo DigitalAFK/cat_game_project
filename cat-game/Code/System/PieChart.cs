@@ -48,12 +48,10 @@ public partial class PieChart : Control
 		{
 			//Sweep tells how much area the percentage covers
 			float sweep = 360f * (Percentages[i] / 100f);
-			GD.Print(sweep);
 			if (sweep == 360)
 			{
 				//Draw the circle at (0, 0) because the node's position has already been set
 				DrawCircle(new Vector2(0, 0), radius, Colors[i]);
-				GD.Print(radius);
 				return;
 			}
 
