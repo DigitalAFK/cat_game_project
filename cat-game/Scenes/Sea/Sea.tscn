@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="10_anqpm"]
 [ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="11_0ujc6"]
 [ext_resource type="AudioStream" uid="uid://3ykj85jiqfcw" path="res://Audio/OST/Cats Adventure.wav" id="11_w6a2i"]
+[ext_resource type="Texture2D" uid="uid://c2e34x2uyhxg5" path="res://Art/Sea Scene/Island Two.png" id="13_g1kvn"]
 [ext_resource type="Script" uid="uid://in7cvxr6vy6d" path="res://Code/Audio/SeaBackgroundSound.cs" id="14_onpox"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
@@ -20,8 +21,8 @@ radius = 20.98169
 height = 140.67975
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qfwcq"]
-radius = 32.0
-height = 128.0
+radius = 44.00003
+height = 122.66669
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w6a2i"]
 size = Vector2(2257, 13752.875)
@@ -107,7 +108,7 @@ script = ExtResource("8_j7fxb")
 metadata/_edit_use_anchors_ = true
 
 [node name="Island1" type="StaticBody2D" parent="." unique_id=901929796]
-position = Vector2(-1129, -1934)
+position = Vector2(-1045, -1861)
 scale = Vector2(3, 3)
 metadata/_edit_group_ = true
 
@@ -129,14 +130,13 @@ scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_qfwcq")
 
 [node name="Island2" type="StaticBody2D" parent="." unique_id=1269740203]
-position = Vector2(740, 1694)
+position = Vector2(1032, 2697)
 scale = Vector2(3, 3)
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Island2" unique_id=2040496147]
 position = Vector2(-8.5, -17.5)
 scale = Vector2(2.75, 2.75)
-texture = ExtResource("10_anqpm")
+texture = ExtResource("13_g1kvn")
 
 [node name="Area2D" type="Area2D" parent="Island2" unique_id=298011169]
 script = ExtResource("9_fvbyo")
@@ -145,7 +145,7 @@ _reEnter = true
 _id = "ISL002"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Island2/Area2D" unique_id=466603099]
-position = Vector2(0, 15)
+position = Vector2(-0.66666675, 6.666666)
 rotation = 1.5707964
 scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_qfwcq")
@@ -153,13 +153,13 @@ shape = SubResource("CapsuleShape2D_qfwcq")
 [node name="Control" parent="." unique_id=791260962 instance=ExtResource("11_0ujc6")]
 
 [node name="SpawnFromDOCK002" type="Marker2D" parent="." unique_id=732680039]
-position = Vector2(35, 1797)
+position = Vector2(1554, 2873)
 
 [node name="DefaultSpawn" type="Marker2D" parent="." unique_id=888267981]
 position = Vector2(-228, 236)
 
 [node name="SpawnFromDOCK001" type="Marker2D" parent="." unique_id=1678337191]
-position = Vector2(-1841, -1827)
+position = Vector2(-1646, -1755)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=959761072]
 position = Vector2(-6631, 5281)
