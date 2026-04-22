@@ -39,9 +39,9 @@ text = "Tracker"
 
 [node name="PointsContainer" type="VBoxContainer" parent="." unique_id=372582226]
 visible = false
-offset_left = 701.0
+offset_left = 640.0
 offset_top = 697.0
-offset_right = 1052.0
+offset_right = 1066.0
 offset_bottom = 836.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -49,8 +49,8 @@ theme_override_constants/separation = 10
 
 [node name="Rectangle" type="Sprite2D" parent="PointsContainer" unique_id=1937807048]
 show_behind_parent = true
-position = Vector2(175.99997, 68.500015)
-scale = Vector2(1.8666669, 0.70089304)
+position = Vector2(213.99997, 68.500015)
+scale = Vector2(2.2564104, 0.70089304)
 texture = ExtResource("4_t761m")
 
 [node name="Island 1" type="FoldableContainer" parent="PointsContainer" unique_id=1603228932]
@@ -59,7 +59,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_icons/expanded_arrow = ExtResource("5_t761m")
 theme_override_icons/folded_arrow = ExtResource("6_kl5au")
 folded = true
-title = "Island 1"
+title = "Hillside Lighthouse"
 script = ExtResource("4_b8v2r")
 _id = "ISL001"
 _backgroundOGSizeX = 195

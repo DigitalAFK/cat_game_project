@@ -257,6 +257,16 @@ public partial class GameManager : Node
 		return _tutorialDone;
 	}
 
+	public void SetLanguage(String locale)
+	{
+		TranslationServer.SetLocale(locale);
+	}
+
+	public String GetLanguage()
+	{
+		return TranslationServer.GetLocale();
+	}
+
 	#endregion
 	/// <summary>
 	/// Goes to the given scene.
