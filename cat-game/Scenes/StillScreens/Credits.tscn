@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="2_7b4er"]
 [ext_resource type="Texture2D" uid="uid://2q4kuj216u5c" path="res://Art/UI/X.png" id="4_6ebv6"]
 [ext_resource type="Script" uid="uid://dlo8ykf0jwrj1" path="res://Code/Buttons/TextureButtonFunction.cs" id="4_la4gw"]
+[ext_resource type="Texture2D" uid="uid://y68rfki6pwce" path="res://Art/MUUSA_logo_rectangle.png" id="6_6ebv6"]
 
 [node name="Credits" type="Control" unique_id=1142691053]
 layout_mode = 3
@@ -22,10 +23,10 @@ texture = ExtResource("1_la4gw")
 layout_mode = 0
 offset_right = 1080.0
 offset_bottom = 1920.0
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_top = 30
-theme_override_constants/margin_right = 30
-theme_override_constants/margin_bottom = 30
+theme_override_constants/margin_left = 90
+theme_override_constants/margin_top = 85
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer" unique_id=2049917100]
 layout_mode = 2
@@ -38,22 +39,16 @@ text = "
 
 
 
-		  Tekijät:
+		Tekijät:
 	Ohjelmointi: Lotta	
-  Grafiikka: Wil ja Elina
-		Audio: Santtu
+ Grafiikka: Wil ja Elina
+	  Audio: Santtu
 
 
-		 Kiitokset:
-		   Muusa
-   Valmennus: Outi Tuisku
-	Ohjelmoinnin ohjaus:
-		 Sami Kojo
-
-
-
-	(work in progress)
-"
+   	   Valmennus: 
+	   Outi Tuisku
+   Ohjelmoinnin ohjaus:
+	   Sami Kojo"
 
 [node name="TextureButton" type="TextureButton" parent="MarginContainer" unique_id=954198983]
 custom_minimum_size = Vector2(150, 150)
@@ -65,3 +60,16 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("4_la4gw")
 _targetScenePath = "res://Scenes/StillScreens/MainMenu.tscn"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=173500274]
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("6_6ebv6")
+expand_mode = 5
+
+[node name="LinkButton" type="LinkButton" parent="MarginContainer/TextureRect" unique_id=877917796]
+layout_mode = 0
+offset_right = 890.0
+offset_bottom = 344.6975
+size_flags_vertical = 8
+uri = "https://muusamentori.fi/"
