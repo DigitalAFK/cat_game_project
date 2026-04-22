@@ -1,0 +1,60 @@
+keys;fi;en
+PLAY;Pelaa;Play
+SETTINGS;Asetukset;Settings
+CREDITS;Tekijät;Credits
+
+
+EXPLORER;etsijä;explorer
+ADVANCER;etenijä;advancer
+ACCELERATOR;edistäjä;accelerator
+
+EXPLORER_EXPLANATION;Oman suunnan etsijä, Pohdit identiteettiäsi, arvojasi ja elämäsi suuntaa;Exploring their own path. Reflects on one’s identity, values and life direction.
+ADVANCER_EXPLANATION;Tavoitteellinen etenijä, Tietää suuntansa, kaipaa suunnitelman;Goal-oriented advancer. Knows their direction, needs a plan.
+ACCELERATOR_EXPLANATION;Yrittäjyyttä pohtiva, On idea, tavoite tai kipinä, kaipaa rohkaisua ja konkretiaa;Considering entrepreunership. Has an idea, a goal or spark, needs encouragement and concretness.
+
+
+ISLAND_01;Mäkelän Majakka;Hillside Lighthouse
+ISLAND_02;Vanha Mökkisaari;Old Cottage Island
+
+
+TUTORIAL_01;Ajat tätä laivaa.;You're sailing this ship.
+TUTORIAL_02;Ohjaat sitä tällä joystickillä.;You can control it with this joystick.
+
+
+PETRO;"Hei! Kuulin että vesillä on uusi piraatti jonka nimi on Pörrö. Aavistan että se olet sinä. Haluaisin esittää sinulle kysymyksen. Mihin olet matkalla ja mikä on elämäsi suunta kun seilaat näitä vesiä?";"Hey! I heard there's a new pirate sailing the high seas named Pörrö. I'm guessing it's you. I would like to ask you a question. Where are you going and what is the direction of your life since you are sailing these high seas?"
+
+PETRO_EXPLORER;"En vielä tiedä, tuntuu että suuntaa ei ole vielä löytynyt.";"I don't know yet, I feel like I don't really have a direction."
+PETRO_ADVANCER;"Tiedän suunnilleen suuntani, mutta tarvitsen apua löytääkseni kokonaisuuden.";"I kind of know my direction, but I need help to get the full picture."
+PETRO_ACCELERATOR;"Olen löytänyt suuntani, mutta tarvitsen miehistön avustamaan suunnitelmani toteutuksessa.";"I know my way, but I need a crew to help me fulfill my plan."
+
+LYNX;"Moro! Kutsuvat minua nimellä Lynx. Mikäs sinut tuo tänne? Anna kun arvaan, tarvitset neuvoja. Neuvon sinua kunhan kerrot mitä tarvitset.";"What's up, they call me Lynx. What brings you here? Let me guess, you need advice. I'll help you, if you tell me what do you need."
+
+LYNX_EXPLORER;Haluaisin neuvoja suuntani löytämiseen;I need some advice on finding myself.
+LYNX_ADVANCER;Haluaisin edetä kohti tavoitteitani;I would like to have some advice on how to reach my goals
+LYNX_ACCELERATOR;Haluaisin tehdä omaa juttuani, ehkä jopa bisnestä;I want some advice on how to get my own thing going, maybe a business
+
+ROSE;"Hei Pörrö! Nimeni on Rose, hauska tutustua. Olen aika rauhallinen, ja mukavuudenhaluinen kissa, joka kaipaa lisää ystäviä. Haluaisin oppia tuntemaan sinut paremmin, joten mietiskelin tässä... Mitä tällä hetkellä tunnet kaipaavasi eniten?";"Hi Pörrö! My name is Rose, nice to meet you. I'm a pretty calm and comfort seeking cat, that wants more friends. I would like to get to know you better, so I was wondering... What is it you feel like you need the most right now?"
+
+ROSE_EXPLORER;Tilaa pohtia, kuka minä olen ja mitä oikeasti haluan.;Some space to think about who I am and what I really want.
+ROSE_ADVANCER;Sparrausta ja suunnitelmaa, jonka avulla saavutan päämääräni.;Sparring and a plan to help me reach my goal.
+ROSE_ACCELERATOR;Konkreettisia askelia ja rohkaisua kokeilla jotain omaa.;Concrete steps and encouragement to try something of my own.
+
+RAMBO;"Ai moi. Olin juuri retkeilemässä, mutta haasteita tuntuu sattuvan joka nurkalla. Näyttää siltä, että sinullakin on jotakin mielen päällä. Mikä sinulle tällä hetkellä tuntuu haastavalta?";"Oh hey. I've been out hiking, but it seems you run into trouble at every corner out here. It seems, however, that you have something on your mind as well. What do you feel challenged by these days?"
+
+RAMBO_EXPLORER;Tietää, mikä olisi "se oikea suunta" tai valinta.;Finding the right directions on my journey.
+RAMBO_ADVANCER;Saada asiat etenemään järjestelmällisesti.;Progressing things in an orderly manner.
+RAMBO_ACCELERATOR;Uskoa omaan ideaani ja löytää tapa toteuttaa sitä.;To believe in my own idea and find a way to execute it.
+
+HARUKA;"Heiiiii! Miten voit? Minä olen Haruka! Kutsuvat minua saaren söpöimmäksi, ja kilteimmäksi kissaksi! Mikä sinun nimesi on? Hauska tavata! Onpas sinulla kaunis nimi! Vaikutat myös kiltiltä! Haluaisitko lahjan?";"Hiiiiii! How are you dear? My name is Haruka, and they call me the cutest and kindest kitty on the island! What's your name? Nice to meet you, you have such a beautiful name! You also seem nice! Would you like a gift?"
+
+HARUKA_EXPLORER;Haluaisin syvällisyyden ja pohdiskelun amuletin.;I'd like the medallion of wisdom and reflection
+HARUKA_ADVANCER;Haluaisin kannustuksen ja järjestelmällisyyden silmälapun.; I'd like the eyepatch of encouragement and organization.
+HARUKA_ACCELERATOR;Haluaisin rohkeuden ja rehellisyyden sormuksen.;I'd like the ring of courage and honesty.
+
+JUNKO;"Hei tulokas, mikä fiilis? Meikä on Junko, saaren kovin kissa. Kertoisiks, mikä näist lauseist resonoi sun kaa eniten.";"Hi newcomer, how you feelin'? I'm Junko, the coolest cat on the island. Wanna tell me which one of these sentences resonates with you most?"
+
+JUNKO_EXPLORER;“Olen liikkeellä, mutta en vielä tiedä, minne tie vie.”;"I'm on the move, but the destination is still unknown."
+JUNKO_ADVANCER;“Tiedän minne haluan mennä – nyt tarttis vaan mennä.”;"I know where I want to go - now I'd just need to get to it."
+JUNKO_ACCELERATOR;“Minulla on idea – mutta miten siitä tulee totta?”;"I have an idea, but how does it come true?"
+
+SHINTARO;Olet löytänyt Shintaron, vanhimman piraattikissoista. "Olen seurannut matkaasi halki näiden vesien, ja olet selvästi matkalla kohti suuria asioita. Tie viisauteen on pitkä, mutta olet onnistunut saavuttamaan tavoitteesi. Joskus suurin aarre on sisäinen harmonia, joka ohjaa sinua elämässä. Olet ansainnut palkintosi";You have found Shintaro, the eldest of the pirate cats. "I've observed your journey through these waters, and I think you are on your way to do great things. The road to wisdom is sometimes long and tedious, but you have managed to achieve yours. Sometimes the greatest treasure is inner harmony, that guides you through life. You deserve your prize."
