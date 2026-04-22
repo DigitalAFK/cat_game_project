@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_4r5si"]
 [ext_resource type="Texture2D" uid="uid://ccmsu03d8176k" path="res://Art/UI/Petro_upperbody.png" id="1_7pqid"]
+[ext_resource type="Script" uid="uid://p1mtaptbr7cc" path="res://Code/Audio/MeowSound.cs" id="1_8hb5q"]
+[ext_resource type="AudioStream" uid="uid://mhenv3rmgb0w" path="res://Audio/SFX/miguel_edited.wav" id="2_81upi"]
 [ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="3_poa0i"]
 [ext_resource type="Texture2D" uid="uid://txtaergdissb" path="res://Art/UI/BlackRectangle.png" id="4_2l47a"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="4_wr5pf"]
@@ -15,6 +17,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8hb5q")
+stream = ExtResource("2_81upi")
 metadata/_edit_group_ = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1859273668]

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cj35uam5onmdu" path="res://Art/UI/Ranbo_upperbody.png" id="1_amlvd"]
 [ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_xfy8s"]
+[ext_resource type="Script" uid="uid://p1mtaptbr7cc" path="res://Code/Audio/MeowSound.cs" id="1_ygnp6"]
 [ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_ygnp6"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_6bjdc"]
 [ext_resource type="Texture2D" uid="uid://uhw8x30xg8wt" path="res://Art/Menu/background.png" id="4_b8gbd"]
@@ -15,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ygnp6")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=15170116]
 layout_mode = 0

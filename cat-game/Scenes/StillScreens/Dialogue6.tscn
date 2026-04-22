@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://4iqq58dwnlcq"]
 
 [ext_resource type="Texture2D" uid="uid://duilueo2tyfjr" path="res://Art/UI/Junko_upperbody.png" id="1_jlkuo"]
+[ext_resource type="Script" uid="uid://p1mtaptbr7cc" path="res://Code/Audio/MeowSound.cs" id="1_sxlh5"]
 [ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_vm6ae"]
 [ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_sxlh5"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_nyyx4"]
@@ -15,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_sxlh5")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1859273668]
 layout_mode = 0

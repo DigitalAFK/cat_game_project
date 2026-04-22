@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bjou21ywrx87m"]
 
+[ext_resource type="Script" uid="uid://p1mtaptbr7cc" path="res://Code/Audio/MeowSound.cs" id="1_6yphw"]
 [ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="1_8wuuw"]
 [ext_resource type="Texture2D" uid="uid://ckxcs7u24j5bx" path="res://Art/UI/Roosa_upperbody.png" id="1_24x5o"]
 [ext_resource type="Script" uid="uid://7i7hsoexi23c" path="res://Code/Buttons/AnswerButtonFunction.cs" id="2_6yphw"]
@@ -15,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_6yphw")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1859273668]
 layout_mode = 0
