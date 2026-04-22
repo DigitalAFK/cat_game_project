@@ -245,6 +245,18 @@ public partial class GameManager : Node
 		return _lastExitID;
 	}
 
+	private bool _tutorialDone = false;
+
+	public void SetTutorialStatus(bool status)
+	{
+		_tutorialDone = status;
+	}
+
+	public bool GetTutorialStatus()
+	{
+		return _tutorialDone;
+	}
+
 	#endregion
 	/// <summary>
 	/// Goes to the given scene.
