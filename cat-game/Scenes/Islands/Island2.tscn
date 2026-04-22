@@ -11,11 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="5_m6umt"]
 [ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="6_ococc"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="7_hsite"]
-[ext_resource type="Texture2D" uid="uid://bs4lsv6722x4r" path="res://Art/Inside Island/NPCs/Roosa.png" id="8_81k0p"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_m6umt"]
 [ext_resource type="Texture2D" uid="uid://d0npgc0uew6gp" path="res://Art/Inside Island/NPCs/Junko.png" id="11_j61o7"]
 [ext_resource type="Script" uid="uid://dvtpvnjlvwr6v" path="res://Code/System/ResultNPCVisible.cs" id="12_6vj34"]
 [ext_resource type="Texture2D" uid="uid://tiehseojtr37" path="res://Art/Inside Island/NPCs/oldcat.png" id="12_xlg44"]
+[ext_resource type="Texture2D" uid="uid://xhbe8okydujh" path="res://Art/Inside Island/NPCs/Haruka.png" id="12_ya43b"]
 [ext_resource type="AudioStream" uid="uid://caavyg4ryvgh2" path="res://Audio/OST/On The Island.wav" id="13_epene"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kd8tv"]
@@ -120,7 +120,7 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC5" unique_id=2085522538]
 scale = Vector2(1.75, 1.75)
-texture = ExtResource("8_81k0p")
+texture = ExtResource("12_ya43b")
 hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 15
