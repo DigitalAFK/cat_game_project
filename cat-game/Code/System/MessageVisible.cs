@@ -1,14 +1,16 @@
 using Godot;
 using System;
 
-public partial class LabelVisible : Label
+public partial class MessageVisible : TextureRect
 {
+	[Export] private string _shintaroID = "NPC007";
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		int score = GameManager.Instance.GetTotalScore();
 		int maxScore = GameManager.Instance.GetMaxScore();
-		if (score == maxScore)
+		bool hasSeenShintaro = GameManager.Instance.HasVisitedScene(_shintaroID);
+		if (score == maxScore && !hasSeenShintaro)
 		{
 			MakeVisible();
 		}

@@ -53,24 +53,24 @@ stretch_mode = 0
 script = ExtResource("2_sxlh5")
 _targetScenePath = "res://Scenes/Islands/Island2.tscn"
 
-[node name="Label" type="Label" parent="VBoxContainer/FinderButton" unique_id=85003989]
+[node name="Label" type="Label" parent="VBoxContainer/FinderButton" unique_id=515679025]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.54700005
 anchor_right = 0.5
 anchor_bottom = 0.54700005
-offset_left = -421.0
-offset_top = -60.050034
-offset_right = 1064.0
-offset_bottom = 65.94996
+offset_left = -427.0
+offset_top = -63.050034
+offset_right = 431.0
+offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_nyyx4")
-theme_override_font_sizes/font_size = 44
-text = "“Olen liikkeellä, mutta en vielä 
-tiedä, minne tie vie.”"
+theme_override_font_sizes/font_size = 41
+text = "JUNKO_EXPLORER"
+autowrap_mode = 2
 
 [node name="AdvancerButton" type="TextureButton" parent="VBoxContainer" unique_id=1919688238]
 custom_minimum_size = Vector2(0, 150)
@@ -83,24 +83,24 @@ script = ExtResource("2_sxlh5")
 type = 1
 _targetScenePath = "res://Scenes/Islands/Island2.tscn"
 
-[node name="Label" type="Label" parent="VBoxContainer/AdvancerButton" unique_id=1317657548]
+[node name="Label" type="Label" parent="VBoxContainer/AdvancerButton" unique_id=832609088]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.54700005
 anchor_right = 0.5
 anchor_bottom = 0.54700005
-offset_left = -421.0
-offset_top = -69.05003
-offset_right = 1010.0
-offset_bottom = 56.94996
+offset_left = -427.0
+offset_top = -63.050034
+offset_right = 431.0
+offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_nyyx4")
-theme_override_font_sizes/font_size = 47
-text = "“Tiedän minne haluan mennä – 
-nyt tarttis vaan mennä.”"
+theme_override_font_sizes/font_size = 41
+text = "JUNKO_ADVANCER"
+autowrap_mode = 2
 
 [node name="PromoterButton" type="TextureButton" parent="VBoxContainer" unique_id=488734298]
 custom_minimum_size = Vector2(0, 150)
@@ -113,24 +113,24 @@ script = ExtResource("2_sxlh5")
 type = 2
 _targetScenePath = "res://Scenes/Islands/Island2.tscn"
 
-[node name="Label" type="Label" parent="VBoxContainer/PromoterButton" unique_id=1212486562]
+[node name="Label" type="Label" parent="VBoxContainer/PromoterButton" unique_id=1656065096]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.54700005
 anchor_right = 0.5
 anchor_bottom = 0.54700005
-offset_left = -423.0
-offset_top = -60.050034
-offset_right = 927.0
-offset_bottom = 65.94996
+offset_left = -427.0
+offset_top = -63.050034
+offset_right = 431.0
+offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_nyyx4")
-theme_override_font_sizes/font_size = 45
-text = "“Minulla on idea – 
-mutta miten siitä tulee totta?”"
+theme_override_font_sizes/font_size = 41
+text = "JUNKO_ACCELERATOR"
+autowrap_mode = 2
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=254442603]
 layout_mode = 0
@@ -159,9 +159,7 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_0w5hp")
 theme_override_font_sizes/font_size = 101
-text = "\"Hei tulokas, mikä fiilis? Meikä on Junko, saaren kovin kissa.
-Kertoisiks, mikä näist lauseist resonoi sun kaa eniten.\"
-"
+text = "JUNKO"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

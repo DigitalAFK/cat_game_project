@@ -62,15 +62,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -427.0
 offset_top = -63.050034
-offset_right = 1058.0
+offset_right = 431.0
 offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_ctup5")
 theme_override_font_sizes/font_size = 41
-text = "\"Tilaa pohtia, kuka minä olen
-ja mitä oikeasti haluan.\""
+text = "ROSE_EXPLORER"
+autowrap_mode = 2
 
 [node name="AdvancerButton" type="TextureButton" parent="VBoxContainer" unique_id=1919688238]
 custom_minimum_size = Vector2(0, 150)
@@ -92,15 +92,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -427.0
 offset_top = -65.05003
-offset_right = 1274.0
+offset_right = 430.0
 offset_bottom = 60.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_ctup5")
 theme_override_font_sizes/font_size = 42
-text = "\"Sparrausta ja suunnitelmaa, 
-jonka avulla saavutan päämääräni.\""
+text = "ROSE_ADVANCER"
+autowrap_mode = 2
 
 [node name="PromoterButton" type="TextureButton" parent="VBoxContainer" unique_id=488734298]
 custom_minimum_size = Vector2(0, 150)
@@ -122,15 +122,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -429.0
 offset_top = -65.05003
-offset_right = 1083.0
+offset_right = 432.0
 offset_bottom = 60.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_ctup5")
 theme_override_font_sizes/font_size = 41
-text = "\"Konkreettisia askelia ja rohkaisua
-kokeilla jotain omaa.\""
+text = "ROSE_ACCELERATOR"
+autowrap_mode = 2
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=254442603]
 layout_mode = 0
@@ -159,9 +159,7 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_ymimj")
 theme_override_font_sizes/font_size = 69
-text = "\"Hei Pörrö! Nimeni on Rose, hauska tutustua. Olen aika rauhallinen, ja mukavuudenhaluinen kissa, joka kaipaa lisää ystäviä.
-Haluaisin oppia tuntemaan sinut paremmin, joten mietiskelin tässä... Mitä tällä hetkellä tunnet kaipaavasi eniten?\"
-"
+text = "ROSE"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

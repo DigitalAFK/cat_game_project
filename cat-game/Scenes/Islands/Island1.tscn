@@ -8,8 +8,6 @@
 [ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_dfjbt"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="4_4dey0"]
 [ext_resource type="Texture2D" uid="uid://c7y7hx4qcwq8a" path="res://Art/Inside Island/NPCs/petro.png" id="5_h7cj5"]
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="5_o1uan"]
-[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="6_76xnn"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="7_1ogpp"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_gt5iu"]
 [ext_resource type="Texture2D" uid="uid://dphbeiite636j" path="res://Art/Inside Island/NPCs/Lynx.png" id="9_o1uan"]
@@ -84,19 +82,6 @@ hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC1/Sprite2D" unique_id=1433744423]
-visible = false
-offset_left = -36.5
-offset_top = -19.0
-offset_right = 53.5
-offset_bottom = 21.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_76xnn")
-theme_override_font_sizes/font_size = 30
-text = "Kissa"
-metadata/_edit_use_anchors_ = true
-
 [node name="Area2D" type="Area2D" parent="NPC1" unique_id=850743107]
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue1.tscn"
@@ -118,19 +103,6 @@ texture = ExtResource("9_o1uan")
 hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
-
-[node name="Label" type="Label" parent="NPC2/Sprite2D" unique_id=856239025]
-visible = false
-offset_left = -36.5
-offset_top = -19.0
-offset_right = 53.5
-offset_bottom = 21.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_76xnn")
-theme_override_font_sizes/font_size = 30
-text = "Kissa"
-metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC2" unique_id=277101697]
 script = ExtResource("7_1ogpp")
@@ -154,19 +126,6 @@ hframes = 2
 script = ExtResource("3_dfjbt")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC3/Sprite2D" unique_id=632302309]
-visible = false
-offset_left = -36.5
-offset_top = -19.0
-offset_right = 53.5
-offset_bottom = 21.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_76xnn")
-theme_override_font_sizes/font_size = 30
-text = "Kissa"
-metadata/_edit_use_anchors_ = true
-
 [node name="Area2D" type="Area2D" parent="NPC3" unique_id=713379256]
 script = ExtResource("7_1ogpp")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue3.tscn"
@@ -181,22 +140,6 @@ shape = SubResource("CapsuleShape2D_dfjbt")
 position = Vector2(-566, 1573.0001)
 scale = Vector2(2.6, 2.6)
 metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Dock" unique_id=348695894]
-visible = false
-texture = ExtResource("5_o1uan")
-
-[node name="Label" type="Label" parent="Dock/Sprite2D" unique_id=286150241]
-offset_left = -39.0
-offset_top = -17.5
-offset_right = 51.0
-offset_bottom = 22.5
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_76xnn")
-theme_override_font_sizes/font_size = 30
-text = "Laituri"
-metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Dock" unique_id=1569787027]
 script = ExtResource("7_1ogpp")

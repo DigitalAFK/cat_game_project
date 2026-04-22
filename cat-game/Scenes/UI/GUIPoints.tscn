@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://8xe7eqgtn5m2" path="res://Art/UI/tracker.png" id="1_r0cyi"]
 [ext_resource type="Script" uid="uid://86vwtjkdrlnr" path="res://Code/Buttons/TextureButtonContainerVisibility.cs" id="2_riwa6"]
-[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="3_nb250"]
 [ext_resource type="Script" uid="uid://ciwkqn5mb0465" path="res://Code/Buttons/FoldContainer.cs" id="4_b8v2r"]
 [ext_resource type="Texture2D" uid="uid://d341s8n2cbx32" path="res://Art/UI/burgundy.png" id="4_t761m"]
 [ext_resource type="Texture2D" uid="uid://bi0cxklx0yg2e" path="res://Art/UI/BlackTriangleDown.png" id="5_t761m"]
@@ -23,19 +22,6 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("2_riwa6")
 _targetContainerPath = "../PointsContainer"
-
-[node name="Label" type="Label" parent="SettingsButton" unique_id=1491744065]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 16.0
-offset_right = 52.0
-offset_bottom = 33.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_nb250")
-theme_override_font_sizes/font_size = 30
-text = "Tracker"
 
 [node name="PointsContainer" type="VBoxContainer" parent="." unique_id=372582226]
 visible = false
@@ -59,7 +45,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_icons/expanded_arrow = ExtResource("5_t761m")
 theme_override_icons/folded_arrow = ExtResource("6_kl5au")
 folded = true
-title = "Hillside Lighthouse"
+title = "ISLAND_01"
 script = ExtResource("4_b8v2r")
 _id = "ISL001"
 _backgroundOGSizeX = 195
@@ -72,7 +58,7 @@ visible = false
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 40
-text = "NPC 1"
+text = "Petro"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label" unique_id=768091832]
 layout_mode = 0
@@ -88,7 +74,7 @@ _id = "NPC001"
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
-text = "NPC 2"
+text = "Lynx"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label2" unique_id=1548726874]
 layout_mode = 0
@@ -105,7 +91,7 @@ visible = false
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 40
-text = "NPC 3"
+text = "Rose"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 1/Label3" unique_id=119175484]
 layout_mode = 0
@@ -123,7 +109,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_icons/expanded_arrow = ExtResource("5_t761m")
 theme_override_icons/folded_arrow = ExtResource("6_kl5au")
 folded = true
-title = "Island 2"
+title = "ISLAND_02"
 script = ExtResource("4_b8v2r")
 _id = "ISL002"
 _backgroundOGSizeX = 195
@@ -136,13 +122,13 @@ visible = false
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 40
-text = "NPC 1"
+text = "Rambo"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label" unique_id=895297013]
 layout_mode = 0
-offset_left = 119.0
+offset_left = 150.0
 offset_top = 3.0
-offset_right = 159.0
+offset_right = 190.0
 offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
@@ -152,13 +138,13 @@ _id = "NPC004"
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
-text = "NPC 2"
+text = "Haruka"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label2" unique_id=1846434894]
 layout_mode = 0
-offset_left = 119.0
+offset_left = 150.0
 offset_top = 3.0
-offset_right = 159.0
+offset_right = 190.0
 offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")
@@ -169,13 +155,13 @@ visible = false
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 40
-text = "NPC 3"
+text = "Junko"
 
 [node name="TextureRect" type="TextureRect" parent="PointsContainer/Island 2/Label3" unique_id=838140386]
 layout_mode = 0
-offset_left = 119.0
+offset_left = 150.0
 offset_top = 3.0
-offset_right = 159.0
+offset_right = 190.0
 offset_bottom = 43.0
 expand_mode = 1
 script = ExtResource("6_riwa6")

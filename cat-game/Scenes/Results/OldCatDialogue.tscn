@@ -65,10 +65,7 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_3obln")
 theme_override_font_sizes/font_size = 81
-text = "\"Olet löytänyt Shintaron, vanhimman piraattikissoista.\"
-\"Olen seurannut matkaasi halki näiden vesien, ja olet selvästi matkalla kohti suuria asioita.\"
-\"Tie viisauteen on pitkä, mutta olet onnistunut saavuttamaan tavoitteesi. Joskus suurin aarre on sisäinen harmonia, joka ohjaa sinua elämässä.\"
-\"Olet ansainnut palkintosi\""
+text = "SHINTARO"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

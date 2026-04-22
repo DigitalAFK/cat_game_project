@@ -65,15 +65,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -424.0
 offset_top = -66.05003
-offset_right = 1196.0
+offset_right = 422.0
 offset_bottom = 51.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("4_wr5pf")
 theme_override_font_sizes/font_size = 34
-text = "\"En vielä tiedä, tuntuu että 
-suuntaa ei ole vielä löytynyt.\""
+text = "PETRO_EXPLORER"
+autowrap_mode = 2
 
 [node name="AdvancerButton" type="TextureButton" parent="VBoxContainer" unique_id=1919688238]
 custom_minimum_size = Vector2(0, 150)
@@ -95,16 +95,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -429.0
 offset_top = -66.05003
-offset_right = 867.0
+offset_right = 427.0
 offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("4_wr5pf")
 theme_override_font_sizes/font_size = 34
-text = "\"Tiedän suunnilleen suuntani, 
-mutta tarvitsen apua löytääkseni
-kokonaisuuden.\""
+text = "PETRO_ADVANCER"
+autowrap_mode = 2
 
 [node name="PromoterButton" type="TextureButton" parent="VBoxContainer" unique_id=488734298]
 custom_minimum_size = Vector2(0, 150)
@@ -126,16 +125,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -428.0
 offset_top = -66.05003
-offset_right = 2029.0
+offset_right = 423.0
 offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("4_wr5pf")
 theme_override_font_sizes/font_size = 35
-text = "\"Olen löytänyt suuntani, mutta
-tarvitsen miehistön avustamaan
-suunnitelmani toteutuksessa.\""
+text = "PETRO_ACCELERATOR"
+autowrap_mode = 2
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=254442603]
 layout_mode = 0
@@ -164,8 +162,7 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_mbg27")
 theme_override_font_sizes/font_size = 85
-text = "\"Hei! Kuulin että vesillä on uusi piraatti jonka nimi on Pörrö. Aavistan että se olet sinä.
-Haluaisin esittää sinulle kysymyksen. Mihin olet matkalla ja mikä on elämäsi suunta kun seilaat näitä vesiä?\""
+text = "PETRO"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

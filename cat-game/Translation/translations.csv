@@ -4,9 +4,9 @@ SETTINGS;Asetukset;Settings
 CREDITS;Tekijät;Credits
 
 
-EXPLORER;etsijä;explorer
-ADVANCER;etenijä;advancer
-ACCELERATOR;edistäjä;accelerator
+EXPLORER;Etsijä;Explorer
+ADVANCER;Etenijä;Advancer
+ACCELERATOR;Edistäjä;Accelerator
 
 EXPLORER_EXPLANATION;Oman suunnan etsijä, Pohdit identiteettiäsi, arvojasi ja elämäsi suuntaa;Exploring their own path. Reflects on one’s identity, values and life direction.
 ADVANCER_EXPLANATION;Tavoitteellinen etenijä, Tietää suuntansa, kaipaa suunnitelman;Goal-oriented advancer. Knows their direction, needs a plan.
@@ -56,5 +56,7 @@ JUNKO;"Hei tulokas, mikä fiilis? Meikä on Junko, saaren kovin kissa. Kertoisik
 JUNKO_EXPLORER;“Olen liikkeellä, mutta en vielä tiedä, minne tie vie.”;"I'm on the move, but the destination is still unknown."
 JUNKO_ADVANCER;“Tiedän minne haluan mennä – nyt tarttis vaan mennä.”;"I know where I want to go - now I'd just need to get to it."
 JUNKO_ACCELERATOR;“Minulla on idea – mutta miten siitä tulee totta?”;"I have an idea, but how does it come true?"
+
+SHINTARO_TIME;Shintaro, on valmis jakamaan viisauttaan kanssasi! Hänet voi löytää majakan juurelta!;Shintaro is ready to share their knowledge with you! You can find them at the foot of the lighthouse!
 
 SHINTARO;Olet löytänyt Shintaron, vanhimman piraattikissoista. "Olen seurannut matkaasi halki näiden vesien, ja olet selvästi matkalla kohti suuria asioita. Tie viisauteen on pitkä, mutta olet onnistunut saavuttamaan tavoitteesi. Joskus suurin aarre on sisäinen harmonia, joka ohjaa sinua elämässä. Olet ansainnut palkintosi";You have found Shintaro, the eldest of the pirate cats. "I've observed your journey through these waters, and I think you are on your way to do great things. The road to wisdom is sometimes long and tedious, but you have managed to achieve yours. Sometimes the greatest treasure is inner harmony, that guides you through life. You deserve your prize."

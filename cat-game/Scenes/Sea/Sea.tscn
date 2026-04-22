@@ -7,15 +7,16 @@
 [ext_resource type="TileSet" uid="uid://bagfqfrfyqmbu" path="res://Art/Sea Scene/new_tile_set.tres" id="4_onpox"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="5_g1kvn"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="7_iy63l"]
-[ext_resource type="Script" uid="uid://c1qipf38sv0ii" path="res://Code/System/LabelVisible.cs" id="8_j7fxb"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="9_fvbyo"]
 [ext_resource type="Texture2D" uid="uid://0k2shby8be2j" path="res://Art/Sea Scene/Island One.png" id="10_anqpm"]
+[ext_resource type="Script" uid="uid://c1qipf38sv0ii" path="res://Code/System/MessageVisible.cs" id="10_ypife"]
 [ext_resource type="PackedScene" uid="uid://cyw8ct7gb74dt" path="res://Scenes/UI/GUIPoints.tscn" id="11_0ujc6"]
 [ext_resource type="Texture2D" uid="uid://d22cm1re5gkvt" path="res://Art/UI/background_flipped.png" id="11_d0kkp"]
 [ext_resource type="AudioStream" uid="uid://3ykj85jiqfcw" path="res://Audio/OST/Cats Adventure.wav" id="11_w6a2i"]
 [ext_resource type="Script" uid="uid://dlwnd1i6i76er" path="res://Code/Buttons/TutorialButton.cs" id="11_ypife"]
 [ext_resource type="FontFile" uid="uid://0xtaqpnopkb2" path="res://Fonts/ttf/JetBrainsMonoNL-Bold.ttf" id="12_iy63l"]
 [ext_resource type="Texture2D" uid="uid://c2e34x2uyhxg5" path="res://Art/Sea Scene/Island Two.png" id="13_g1kvn"]
+[ext_resource type="Texture2D" uid="uid://bddbftfn6sdmq" path="res://Art/UI/Arrow.png" id="13_ypife"]
 [ext_resource type="Script" uid="uid://in7cvxr6vy6d" path="res://Code/Audio/SeaBackgroundSound.cs" id="14_onpox"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pms0"]
@@ -82,69 +83,76 @@ _target = NodePath("../CharacterBody2D")
 
 [node name="UI" parent="." unique_id=317430085 instance=ExtResource("7_iy63l")]
 
-[node name="Label" type="Label" parent="UI" unique_id=1171645858]
+[node name="ShintaroReveal" type="TextureRect" parent="UI" unique_id=887798465]
 visible = false
-top_level = true
-custom_minimum_size = Vector2(700, 0)
-anchors_preset = -1
-offset_left = 47.0
-offset_top = 63.0
-offset_right = 747.0
-offset_bottom = 662.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "Shintaro, on valmis jakamaan viisauttaan kanssasi!
-Hänet voi löytää majakan juurelta!"
-autowrap_mode = 2
-script = ExtResource("8_j7fxb")
-metadata/_edit_use_anchors_ = true
+modulate = Color(1, 1, 1, 0.83137256)
+self_modulate = Color(1, 1, 1, 0.76862746)
+show_behind_parent = true
+offset_left = 36.0
+offset_top = 48.0
+offset_right = 806.0
+offset_bottom = 500.0
+texture = ExtResource("11_d0kkp")
+expand_mode = 1
+script = ExtResource("10_ypife")
 
-[node name="TextureRect" type="TextureRect" parent="UI" unique_id=49941181]
+[node name="Label" type="Label" parent="UI/ShintaroReveal" unique_id=2058358904]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 56.0
+offset_right = 727.0
+offset_bottom = 394.0
+theme_override_fonts/font = ExtResource("12_iy63l")
+theme_override_font_sizes/font_size = 50
+text = "SHINTARO_TIME"
+autowrap_mode = 2
+
+[node name="Tutorial1" type="TextureRect" parent="UI" unique_id=49941181]
 modulate = Color(1, 1, 1, 0.83137256)
 self_modulate = Color(1, 1, 1, 0.76862746)
 show_behind_parent = true
 offset_left = 53.0
 offset_top = 336.0
-offset_right = 625.0
-offset_bottom = 635.0
+offset_right = 599.0
+offset_bottom = 537.0
 texture = ExtResource("11_d0kkp")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="UI/TextureRect" unique_id=228327039]
+[node name="Label" type="Label" parent="UI/Tutorial1" unique_id=228327039]
 layout_mode = 0
 offset_left = 49.0
-offset_top = 43.0
-offset_right = 525.0
-offset_bottom = 256.0
+offset_top = 36.0
+offset_right = 510.0
+offset_bottom = 181.0
 theme_override_fonts/font = ExtResource("12_iy63l")
 theme_override_font_sizes/font_size = 50
-text = "Ajat tätä laivaa"
+text = "TUTORIAL_01"
+autowrap_mode = 2
 
-[node name="TextureRect2" type="TextureRect" parent="UI" unique_id=329191386]
+[node name="Tutorial2" type="TextureRect" parent="UI" unique_id=329191386]
 visible = false
 modulate = Color(1, 1, 1, 0.83137256)
 self_modulate = Color(1, 1, 1, 0.76862746)
 show_behind_parent = true
 offset_left = 389.0
 offset_top = 1140.0
-offset_right = 961.0
-offset_bottom = 1439.0
+offset_right = 856.0
+offset_bottom = 1499.0
 texture = ExtResource("11_d0kkp")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="UI/TextureRect2" unique_id=701202001]
+[node name="Label" type="Label" parent="UI/Tutorial2" unique_id=701202001]
 layout_mode = 0
-offset_left = 49.0
+offset_left = 35.0
 offset_top = 43.0
-offset_right = 525.0
-offset_bottom = 256.0
+offset_right = 433.0
+offset_bottom = 317.0
 theme_override_fonts/font = ExtResource("12_iy63l")
 theme_override_font_sizes/font_size = 50
-text = "Ohjaat sitä tällä joystickillä"
+text = "TUTORIAL_02"
 autowrap_mode = 2
 
-[node name="Button" type="Button" parent="UI" unique_id=2144081700 node_paths=PackedStringArray("firstNote", "secondNote")]
+[node name="Button" type="Button" parent="UI" unique_id=2144081700 node_paths=PackedStringArray("firstNote", "secondNote", "firstArrow", "secondArrow")]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 offset_right = 1080.0
@@ -152,8 +160,23 @@ offset_bottom = 1920.0
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 0)
 action_mode = 0
 script = ExtResource("11_ypife")
-firstNote = NodePath("../TextureRect")
-secondNote = NodePath("../TextureRect2")
+firstNote = NodePath("../Tutorial1")
+secondNote = NodePath("../Tutorial2")
+firstArrow = NodePath("../Arrow1")
+secondArrow = NodePath("../Arrow2")
+
+[node name="Arrow1" type="Sprite2D" parent="UI" unique_id=1814304009]
+position = Vector2(436, 731)
+rotation = -0.3926991
+scale = Vector2(1.5557013, 2.856333)
+texture = ExtResource("13_ypife")
+
+[node name="Arrow2" type="Sprite2D" parent="UI" unique_id=210873591]
+visible = false
+position = Vector2(745.7345, 1567.9391)
+rotation = 0.61086524
+scale = Vector2(1.3153203, 1.9014145)
+texture = ExtResource("13_ypife")
 
 [node name="Island1" type="StaticBody2D" parent="." unique_id=901929796]
 position = Vector2(-1045, -1861)

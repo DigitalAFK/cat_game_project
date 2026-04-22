@@ -9,7 +9,11 @@ public partial class LanguageButton : TextureButton
 	{
 		if (GameManager.Instance.GetLanguage() == "en")
 		{
-			GameManager.Instance.SetLanguage("fi");
+			base.ButtonPressed = true;
+		}
+		else if (GameManager.Instance.GetLanguage() == "fi")
+		{
+			base.ButtonPressed = false;
 		}
 	}
 

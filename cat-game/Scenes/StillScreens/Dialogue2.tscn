@@ -62,15 +62,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -411.0
 offset_top = -60.050034
-offset_right = 615.0
+offset_right = 421.0
 offset_bottom = 65.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_y0lvc")
 theme_override_font_sizes/font_size = 45
-text = "\"Haluaisin neuvoja
-suuntani löytämiseen\""
+text = "LYNX_EXPLORER"
+autowrap_mode = 2
 
 [node name="AdvancerButton" type="TextureButton" parent="VBoxContainer" unique_id=1919688238]
 custom_minimum_size = Vector2(0, 150)
@@ -92,15 +92,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -405.0
 offset_top = -67.05003
-offset_right = 594.0
+offset_right = 427.0
 offset_bottom = 58.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_y0lvc")
-theme_override_font_sizes/font_size = 45
-text = "\"Haluaisin edetä
-kohti tavoitteitani\""
+theme_override_font_sizes/font_size = 40
+text = "LYNX_ADVANCER"
+autowrap_mode = 2
 
 [node name="PromoterButton" type="TextureButton" parent="VBoxContainer" unique_id=488734298]
 custom_minimum_size = Vector2(0, 150)
@@ -122,15 +122,15 @@ anchor_right = 0.5
 anchor_bottom = 0.54700005
 offset_left = -408.0
 offset_top = -63.050034
-offset_right = 915.0
+offset_right = 429.0
 offset_bottom = 62.94996
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -6
 theme_override_fonts/font = ExtResource("3_y0lvc")
-theme_override_font_sizes/font_size = 45
-text = "\"Haluaisin tehdä omaa juttuani,
-ehkä jopa bisnestä\""
+theme_override_font_sizes/font_size = 35
+text = "LYNX_ACCELERATOR"
+autowrap_mode = 2
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=254442603]
 layout_mode = 0
@@ -159,8 +159,7 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_acon6")
 theme_override_font_sizes/font_size = 85
-text = "\"Moro! Kutsuvat minua nimellä Lynx. Mikäs sinut tuo tänne? Anna kun arvaan, tarvitset neuvoja.\"
-\"Neuvon sinua kunhan kerrot mitä tarvitset.\""
+text = "LYNX"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

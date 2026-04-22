@@ -8,8 +8,6 @@
 [ext_resource type="Script" uid="uid://565w7208l68n" path="res://Code/AnimatedBackgrounds/AnimatedSprites.cs" id="3_ns76p"]
 [ext_resource type="Script" uid="uid://ikx78u6jwrtp" path="res://Code/Characters/FollowCamera.cs" id="4_npr2w"]
 [ext_resource type="Texture2D" uid="uid://byx1k5awwx00u" path="res://Art/Inside Island/NPCs/Ranbo.png" id="5_hsite"]
-[ext_resource type="Texture2D" uid="uid://5huam7xnjbjs" path="res://Art/Sprites/icon.svg" id="5_m6umt"]
-[ext_resource type="FontFile" uid="uid://da16j2wg3ets4" path="res://Fonts/ttf/JetBrainsMono-Bold.ttf" id="6_ococc"]
 [ext_resource type="Script" uid="uid://cbjt24nieyhrp" path="res://Code/Characters/CollisionController.cs" id="7_hsite"]
 [ext_resource type="PackedScene" uid="uid://b2coer7l1x84u" path="res://Scenes/UI/UI.tscn" id="8_m6umt"]
 [ext_resource type="Texture2D" uid="uid://d0npgc0uew6gp" path="res://Art/Inside Island/NPCs/Junko.png" id="11_j61o7"]
@@ -90,19 +88,6 @@ hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 15
 
-[node name="Label" type="Label" parent="NPC4/Sprite2D" unique_id=1333747354]
-visible = false
-offset_left = -36.5
-offset_top = -19.0
-offset_right = 53.5
-offset_bottom = 21.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_ococc")
-theme_override_font_sizes/font_size = 30
-text = "Kissa"
-metadata/_edit_use_anchors_ = true
-
 [node name="Area2D" type="Area2D" parent="NPC4" unique_id=605035892]
 script = ExtResource("7_hsite")
 _targetScenePath = "res://Scenes/StillScreens/Dialogue4.tscn"
@@ -124,19 +109,6 @@ texture = ExtResource("12_ya43b")
 hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 15
-
-[node name="Label" type="Label" parent="NPC5/Sprite2D" unique_id=1061558535]
-visible = false
-offset_left = -36.5
-offset_top = -19.0
-offset_right = 53.5
-offset_bottom = 21.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_ococc")
-theme_override_font_sizes/font_size = 30
-text = "Kissa"
-metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC5" unique_id=587753935]
 script = ExtResource("7_hsite")
@@ -160,19 +132,6 @@ texture = ExtResource("11_j61o7")
 hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 15
-
-[node name="Label" type="Label" parent="NPC6/Sprite2D" unique_id=2117871681]
-visible = false
-offset_left = -36.5
-offset_top = -19.0
-offset_right = 53.5
-offset_bottom = 21.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_ococc")
-theme_override_font_sizes/font_size = 30
-text = "Kissa"
-metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="NPC6" unique_id=643156302]
 script = ExtResource("7_hsite")
@@ -198,20 +157,6 @@ hframes = 2
 script = ExtResource("3_ns76p")
 _animationSpeed = 25
 
-[node name="Label" type="Label" parent="Result-NPC/Sprite2D" unique_id=413734968]
-visible = false
-offset_left = -42.0
-offset_top = -44.5
-offset_right = 48.0
-offset_bottom = 38.5
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_ococc")
-theme_override_font_sizes/font_size = 30
-text = "Vanha
-kissa"
-metadata/_edit_use_anchors_ = true
-
 [node name="Area2D" type="Area2D" parent="Result-NPC" unique_id=36939937]
 script = ExtResource("7_hsite")
 _targetScenePath = "res://Scenes/Results/OldCatDialogue.tscn"
@@ -227,22 +172,6 @@ shape = SubResource("CapsuleShape2D_6vj34")
 position = Vector2(-588, 1583.0001)
 scale = Vector2(2.6, 2.6)
 metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Dock" unique_id=1227382902]
-visible = false
-texture = ExtResource("5_m6umt")
-
-[node name="Label" type="Label" parent="Dock/Sprite2D" unique_id=1004088060]
-offset_left = -39.0
-offset_top = -17.5
-offset_right = 51.0
-offset_bottom = 22.5
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_ococc")
-theme_override_font_sizes/font_size = 30
-text = "Laituri"
-metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Dock" unique_id=1147286434]
 script = ExtResource("7_hsite")

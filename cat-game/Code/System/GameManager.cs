@@ -100,7 +100,6 @@ public partial class GameManager : Node
 		return _maxScore;
 	}
 
-	//TODO: Set scores to zero
 	//Etsijä
 	private int _finderScore = 0;
 	//Etenijä
